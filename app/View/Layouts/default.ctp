@@ -13,51 +13,31 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
-	</title>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php
-		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+		echo $this->Html->css('bootstrap');
+		echo $this->Html->css('custom.min');
 	?>
-</head>
-<body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'https://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
-
-			<?php echo $this->Flash->render(); ?>
-
+	</head>
+	<link rel="stylesheet" type="text/css" href="">
+	<title>
+	</title>
+	</head>
+	<body>
+		<div class="container">
+		<?php echo $this->Flash->render(); ?>
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'https://cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
-</body>
+		<?php
+		echo $this->Html->script('jquery.min');
+		echo $this->Html->script('popper.min');
+		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('custom');
+	?>
+	</body>
 </html>
