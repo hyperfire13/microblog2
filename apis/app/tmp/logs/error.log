@@ -1,0 +1,1962 @@
+2020-03-23 10:36:03 Error: [MissingControllerException] Controller class ViewController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/view
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-23 10:36:10 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-23 10:36:42 Error: [MissingControllerException] Controller class ViewController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/View/Posts
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-23 10:36:44 Error: [MissingControllerException] Controller class ViewController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/View/Posts/
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 01:57:50 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:22:15 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:22:16 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:22:17 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:22:17 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:22:18 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:22:18 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:22:26 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:23:39 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:25:53 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:25:54 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 02:25:54 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cake-blog/cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cake-blog\cakephp\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 06:28:43 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /microblog-2/app/webroot/
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-24 09:37:11 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/users/
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 09:37:14 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 09:38:28 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /microblog-2/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-24 09:38:32 Error: [MissingActionException] Action UsersController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+)
+Request URL: /microblog-2/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-24 10:04:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:04:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:05:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:05:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-24 10:05:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/cake.generic.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 02:52:32 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /microblog-2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 02:58:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 02:58:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 02:59:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 02:59:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 02:59:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 02:59:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:09:07 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /microblog-2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 03:12:18 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /microblog-2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 03:31:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:31:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:32:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:32:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:32:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:32:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:34:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:34:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:35:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:35:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:36:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:36:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:40:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:40:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:47:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:47:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:48:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:48:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:51:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 03:51:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 04:03:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 04:03:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 04:11:21 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /microblog-2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 04:11:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 04:11:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 04:15:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 04:15:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 04:15:32 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /microblog-2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 04:15:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 04:15:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:20:59 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /microblog-2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 11:20:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:20:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:21:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:21:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:21:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:21:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:21:26 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /microblog-2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 11:21:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:21:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:28:07 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /microblog-2/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 11:28:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:28:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:28:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:28:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:28:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:28:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:29:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:29:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:29:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:29:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:30:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 11:30:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 13:32:53 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 14:25:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:25:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:29:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:29:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:34:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/microblogv%3D1.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:34:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:34:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:34:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/microblogv%3D1.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:34:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/microblogv%3D1.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:34:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:34:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:37:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:37:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:38:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:39:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:39:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:40:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:40:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:42:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:42:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:46:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:46:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:46:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:46:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:46:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:46:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:47:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:47:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:47:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:47:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:48:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:48:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:49:09 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-25 14:50:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:50:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:50:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/microblogs.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:50:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/microblogs.js
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:50:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:50:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:51:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:51:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:53:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:53:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:53:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:53:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:57:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 14:57:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:19:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:19:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:20:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:20:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:21:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:21:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:22:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:22:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:22:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:22:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:23:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:23:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:29:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:29:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:31:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/bootstrap.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 15:31:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/js/popper.min.js.map
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-25 18:01:46 Error: [ParseError] syntax error, unexpected ''message'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /microblog-2/users/add
+Stack Trace:
+#0 [internal function]: App::load('User')
+#1 [internal function]: spl_autoload_call('User')
+#2 C:\xampp\htdocs\microblog-2\lib\Cake\Utility\ClassRegistry.php(146): class_exists('User')
+#3 C:\xampp\htdocs\microblog-2\lib\Cake\Controller\Controller.php(746): ClassRegistry::init('User')
+#4 C:\xampp\htdocs\microblog-2\lib\Cake\Controller\Controller.php(376): Controller->loadModel('User')
+#5 C:\xampp\htdocs\microblog-2\lib\Cake\Controller\Controller.php(414): Controller->__isset('User')
+#6 C:\xampp\htdocs\microblog-2\app\Controller\UsersController.php(16): Controller->__get('User')
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\microblog-2\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2020-03-25 18:02:17 Error: [ParseError] syntax error, unexpected ''message'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /microblog-2/users/add
+Stack Trace:
+#0 [internal function]: App::load('User')
+#1 [internal function]: spl_autoload_call('User')
+#2 C:\xampp\htdocs\microblog-2\lib\Cake\Utility\ClassRegistry.php(146): class_exists('User')
+#3 C:\xampp\htdocs\microblog-2\lib\Cake\Controller\Controller.php(746): ClassRegistry::init('User')
+#4 C:\xampp\htdocs\microblog-2\lib\Cake\Controller\Controller.php(376): Controller->loadModel('User')
+#5 C:\xampp\htdocs\microblog-2\lib\Cake\Controller\Controller.php(414): Controller->__isset('User')
+#6 C:\xampp\htdocs\microblog-2\app\Controller\UsersController.php(16): Controller->__get('User')
+#7 [internal function]: UsersController->add()
+#8 C:\xampp\htdocs\microblog-2\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2020-03-26 01:21:41 Error: [MissingControllerException] Controller class Index2.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Index2.phpController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/index2.php
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-26 01:28:44 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-26 01:28:45 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-26 01:28:45 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-26 01:28:46 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-26 01:28:46 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-26 01:28:46 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-26 01:57:51 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /microblog-2/apis/users
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-26 02:01:33 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /microblog-2/apis/users
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-26 10:59:26 Error: Fatal Error (64): Cannot use [] for reading in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 21]
+2020-03-26 10:59:26 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\\xampp\\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-03-26 13:53:57 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/apis/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-26 13:56:01 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/apis/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-26 13:56:55 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/apis/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-26 13:57:07 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/apis/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-26 13:57:13 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/apis/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-26 14:16:51 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 14:17:43 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 14:24:25 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 14:30:07 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 14:30:59 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 14:35:49 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 14:53:07 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:10:44 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:14:56 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;ssl://smtp.gmail.com&quot; port 465, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(40): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:16:13 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:17:12 Error: [SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\MailTransport.php(52): MailTransport->_mail('kennethybanez.y...', 'About', 'Pa click naman ...', 'From: My Site <...', NULL)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): MailTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:17:34 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:19:20 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:24:06 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:25:08 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:27:19 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:28:47 Error: [SocketException] SMTP timeout.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(149): SmtpTransport->_smtpSend(NULL, '220')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-26 15:29:07 Error: [SocketException] SMTP timeout.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(149): SmtpTransport->_smtpSend(NULL, '220')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-26 15:29:25 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:32:56 Error: [SocketException] SMTP timeout.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(149): SmtpTransport->_smtpSend(NULL, '220')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send('Pa click naman ...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-26 15:35:26 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(33): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:36:52 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(33): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2020-03-26 15:37:30 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(33): CakeEmail->send('Pa click naman ...')
+#3 [internal function]: UsersController->add()
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
