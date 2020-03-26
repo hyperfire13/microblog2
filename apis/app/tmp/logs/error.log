@@ -1960,3 +1960,18 @@ Stack Trace:
 #6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #7 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2020-03-26 16:55:28 Error: [SocketException] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(146): CakeSocket->connect()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(19): CakeEmail->send('Clck the link b...')
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(46): EmailValidation->sendValidationLink('www.kenneth.pog...')
+#5 [internal function]: UsersController->add()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
