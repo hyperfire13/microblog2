@@ -31,4 +31,15 @@ App::uses('Controller', 'Controller');
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+  private $requestMethod;
+  public $promtMessage;
+  public function CheckRequest ($method) {
+    $this->requestMethod = $method;
+    if ($this->request->is($this->requestMethod)) {
+        return true;
+    } else {
+        $this->promtMessage = array('status'=>'failed', 'message'=>'wrong request method');
+        return false;
+    }
+  }
 }

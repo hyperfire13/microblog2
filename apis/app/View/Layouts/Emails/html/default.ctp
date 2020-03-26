@@ -24,6 +24,9 @@
 	
 	<p>Microblog 2 Account Verification</a></p>
 	<p>Hi <?php echo $name.','; ?></p>
+	<p>Here is your validation code : <?php echo $token.','; ?></p>
+	<p>Click the link below to activate you account by entering your validation code:</p>
+
 	<p><a href="<?php echo $link; ?>" style="box-shadow: 0px 1px 0px 0px #f0f7fa;
 		background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
 		background-color:#33bdef;
