@@ -2054,3 +2054,194 @@ Stack Trace:
 #8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2020-03-27 10:47:24 Error: [SocketException] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(146): CakeSocket->connect()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(63): EmailValidation->sendValidationLink('abcdcode', 'popo', 'kennethybanez.y...')
+#5 [internal function]: UsersController->add()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-03-27 11:03:10 Error: [SocketException] php_network_getaddresses: getaddrinfo failed: No such host is known. 
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(146): CakeSocket->connect()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(63): EmailValidation->sendValidationLink('abcdcode', 'popo', 'kennethybanez.y...')
+#5 [internal function]: UsersController->add()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-03-27 11:17:11 Error: [SocketException] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(146): CakeSocket->connect()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(63): EmailValidation->sendValidationLink('MB-8918', 'popo', 'joanbona1995@gm...')
+#5 [internal function]: UsersController->add()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-03-27 11:17:50 Error: [SocketException] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(146): CakeSocket->connect()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(63): EmailValidation->sendValidationLink('MB-1689', 'popo', 'joanbona1995@gm...')
+#5 [internal function]: UsersController->add()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-03-27 11:44:50 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(64): EmailValidation->sendValidationLink('MB-3828', 'popo', 'kennethybanez.y...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-27 11:49:08 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(65): EmailValidation->sendValidationLink('MB-7989', 'kenneth', 'kennethybanez.y...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-27 11:54:24 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(65): EmailValidation->sendValidationLink('MB-8625', 'popo', 'kennethybanez.y...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-27 13:40:14 Error: [SocketException] php_network_getaddresses: getaddrinfo failed: No such host is known. 
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(146): CakeSocket->connect()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(86): SmtpTransport->_connect()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(64): EmailValidation->sendValidationLink('MB-4913', 'kenneth', 'kennethybanez.y...')
+#5 [internal function]: UsersController->add()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-03-27 14:15:16 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(64): EmailValidation->sendValidationLink('MB-1646', 'pa', 'kennethybanez.y...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-27 14:16:23 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(64): EmailValidation->sendValidationLink('MB-7631', 'xx', 'kennethybanez.y...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-27 14:35:15 Error: [SocketException] SMTP server did not accept the password.
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\SmtpTransport.php(87): SmtpTransport->_auth()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Network\Email\CakeEmail.php(1183): SmtpTransport->send(Object(CakeEmail))
+#2 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(32): CakeEmail->send()
+#3 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(64): EmailValidation->sendValidationLink('MB-1333', 'bbb', 'kennethybanez.y...')
+#4 [internal function]: UsersController->add()
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-03-27 15:04:47 Error: Fatal Error (64): Access level to AppController::$name must be public (as in class Controller) in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 33]
+2020-03-27 15:04:47 Error: [FatalErrorException] Access level to AppController::$name must be public (as in class Controller)
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Access level to...', 'C:\\xampp\\htdocs...', 33, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-03-27 15:05:53 Error: Fatal Error (64): Access level to AppController::$name must be public (as in class Controller) in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 33]
+2020-03-27 15:05:53 Error: [FatalErrorException] Access level to AppController::$name must be public (as in class Controller)
+Request URL: /microblog-2/apis/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Access level to...', 'C:\\xampp\\htdocs...', 33)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Access level to...', 'C:\\xampp\\htdocs...', 33, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-03-27 15:56:21 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/apis/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-27 15:59:35 Error: [MissingActionException] Action UsersController::adds() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'adds',
+)
+Request URL: /microblog-2/apis/users/adds
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

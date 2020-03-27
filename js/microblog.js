@@ -15,3 +15,19 @@ function showError(message,title) {
   $('#errorMsg').text(message);
   $('#errorModal').modal('show');
 }
+
+function showLoading(show) {
+  if (show === true) {
+      $('#loadingModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : show
+      });
+  } else {
+      $('#loadingModal').modal('hide');
+  }
+}
+
+$(document).on('hidden.bs.modal', '#successModal', function () {
+  alert("redirect");
+});

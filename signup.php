@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,6 +98,21 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- loading Modal -->
+    <div id="loadingModal" class="modal fade " tabindex="-1" role="dialog">
+      <div class="modal-dialog"  role="document">
+        <div class="modal-content bg-info text-white">
+          <div class="modal-header">
+            <h5 id="errorTitle" class="modal-title">Hold a second, we are saving your info :)</h5>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
           </div>
         </div>
       </div>
