@@ -30,4 +30,5 @@ function showLoading(show) {
 
 $(document).on('hidden.bs.modal', '#successModal', function () {
   alert("redirect");
+  location.href = "verification.php";
 });
