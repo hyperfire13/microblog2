@@ -22,7 +22,7 @@ function addUser () {
       showError("Confirm Password does not match with your Password", "Ooops...");
   } else {
       // show loading modal
-      showLoading(true);
+      showLoading(true,'Hi there!, we are saving your info :)');
       // Request Sending
       $.ajax({
         method: 'POST',
@@ -43,16 +43,17 @@ function addUser () {
           setTimeout(function() {
             // If the api was reached, do the following actions.
             if (status === 'success') {
+              moduleRequested = "signup";
               showSuccess(response.message);
               $('#addForm')[0].reset();
             } else if (status === 'failed') {
-                showError(response.message, "Oops, Please Check the the details you entered below");
+                showError(response.message, "Oops!, Please Check the the details you entered below");
             } else {
                 showError("Something went wrong","It's not on you,It's on us");
             }
           }, 1000);
         },
-        error: function(){
+        error: function() {
           setTimeout(function() {
             showLoading(false);
           }, 1000);

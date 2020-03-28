@@ -17,7 +17,7 @@
           }
           // check if data in not empty
           if (!empty($data)) {
-              $name = $data['first_name'];
+              $name = $this->capitalizeFirstLetter($data['first_name']);
               $code = $data['code'];
               $email = $data['email'];
               $duplicateCount = $this->User->find('count', array(

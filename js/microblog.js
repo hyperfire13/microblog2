@@ -1,3 +1,4 @@
+var moduleRequested = null;
 $(document).ready(function() { 
   $('#addForm').submit(function(e) {
     e.preventDefault();
@@ -16,7 +17,8 @@ function showError(message,title) {
   $('#errorModal').modal('show');
 }
 
-function showLoading(show) {
+function showLoading(show,title) {
+  $('#loadingTitle').text(title);
   if (show === true) {
       $('#loadingModal').modal({
         backdrop: 'static',
@@ -28,7 +30,23 @@ function showLoading(show) {
   }
 }
 
+function showResendModal(show) {
+  
+  if (show === true) {
+      $('#resendCodeModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : show
+      });
+  } else {
+      $('#resendCodeModal').modal('hide');
+  }
+}
+
 $(document).on('hidden.bs.modal', '#successModal', function () {
-  alert("redirect");
-  location.href = "verification.php";
+  if (moduleRequested === 'signup') {
+      alert("redirect");
+      location.href = "activate-account.php";
+  }
+  
 });

@@ -76,4 +76,9 @@
       $this->code = rand(1000, 9999); 
       return $this->code;
     }
+
+    public function capitalizeFirstLetter ($word) {
+      $formattedWord = ucwords($word);
+      return $formattedWord;
+    }
   }
