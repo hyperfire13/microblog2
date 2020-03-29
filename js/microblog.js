@@ -1,10 +1,4 @@
 var moduleRequested = null;
-$(document).ready(function() { 
-  $('#addForm').submit(function(e) {
-    e.preventDefault();
-    addUser();
-  });
-});
 
 function showSuccess(message) {
   $('#successMsg').text(message);

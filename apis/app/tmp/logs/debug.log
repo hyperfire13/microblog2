@@ -18,3 +18,297 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 117
 
+2020-03-29 16:16:01 Debug: Notice (8): Undefined index: first_name in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 20]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::add() - APP\Controller\UsersController.php, line 20
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:16:01 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 22]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::add() - APP\Controller\UsersController.php, line 22
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:16:01 Debug: Notice (8): Undefined index: username in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 24]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::add() - APP\Controller\UsersController.php, line 24
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:20:01 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 57]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 57
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:20:10 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 57]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 57
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:28:43 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 59]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 59
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:53:25 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3085]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::buildQuery() - CORE\Cake\Model\Model.php, line 3085
+Model::find() - CORE\Cake\Model\Model.php, line 3020
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:53:25 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3062]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3062
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:53:43 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3085]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::buildQuery() - CORE\Cake\Model\Model.php, line 3085
+Model::find() - CORE\Cake\Model\Model.php, line 3020
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:53:43 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3062]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3062
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:53:46 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3085]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::buildQuery() - CORE\Cake\Model\Model.php, line 3085
+Model::find() - CORE\Cake\Model\Model.php, line 3020
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:53:47 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3062]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3062
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:54:13 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3085]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::buildQuery() - CORE\Cake\Model\Model.php, line 3085
+Model::find() - CORE\Cake\Model\Model.php, line 3020
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 16:54:13 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3062]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3062
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:00:50 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3085]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::buildQuery() - CORE\Cake\Model\Model.php, line 3085
+Model::find() - CORE\Cake\Model\Model.php, line 3020
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:00:50 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3062]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3062
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:01:00 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:01:15 Debug: Notice (8): Undefined index: User.email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3085]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::buildQuery() - CORE\Cake\Model\Model.php, line 3085
+Model::find() - CORE\Cake\Model\Model.php, line 3020
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:01:15 Debug: Notice (8): Undefined index: User.email in [C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php, line 3062]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3062
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+UsersController::activate() - APP\Controller\UsersController.php, line 63
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:01:19 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:02:14 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:02:19 Debug: Notice (8): Undefined index: email in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:02:26 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:06:01 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:06:01 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:06:04 Debug: Notice (8): Undefined index: User in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-03-29 17:06:04 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 64]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+UsersController::activate() - APP\Controller\UsersController.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+

@@ -1,4 +1,4 @@
-<?php $version = '2a';?>
+<?php $version = '3a';?>
 <!-- loading Modal -->
 <div id="loadingModal" class="modal fade " tabindex="-1" role="dialog">
   <div class="modal-dialog"  role="document">
@@ -33,7 +33,7 @@
     </div>
   </div>
 </div>
-    <!-- Error Modal -->
+<!-- Error Modal -->
 <div id="errorModal" class="modal fade " tabindex="-1" role="dialog">
   <div class="modal-dialog"  role="document">
     <div class="modal-content bg-danger text-white">
@@ -52,6 +52,7 @@
     </div>
   </div>
 </div>
+<!-- Resend Modal -->
 <div id="resendCodeModal" class="modal fade">
   <div class="modal-dialog" role="document">
     <div class="modal-content bg-info text-white">
@@ -59,9 +60,10 @@
         <h5 class="modal-title">Resend Activation Code</h5>
       </div>
       <div class="modal-body">
-        <div class="form-group">
+        <div class="form-group has-danger">
           <label for="">Enter Username you provided</label>
-          <input type="text" name="resendUsername" class="form-control" id="resendUsername"  placeholder="Enter username" required>
+          <input type="text" name="resendUsername" class="form-control " id="resendUsername"  placeholder="Enter username" required>
+          <div class="invalid-feedback">Please enter username.</div>
         </div>
       </div>
       <div class="modal-footer">

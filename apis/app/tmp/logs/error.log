@@ -2271,3 +2271,62 @@ Stack Trace:
 #1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
 #2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2020-03-29 15:06:43 Error: [MissingActionException] Action UsersController::activate() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'activate',
+)
+Request URL: /microblog-2/apis/users/activate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-29 15:40:25 Error: [MissingViewException] View file "Users\activate.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\activate.ctp',
+)
+Request URL: /microblog-2/apis/users/activate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\View\View.php(470): View->_getViewFileName('Users\\activate')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-03-29 15:50:14 Error: [MissingViewException] View file "Users\activate.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\activate.ctp',
+)
+Request URL: /microblog-2/apis/users/activate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\View\View.php(470): View->_getViewFileName('Users\\activate')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-03-29 16:16:23 Error: [MissingViewException] View file "Users\activate.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\activate.ctp',
+)
+Request URL: /microblog-2/apis/users/activate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\View\View.php(470): View->_getViewFileName('Users\\activate')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-03-29 16:16:42 Error: [MissingViewException] View file "Users\activate.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\activate.ctp',
+)
+Request URL: /microblog-2/apis/users/activate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\View\View.php(470): View->_getViewFileName('Users\\activate')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

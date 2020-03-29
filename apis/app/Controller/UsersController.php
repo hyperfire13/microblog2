@@ -48,5 +48,31 @@
       $this->response->body(json_encode($this->promtMessage));
       return $this->response->send();
     }
+
+    public function activate () {
+      $this->layout = false;
+      $data = $this->request->input('json_decode', true);
+      if ($this->CheckRequest('post')) { 
+          $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
+          if (empty($data)) {
+              $data = $this->request->data;
+          } elseif (!empty($data)) {
+              // $duplicateCount = $this->User->find('count', array(
+              //     'conditions' => array('User.username' => $data['username'])
+              // ));
+              $record = $this->User->find('first', array( 'conditions' => array('User.username' => $data['username'])));
+              if (empty($record)) {
+                  $this->promtMessage = array('status'=>'success', 'message'=>'Email not found');
+              } else {
+                  echo $record['User']['email'];
+              }
+              
+              
+          }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
   }
 ?>

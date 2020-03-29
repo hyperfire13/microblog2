@@ -68,6 +68,15 @@
           'message' => 'birthday'
         )
       ),
+      'code' => array(
+        'required' => array(
+          'rule' => 'notBlank',
+          'type' => 'string',
+          'allowEmpty' => false,
+          'required' => true,
+          'message' => 'validation code'
+        )
+      ),
       'deleted_date' => array(
         'required' => array(
           'rule' => 'date',
