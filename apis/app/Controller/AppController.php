@@ -21,6 +21,7 @@
 
   App::uses('Controller', 'Controller');
   App::uses('CakeEmail', 'Network/Email');
+  App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
   /**
    * Application Controller
    *
@@ -80,5 +81,11 @@
     public function capitalizeFirstLetter ($word) {
       $formattedWord = ucwords($word);
       return $formattedWord;
+    }
+
+    public function checkPassword ($pw,$basePw) {
+      $passwordHasher = new BlowfishPasswordHasher();
+      $pw = $passwordHasher->check($pw,$basePw);
+      return $pw;
     }
   }

@@ -2,6 +2,7 @@
   
   App::uses('AppController', 'Controller');
   App::uses('CakeEmail', 'Network/Email');
+  
 
   class UsersController extends AppController {
     public function add() {
@@ -50,31 +51,31 @@
       return $this->response->send();
     }
     public function activate () { 
-			$this->layout = false;
-			$data = $this->request->input('json_decode', true);
-			if ($this->CheckRequest('post')) { 
-					$this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
-					if (empty($data)) {
-							$data = $this->request->data;
-					} elseif (!empty($data)) {
-							$record = $this->User->find('first', array( 'conditions' => array('User.code' => $data['code'])));
-							if (empty($record)) {
-									$this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, you entered an invalid code');
-							} else {
-									unset($record['User']['modified']);
-									if (!$record['User']['activation_status']) {
-											$record['User']['activation_status'] = 1;
-											$this->User->id = $record['User']['id'];
-											if ($this->User->save($record)) { 
-													$this->promtMessage = array('status'=>'success','message'=>'Yehey! Your account was activated');
-											} else {
-													$this->promtMessage = array('status'=>'failed','message'=>$this->User->validationErrors);
-											} 
-									} else {
-											$this->promtMessage = array('status'=>'success','message'=>'Your account was already activated');  
-									}
-							}
-					}
+      $this->layout = false;
+      $data = $this->request->input('json_decode', true);
+      if ($this->CheckRequest('post')) { 
+          $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
+          if (empty($data)) {
+             $data = $this->request->data;
+          } elseif (!empty($data)) {
+              $record = $this->User->find('first', array( 'conditions' => array('User.code' => $data['code'])));
+              if (empty($record)) {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, you entered an invalid code');
+              } else {
+                  unset($record['User']['modified']);
+                  if (!$record['User']['activation_status']) {
+                      $record['User']['activation_status'] = 1;
+                      $this->User->id = $record['User']['id'];
+                      if ($this->User->save($record)) { 
+                          $this->promtMessage = array('status'=>'success','message'=>'Yehey! Your account was activated');
+                      } else {
+                          $this->promtMessage = array('status'=>'failed','message'=>$this->User->validationErrors);
+                      } 
+                  } else {
+                      $this->promtMessage = array('status'=>'success','message'=>'Your account was already activated');  
+                  }
+              }
+          }
       }
       $this->response->type('application/json');
       $this->response->body(json_encode($this->promtMessage));
@@ -93,7 +94,7 @@
               // ));
               $record = $this->User->find('first', array( 'conditions' => array('User.username' => $data['username'])));
               if (empty($record)) {
-									$this->promtMessage = array('status'=>'failed', 'message'=>'Email not found');
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'Email not found');
               } else {
                   $resendEmail = $record['User']['email'];
                   $resendCode = $record['User']['code'];
@@ -115,14 +116,17 @@
           if (empty($data)) {
             $data = $this->request->data;
           } elseif (!empty($data)) {
-              if ($this->Auth->login()) {
-                echo "login";
+              $record = $this->User->find('first', array( 'conditions' => array('User.username' => $data['username'])));
+              if (empty($record)) {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');
+              } else {
+                  if ($this->checkPassword($data['password'],$record['User']['password'])) {
+                      $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!');
+                  } else {
+                      $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');
+                  }
+                 
               }
-              // $record = $this->User->find('first', array( 'conditions' => array('User.code' => $data['code'])));
-              // if (empty($record)) {
-              //     $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, you entered an invalid code');
-              // } else {
-              // }
           }
       }
       $this->response->type('application/json');
