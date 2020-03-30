@@ -1,5 +1,5 @@
 <?php 
-  // app/Controller/UsersController.php
+  
   App::uses('AppController', 'Controller');
   App::uses('CakeEmail', 'Network/Email');
 
@@ -61,18 +61,18 @@
 							if (empty($record)) {
 									$this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, you entered an invalid code');
 							} else {
-                  unset($record['User']['modified']);
-                  if (!$record['User']['activation_status']) {
-                      $record['User']['activation_status'] = 1;
-                      $this->User->id = $record['User']['id'];
-                      if ($this->User->save($record)) { 
-                          $this->promtMessage = array('status'=>'success','message'=>'Yehey! Your account was activated');
-                      } else {
-                          $this->promtMessage = array('status'=>'failed','message'=>$this->User->validationErrors);
-                      } 
-                  } else {
-                      $this->promtMessage = array('status'=>'success','message'=>'Your account was already activated');  
-                  }
+									unset($record['User']['modified']);
+									if (!$record['User']['activation_status']) {
+											$record['User']['activation_status'] = 1;
+											$this->User->id = $record['User']['id'];
+											if ($this->User->save($record)) { 
+													$this->promtMessage = array('status'=>'success','message'=>'Yehey! Your account was activated');
+											} else {
+													$this->promtMessage = array('status'=>'failed','message'=>$this->User->validationErrors);
+											} 
+									} else {
+											$this->promtMessage = array('status'=>'success','message'=>'Your account was already activated');  
+									}
 							}
 					}
       }
@@ -122,7 +122,6 @@
               // if (empty($record)) {
               //     $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, you entered an invalid code');
               // } else {
-                 
               // }
           }
       }
