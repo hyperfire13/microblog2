@@ -16,7 +16,7 @@
 	<body>
 		<div class="container d-flex justify-content-center">
       <div class="col-lg-6">
-        <form id="addForm" method="POST" autocomplete="off">
+        <form id="activateForm" method="POST" autocomplete="off">
           <div class="card text-white bg-info mb-3">
             <div class="card-header">Verification</div>
             <div class="card-body">
@@ -25,6 +25,7 @@
                   <div class="form-group">
                     <label for="exampleInputEmail1">We sent an activation code to the email you provided in the Registration</label>
                     <input type="text" name="code" class="form-control" id="code"  placeholder="Enter code" required>
+                    <div class="invalid-feedback">Please enter the validation code.</div>
                     <button onclick="showResendModal(true)" class="btn btn-link">Resend Activation Code</button>
                   </div>
                 </div>

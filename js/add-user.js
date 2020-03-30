@@ -38,12 +38,10 @@ function addUser () {
         contentType: 'application/json',
         data: JSON.stringify(user),
         success: function(data) {
-          console.log(data);
           // Conversion from string to JSON.
           var response = data;
           // Get the status of the record addition.
           var status = response.status;
-          console.log(status);
           setTimeout(function() {
             showLoading(false);
           }, 1000);

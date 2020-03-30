@@ -76,13 +76,6 @@
           'required' => true,
           'message' => 'validation code'
         )
-      ),
-      'deleted_date' => array(
-        'required' => array(
-          'rule' => 'date',
-          'type' => 'timestamp',
-          'message' => 'delete date is required'
-        )
       )
     );
     public function beforeSave($options = array()) {

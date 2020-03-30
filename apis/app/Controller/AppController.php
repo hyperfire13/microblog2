@@ -44,7 +44,7 @@
 
     public function sendValidationLink ($token,$name,$email) {
       try {
-          $this->link = 'http://192.168.254.168/microblog-2/verify.php' . $token;
+          $this->link = 'http://192.168.254.168/microblog-2/activate-user.php';
           $this->name = $name;
           $this->token = $token;
           $this->email = $email;
@@ -73,7 +73,7 @@
     }
     
     public function createCode () {
-      $this->code = rand(1000, 9999); 
+      $this->code = rand(1000, 999999); 
       return $this->code;
     }
 

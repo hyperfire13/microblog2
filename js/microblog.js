@@ -39,8 +39,10 @@ function showResendModal(show) {
 
 $(document).on('hidden.bs.modal', '#successModal', function () {
   if (moduleRequested === 'signup') {
-      alert("redirect");
       location.href = "activate-account.php";
+  } else if (moduleRequested === 'activate') {
+      location.href = "index.php";
   }
+  moduleRequested = null;
   
 });

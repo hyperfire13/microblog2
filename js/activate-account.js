@@ -1,3 +1,10 @@
+$(document).ready(function() { 
+  $('#activateForm').submit(function(e) {
+    e.preventDefault();
+    activateAccount();
+  });
+});
+
 function resendCode () {
   var resendUsername = $('#resendUsername').val();
   var resend = {
@@ -7,29 +14,25 @@ function resendCode () {
       $("#resendUsername").addClass("is-invalid");
   } else {
       resend.username = resendUsername;
-      console.log(resendUsername);
       showResendModal(false);
-      showLoading(true,'Hello, We are now resending your Activation s...');
+      showLoading(true,'Hello, We are now resending your Activation code');
       $.ajax({
         method: 'POST',
-        url: 'apis/users/activate',
+        url: 'apis/users/resendCode',
         dataType: 'json',
         contentType: 'application/json',
         data: JSON.stringify(resend),
         success: function(data) {
-          console.log(data);
           // Conversion from string to JSON.
           var response = data;
           // Get the status of the record addition.
           var status = response.status;
-          console.log(status);
           setTimeout(function() {
             showLoading(false);
           }, 1000);
           setTimeout(function() {
             // If the api was reached, do the following actions.
             if (status === 'success') {
-              moduleRequested = "signup";
               showSuccess(response.message);
               $('#addForm')[0].reset();
             } else if (status === 'failed') {
@@ -50,4 +53,55 @@ function resendCode () {
       });
   }
   //showSuccess('di dapat mag redirect');
+}
+
+function activateAccount () {
+  var code = $('#code').val();
+  var activate = {
+    code : code
+  };
+  if (resendUsername === null || resendUsername === undefined || resendUsername === '') {
+      $("#code").addClass("is-invalid");
+  } else {
+      activate.code = code;
+      showLoading(true,'Greetings, We are now activating your account');
+      $.ajax({
+        method: 'POST',
+        url: 'apis/users/activate',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(activate),
+        success: function(data) {
+          // Conversion from string to JSON.
+          var response = data;
+          // Get the status of the record addition.
+          var status = response.status;
+          setTimeout(function() {
+            showLoading(false);
+          }, 1000);
+          setTimeout(function() {
+            // If the api was reached, do the following actions.
+            if (status === 'success') {
+              moduleRequested = "activate";
+              showSuccess(response.message);
+              $('#activateForm')[0].reset();
+            } else if (status === 'failed') {
+                showError(response.message, "Oops!, Please Check the the details you entered below");
+            } else {
+                showError("Something went wrong","It's not on you,It's on us");
+            }
+          }, 1000);
+        },
+        error: function() {
+          setTimeout(function() {
+            showLoading(false);
+          }, 1000);
+          setTimeout(function() {
+            showError("Something went wrong","It's not on you,It's on us");
+          },1000);
+        }
+      });
+  }
+  
+
 }
