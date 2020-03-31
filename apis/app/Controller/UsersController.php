@@ -57,6 +57,7 @@
           if (empty($data)) {
              $data = $this->request->data;
           } elseif (!empty($data)) {
+              $data = array_map('trim', $data) ;
               $record = $this->User->find('first', array( 'conditions' => array('User.code' => $data['code'])));
               if (empty($record)) {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, you entered an invalid code');

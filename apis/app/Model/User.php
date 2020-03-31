@@ -67,7 +67,15 @@
           'required' => true,
           'message' => 'birthday'
         )
-      ),
+      ),'activation_status' => array(
+        'required' => array(
+          'rule' => 'numeric',
+          'type' => 'tinyinteger',
+          'allowEmpty' => false,
+          'required' => false,
+          'message' => 'birthday'
+        )
+        ),
       'code' => array(
         'required' => array(
           'rule' => 'notBlank',
