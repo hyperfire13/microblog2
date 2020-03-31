@@ -17,7 +17,7 @@
 		<div class="container d-flex justify-content-center">
       <div class="col-lg-6">
         <form id="loginForm" method="POST" autocomplete="off">
-          <div class="card text-white bg-info mb-3">
+          <div class="card text-white bg-warning mb-3">
             <div class="card-header">Microblog 2</div>
             <div class="card-body">
               <div class="row">

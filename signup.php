@@ -17,7 +17,7 @@
 		<div class="container">
       <div class="col-lg-12">
         <form id="addForm" method="POST" autocomplete="off">
-          <div class="card text-white bg-info mb-3">
+          <div class="card text-white bg-warning mb-3">
             <div class="card-header">Signup</div>
             <div class="card-body">
               <div class="row">

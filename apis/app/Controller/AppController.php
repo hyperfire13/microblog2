@@ -88,4 +88,10 @@
       $pw = $passwordHasher->check($pw,$basePw);
       return $pw;
     }
+
+    public function createToken ($username) {
+      $passwordHasher = new BlowfishPasswordHasher();
+      $token = $passwordHasher->hash($username);
+      return $token;
+    }
   }

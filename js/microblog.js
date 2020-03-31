@@ -42,7 +42,9 @@ $(document).on('hidden.bs.modal', '#successModal', function () {
       location.href = "activate-account.php";
   } else if (moduleRequested === 'activate') {
       location.href = "index.php";
-  }
+  } else if (moduleRequested === 'login') {
+      location.href = "main/";
+  }  
   moduleRequested = null;
   
 });

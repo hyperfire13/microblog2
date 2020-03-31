@@ -2,7 +2,6 @@
   
   App::uses('AppController', 'Controller');
   App::uses('CakeEmail', 'Network/Email');
-  
 
   class UsersController extends AppController {
     public function add() {
@@ -66,7 +65,7 @@
                   if (!$record['User']['activation_status']) {
                       $record['User']['activation_status'] = 1;
                       $this->User->id = $record['User']['id'];
-                      if ($this->User->save($record)) { 
+                      if ($this->User->saveField('activation_status',1)) { 
                           $this->promtMessage = array('status'=>'success','message'=>'Yehey! Your account was activated');
                       } else {
                           $this->promtMessage = array('status'=>'failed','message'=>$this->User->validationErrors);
@@ -120,12 +119,16 @@
               if (empty($record)) {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');
               } else {
-                  if ($this->checkPassword($data['password'],$record['User']['password'])) {
-                      $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!');
+                  if ($record['User']['activation_status']) {
+                      if ($this->checkPassword($data['password'],$record['User']['password'])) {
+                          $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!');
+                          $this->Session->write('User.token', $this->createToken($data['username']));
+                      } else {
+                          $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');
+                      }
                   } else {
-                      $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');
+                      $this->promtMessage = array('status'=>'failed', 'message'=>'The account you are using is not activated yet');
                   }
-                 
               }
           }
       }
