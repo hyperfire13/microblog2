@@ -43,7 +43,7 @@ $(document).on('hidden.bs.modal', '#successModal', function () {
   } else if (moduleRequested === 'activate') {
       location.href = "index.php";
   } else if (moduleRequested === 'login') {
-      location.href = "main/";
+      location.href = "main/#!home";
   }  
   moduleRequested = null;
   

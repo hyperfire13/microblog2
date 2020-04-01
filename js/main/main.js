@@ -29,6 +29,12 @@ microblogApp.config(['$routeProvider',function($routeProvider) {
       // css:"css/main/home.css",
       js:"js/main/home.js",
       requireLogin	:	true
+    },'/profile' : {
+      templateUrl:"main/profile.php",
+      controller:"profileCtrl",
+      css:"css/main/profile.css",
+      js:"js/main/profile.js",
+      requireLogin	:	true
     },
     '/compose-blog' : {
       templateUrl:"main/compose-blog.php",

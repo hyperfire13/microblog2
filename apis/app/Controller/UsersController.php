@@ -114,7 +114,7 @@
       if ($this->CheckRequest('post')) { 
           $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
           if (empty($data)) {
-            $data = $this->request->data;
+              $data = $this->request->data;
           } elseif (!empty($data)) {
               $record = $this->User->find('first', array( 'conditions' => array('User.username' => $data['username'])));
               if (empty($record)) {
@@ -124,6 +124,7 @@
                       if ($this->checkPassword($data['password'],$record['User']['password'])) {
                           $token = $this->createToken($data['username']);
                           $this->Session->write('User.token',$token );
+                          $this->Session->write('User.id',$record['User']['id']);
                           $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!','token'=>$token);
                       } else {
                           $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');
@@ -146,9 +147,11 @@
           if (empty($data)) {
             $data = $this->request->data;
           } elseif (!empty($data)) {
-              $base_token = $this->Session->read('User.token');
-              if ($data['token'] === $base_token) {
-                  $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!');
+              if ($this->Session->check('User.token')) {
+                  $base_token = $this->Session->read('User.token');
+                  if ($data['token'] === $base_token) {
+                      $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!');
+                  }
               }
           }
       }
@@ -163,6 +166,29 @@
         if($this->Session->destroy()) {
             //$this->promtMessage = array('status'=>'success', 'message'=>$data['token']);
         };
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
+    public  function getProfile () {
+      $this->layout = false;
+      $data = $this->request->input('json_decode', true);
+      if ($this->CheckRequest('post')) { 
+          if (empty($data)) {
+              $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
+          } elseif (!empty($data)) { 
+              $this->promtMessage = array('status'=>'failed', 'message'=>'Please relogin');
+              if ($this->Session->check('User.token')) {
+                $base_token = $this->Session->read('User.token');
+                if ($data['token'] === $base_token) {
+                  $id = $this->Session->read('User.id');
+                  $record = $this->User->find('first', array( 'conditions' => array('User.id' => $id)));
+                  $record['User']['date_of_birth'] = date("M d, Y", strtotime($record['User']['date_of_birth']));
+                  $this->promtMessage = array('status'=>'success', 'record'=>$record);
+                }
+              }
+          }
       }
       $this->response->type('application/json');
       $this->response->body(json_encode($this->promtMessage));

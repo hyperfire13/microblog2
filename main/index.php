@@ -9,6 +9,8 @@
     <!-- <link rel="stylesheet" type="text/css" href="dependencies/css/custom.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/all.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/fontawesome-animation.min.css">
     <script type = "text/javascript" src = "dependencies/angularjs/angular.min.js"></script>
     <script type = "text/javascript" src = "dependencies/angularjs/angular-route.min.js"></script>
     <title>Microblog</title>
@@ -55,11 +57,15 @@
         <div class="sidebar-heading">Microblog 2</div>
         <div class="list-group list-group-flush ">
         <a class="nav-link bg-warning " href="main/#!home">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <span  class = "fa fa-home fa-1x"></span>
           Home 
         </a>
+        <a class="nav-link bg-warning " href="main/#!profile">
+        <span  class = "fa fa-user fa-1x"></span>
+          Profile 
+        </a>
         <a class="nav-link bg-warning " href="main/#!compose-blog">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+        <span  class = "fa fa-file "></span>
           Compose 
         </a>
         </div>
@@ -68,7 +74,8 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" ng-controller="headerCtrl">
-          <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+          <img id="menu-toggle" ng-src="pic-profiles/{{user.image}}" alt="..." alt="" style="width: 100%;max-width: 50px;height: 50px;border-radius: 50%;border-width: medium" class="rounded">
+          <!-- <button class="btn btn-primary" id="menu-toggle">{{user.image}}</button> -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -76,7 +83,7 @@
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Hi Kenneth
+                  Hi {{user.first_name}}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Settings</a>
@@ -108,6 +115,7 @@
     <script type="text/javascript" src ="js/main/header-ctrl.js?v=<?php echo $version; ?>"></script>
     <script type="text/javascript" src ="js/main/handler.js?v=<?php echo $version; ?>"></script>
     <script type="text/javascript" src ="js/main/home.js?v=<?php echo $version; ?>"></script>
+    <script type="text/javascript" src ="js/main/profile.js?v=<?php echo $version; ?>"></script>
     <script type="text/javascript" src ="js/main/compose-blog.js?v=<?php echo $version; ?>"></script>
     <script>
     $("#menu-toggle").click(function(e) {

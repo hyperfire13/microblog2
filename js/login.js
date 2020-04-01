@@ -73,7 +73,6 @@ function auth () {
     data: JSON.stringify(securityKeys), 
     success: function(data) {
       var response = data;
-      
       if (response.status === "success") {
           location.href = "main/#!home";;
       } 

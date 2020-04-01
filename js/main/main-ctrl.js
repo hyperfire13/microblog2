@@ -1,5 +1,6 @@
 microblogApp.run(['$rootScope', '$location', '$routeParams', '$http', '$timeout', '$interval', '$httpParamSerializerJQLike', '$log', 
 function($rootScope, $location, $routeParams, $http, $timeout, $interval, $httpParamSerializerJQLike, $log, handler) {
+  $rootScope.user = null;
   $rootScope.firstName = null;
   var securityKeys = {
     token : null
@@ -15,7 +16,7 @@ function($rootScope, $location, $routeParams, $http, $timeout, $interval, $httpP
       data: JSON.stringify(securityKeys), 
       success: function(data) {
         var response = data;
-        console.log(response.status);
+        
         if (response.status === "failed") {
             location.href = './';
             $rootScope.$apply();
@@ -31,5 +32,23 @@ function($rootScope, $location, $routeParams, $http, $timeout, $interval, $httpP
         }, 2000); 
     }
   };
+  
+  $rootScope.getProfile = function () {
+    
+    $http({
+        method:'POST',
+        url:'apis/users/getProfile',
+        data : {
+          token : localStorage.getItem('token')
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+    }).then(function mySuccess(response) {
+        if (response.data.status === 'success') {
+            $rootScope.user = response.data.record.User;
+        }
+        //$timeout(function() { location.href = './'; }, 600);
+    });
+  }
  $rootScope.auth(true);
+ $rootScope.getProfile();
 }]);
