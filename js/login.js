@@ -39,6 +39,7 @@ function login () {
             // If the api was reached, do the following actions.
             if (status === 'success') {
               moduleRequested = "login";
+              localStorage.setItem('token',response.token);
               showSuccess(response.message);
             } else if (status === 'failed') {
               $("#usernameLogin").addClass("is-invalid");
@@ -60,3 +61,26 @@ function login () {
       });
   }
 }
+
+function auth () {
+  var securityKeys = {
+    token : null
+  };
+  securityKeys.token = localStorage.getItem('token');
+  $.ajax({
+    url: 'apis/users/authenticate',
+    method: 'POST',
+    data: JSON.stringify(securityKeys), 
+    success: function(data) {
+      var response = data;
+      
+      if (response.status === "success") {
+          location.href = "main/#!home";;
+      } 
+    },
+    error: function() {
+      console.log("Something went wrong","It's not on you,It's on us");
+    }
+  });
+};
+auth();

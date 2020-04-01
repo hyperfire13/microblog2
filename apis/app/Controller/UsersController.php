@@ -122,8 +122,9 @@
               } else {
                   if ($record['User']['activation_status']) {
                       if ($this->checkPassword($data['password'],$record['User']['password'])) {
-                          $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!');
-                          $this->Session->write('User.token', $this->createToken($data['username']));
+                          $token = $this->createToken($data['username']);
+                          $this->Session->write('User.token',$token );
+                          $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!','token'=>$token);
                       } else {
                           $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');
                       }
@@ -132,6 +133,36 @@
                   }
               }
           }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
+    public function authenticate () {
+      $this->layout = false;
+      $data = $this->request->input('json_decode', true);
+      if ($this->CheckRequest('post')) { 
+          $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
+          if (empty($data)) {
+            $data = $this->request->data;
+          } elseif (!empty($data)) {
+              $base_token = $this->Session->read('User.token');
+              if ($data['token'] === $base_token) {
+                  $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!');
+              }
+          }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
+    public  function logout () {
+      $this->layout = false;
+      $data = $this->request->input('json_decode', true);
+      if ($this->CheckRequest('post')) { 
+        if($this->Session->destroy()) {
+            //$this->promtMessage = array('status'=>'success', 'message'=>$data['token']);
+        };
       }
       $this->response->type('application/json');
       $this->response->body(json_encode($this->promtMessage));
