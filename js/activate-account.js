@@ -23,15 +23,12 @@ function resendCode () {
         contentType: 'application/json',
         data: JSON.stringify(resend),
         success: function(data) {
-          // Conversion from string to JSON.
           var response = data;
-          // Get the status of the record addition.
           var status = response.status;
           setTimeout(function() {
             showLoading(false);
           }, 1000);
           setTimeout(function() {
-            // If the api was reached, do the following actions.
             if (status === 'success') {
               showSuccess(response.message);
               $('#addForm')[0].reset();
@@ -52,7 +49,6 @@ function resendCode () {
         }
       });
   }
-  //showSuccess('di dapat mag redirect');
 }
 
 function activateAccount () {
@@ -72,15 +68,12 @@ function activateAccount () {
         contentType: 'application/json',
         data: JSON.stringify(activate),
         success: function(data) {
-          // Conversion from string to JSON.
           var response = data;
-          // Get the status of the record addition.
           var status = response.status;
           setTimeout(function() {
             showLoading(false);
           }, 1000);
           setTimeout(function() {
-            // If the api was reached, do the following actions.
             if (status === 'success') {
               moduleRequested = "activate";
               showSuccess(response.message);

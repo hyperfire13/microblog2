@@ -35,6 +35,7 @@
   class AppController extends Controller {
     // check method variables
     private $requestMethod;
+    private $session;
     public $promtMessage;
     // email sender variables
     public $link;
@@ -60,7 +61,7 @@
           $Email->viewVars(array('link' => $this->link,'name' => $this->name,'token' => $this->token ));
           $Email->send();
       } catch (Exception $e) {
-          $this->promtMessage = array('status'=>'failed', 'message'=>'There is a problem sending verification code to email');
+          $this->promtMessage = array('status'=>'emailProblem', 'message'=>'There is a problem sending verification code to email');
       }
     }
 
@@ -70,6 +71,16 @@
           return true;
       } else {
           $this->promtMessage = array('status'=>'failed', 'message'=>'wrong request method');
+          return false;
+      }
+    }
+
+    public function CheckSession ($session) {
+      $this->session = $session;
+      if ($this->Session->check($this->session)) { 
+          return true;
+      } else {
+          $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
           return false;
       }
     }

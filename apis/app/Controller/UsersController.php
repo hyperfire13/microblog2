@@ -142,14 +142,14 @@
     public function authenticate () {
       $this->layout = false;
       $data = $this->request->input('json_decode', true);
-      if ($this->CheckRequest('post')) { 
+      if ($this->CheckRequest('post')) {
           $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
           if (empty($data)) {
             $data = $this->request->data;
           } elseif (!empty($data)) {
               if ($this->Session->check('User.token')) {
-                  $base_token = $this->Session->read('User.token');
-                  if ($data['token'] === $base_token) {
+                  $baseToken = $this->Session->read('User.token');
+                  if ($data['token'] === $baseToken) {
                       $this->promtMessage = array('status'=>'success', 'message'=>'Login success, Welcome!');
                   }
               }
@@ -180,14 +180,50 @@
           } elseif (!empty($data)) { 
               $this->promtMessage = array('status'=>'failed', 'message'=>'Please relogin');
               if ($this->Session->check('User.token')) {
-                $base_token = $this->Session->read('User.token');
-                if ($data['token'] === $base_token) {
+                $baseToken = $this->Session->read('User.token');
+                if ($data['token'] === $baseToken) {
                   $id = $this->Session->read('User.id');
                   $record = $this->User->find('first', array( 'conditions' => array('User.id' => $id)));
                   $record['User']['date_of_birth'] = date("M d, Y", strtotime($record['User']['date_of_birth']));
+                  $record['User']['first_name'] = $this->capitalizeFirstLetter($record['User']['first_name']);
+                  $record['User']['last_name'] = $this->capitalizeFirstLetter($record['User']['last_name']);
                   $this->promtMessage = array('status'=>'success', 'record'=>$record);
                 }
               }
+          }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
+    public function profilePic () {
+      $this->layout = false;
+      if ($this->CheckRequest('post')) { 
+          if ($this->CheckSession('User.token')) {
+              $data = $this->request->data; 
+              $baseToken = $this->Session->read('User.token');
+              if ($data['token'] === $baseToken) { 
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
+                  if (empty($_FILES['file'])) { 
+                      $this->promtMessage = array('status'=>'failed', 'message'=>'No photo was sent');
+                  } else {
+                      $userId = $this->Session->read('User.id');
+                      $img = $_FILES['file']['name'][0];
+                      $tmp = $_FILES['file']['tmp_name'][0];
+                      $path = '../../../pic-profiles/';
+                      $extension = pathinfo($img, PATHINFO_EXTENSION);
+                      $path = $path.strtolower($userId."-profilepic.".$extension);
+                      $imgNewName = strtolower($userId."-profilepic.".$extension);
+                      $this->User->id = $userId;
+                      if ($this->User->saveField('image',$imgNewName)) { 
+                          if (move_uploaded_file($tmp,$path)) {
+                              $this->promtMessage = array('status'=>'success', 'message'=>"Image uploaded to server and database");
+                          }
+                      }
+                  }
+              } else {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
+              }     
           }
       }
       $this->response->type('application/json');

@@ -3388,3 +3388,237 @@ Stack Trace:
 #3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2020-04-02 14:32:17 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 14:32:19 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 14:32:21 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 14:32:23 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 14:32:25 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 14:32:27 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 15:28:18 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 15:28:20 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 15:28:22 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 15:28:24 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 15:30:18 Error: [ParseError] syntax error, unexpected '}', expecting ';' or ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 15:30:20 Error: [ParseError] syntax error, unexpected '}', expecting ';' or ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 16:07:31 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 16:07:33 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 16:07:35 Error: [ParseError] syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-02 16:09:01 Error: Fatal Error (64): Cannot redeclare AppController::CheckRequest() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 77]
+2020-04-02 16:09:01 Error: [FatalErrorException] Cannot redeclare AppController::CheckRequest()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 77)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 77, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-02 16:09:03 Error: Fatal Error (64): Cannot redeclare AppController::CheckRequest() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 77]
+2020-04-02 16:09:03 Error: [FatalErrorException] Cannot redeclare AppController::CheckRequest()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 77)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 77, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-02 16:10:52 Error: [ParseError] syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(6): spl_autoload_call('AppController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(547): include('C:\\xampp\\htdocs...')
+#3 [internal function]: App::load('UsersController')
+#4 [internal function]: spl_autoload_call('UsersController')
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-04-02 16:10:52 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2020-04-02 16:10:52 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-02 16:10:54 Error: [ParseError] syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(6): spl_autoload_call('AppController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(547): include('C:\\xampp\\htdocs...')
+#3 [internal function]: App::load('UsersController')
+#4 [internal function]: spl_autoload_call('UsersController')
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-04-02 16:10:54 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2020-04-02 16:10:54 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-02 16:10:56 Error: [ParseError] syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('AppController')
+#1 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(6): spl_autoload_call('AppController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(547): include('C:\\xampp\\htdocs...')
+#3 [internal function]: App::load('UsersController')
+#4 [internal function]: spl_autoload_call('UsersController')
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#8 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2020-04-02 16:10:56 Error: Fatal Error (16): Exception thrown without a stack frame in [Unknown, line 0]
+2020-04-02 16:10:56 Error: [FatalErrorException] Exception thrown without a stack frame
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(16, 'Exception throw...', 'Unknown', 0)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(16, 'Exception throw...', 'Unknown', 0, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
