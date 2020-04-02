@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="microblogApp"ng-cloak>
   <head>
-    <?php $version = '3a';?>
+    <?php $version = '1a';?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/microblog-2/">
-    <link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css?ver=<?php echo $version; ?>">
     <!-- <link rel="stylesheet" type="text/css" href="dependencies/css/custom.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/all.min.css">
-    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/fontawesome-animation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css?ver=<?php echo $version; ?>">
+    <link href="css/simple-sidebar.css?ver=<?php echo $version; ?>" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/all.min.css?ver=<?php echo $version; ?>">
+    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/fontawesome-animation.min.css?ver=<?php echo $version; ?>">
     <link rel="stylesheet" href="dependencies/jGrowl-1.2.7/jquery.jgrowl.css">
     <script type = "text/javascript" src = "dependencies/angularjs/angular.min.js"></script>
     <script type = "text/javascript" src = "dependencies/angularjs/angular-route.min.js"></script>
@@ -93,13 +93,13 @@
     <script type="text/javascript" src="dependencies/angularjs/angular-pagination-2.2.2/src/paging.js"></script>
     <script src="dependencies/jGrowl-1.2.7/jquery.jgrowl.js"></script>
 
-    <script type="text/javascript" src ="js/main/main.js?v=<?php echo $version; ?>"></script>
-    <script type="text/javascript" src ="js/main/main-ctrl.js?v=<?php echo $version; ?>"></script>
-    <script type="text/javascript" src ="js/main/header-ctrl.js?v=<?php echo $version; ?>"></script>
-    <script type="text/javascript" src ="js/main/handler.js?v=<?php echo $version; ?>"></script>
-    <script type="text/javascript" src ="js/main/home.js?v=<?php echo $version; ?>"></script>
-    <script type="text/javascript" src ="js/main/profile.js?v=<?php echo $version; ?>"></script>
-    <script type="text/javascript" src ="js/main/compose-blog.js?v=<?php echo $version; ?>"></script>
+    <script type="text/javascript" src ="js/main/main.js?ver=<?php echo $version; ?>"></script>
+    <script type="text/javascript" src ="js/main/main-ctrl.js?ver=<?php echo $version; ?>"></script>
+    <script type="text/javascript" src ="js/main/header-ctrl.js?ver=<?php echo $version; ?>"></script>
+    <script type="text/javascript" src ="js/main/handler.js?ver=<?php echo $version; ?>"></script>
+    <script type="text/javascript" src ="js/main/home.js?ver=<?php echo $version; ?>"></script>
+    <script type="text/javascript" src ="js/main/profile.js?ver=<?php echo $version; ?>"></script>
+    <script type="text/javascript" src ="js/main/compose-blog.js?ver=<?php echo $version; ?>"></script>
     <script>
     $("#menu-toggle").click(function(e) {
       e.preventDefault();

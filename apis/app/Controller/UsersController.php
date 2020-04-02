@@ -230,5 +230,46 @@
       $this->response->body(json_encode($this->promtMessage));
       return $this->response->send();
     }
+    public function editProfile () {
+      $this->layout = false;
+      if ($this->CheckRequest('post')) {
+          if ($this->CheckSession('User.token')) {
+              $this->promtMessage = array('status'=>'failed', 'message'=>'record not found');
+              $data = $this->request->input('json_decode', true);
+              $baseToken = $this->Session->read('User.token');
+              $baseId = $this->Session->read('User.id');
+              if ($data['token'] === $baseToken && $baseId === $data['id']) {  
+                if (empty($data)) {
+                    $data = $this->request->data;
+                } elseif (!empty($data)) {
+                    $record = $this->User->find('first', array( 'conditions' => array('User.id' => $data['id'])));
+                    if (!empty($record)) {
+                        if ($this->checkPassword($data['old_password'],$record['User']['password'])) {
+                            $this->User->id = $data['id'];
+                            unset($data['old_password']);
+                            if ($this->User->save($data,true,['username','password','email','first_name','middle_name','last_name','date_of_birth'])) { 
+                                $this->promtMessage = array('status'=>'success', 'message'=>'Profile successfuilly updated!');
+                            } else {
+                                $errorList = ['Missing :'];
+                                $errors = $this->User->validationErrors;
+                                foreach ($errors as $value) {
+                                array_push($errorList," ".$value[0]);
+                              }
+                              $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
+                            }
+                        } else {
+                            $this->promtMessage = array('status'=>'failed', 'message'=>'Wrong old password');
+                        }
+                    }
+                }
+              } else {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
+              }
+          }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
   }
 ?>

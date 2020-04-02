@@ -1,4 +1,4 @@
-<?php $version = '3a';?>
+<?php $version = '1a';?>
 <!-- loading Modal -->
 <div id="loadingModal" class="modal fade " tabindex="-1" role="dialog">
   <div class="modal-dialog"  role="document">

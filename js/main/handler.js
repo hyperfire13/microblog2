@@ -10,7 +10,7 @@ microblogApp.service('handler',
     this.growler = function (growl){
       var growlMessage = growl;
       jQuery.jGrowl(growlMessage, {
-        header: 'Ooppss',
+        header: 'Notice meee!',
         position: 'top-right',
         sticky : true
       });

@@ -21,8 +21,10 @@ microblogApp.controller('profileCtrl',
     
     $scope.pictureChange = false;
     $scope.editUser = {
+      id : '',
       email : '',
       username : '',
+      oldPassword : '',
       password : '',
       firstName : '',
       middleName : '',
@@ -53,32 +55,35 @@ microblogApp.controller('profileCtrl',
       formSample.append("file[]", $("#fileId")[0].files[0]);
       formSample.append("token", localStorage.getItem('token'));
       handler.showLoading(true,"Updating your profile picture...");
-      $.ajax({
-        method: 'POST',
-        data: formSample ,
-        processData: false,
-        contentType: false,
-        url: 'apis/users/profilePic',
-        success: function(data) {
-          var response = data;
-          $timeout(function () {
-            handler.showLoading(false,"");
-          }, 2000);
-          if (response.status === 'success') {
-              handler.growler("Image Successfully Updated");
-              jQuery('#picPreview').attr('src', null);
-              $scope.pictureChange = false;
-              location.reload();
-          } else if (response.status === 'empty') {
-              handler.growler("Please choose an image");
-          } else if (response.status !== 'success') {
-              handler.unknown();
+      $timeout(function () {
+        $.ajax({
+          method: 'POST',
+          data: formSample ,
+          processData: false,
+          contentType: false,
+          url: 'apis/users/profilePic',
+          success: function(data) {
+            var response = data;
+            $timeout(function () {
+              handler.showLoading(false,"");
+            }, 2000);
+            if (response.status === 'success') {
+                handler.growler("Image Successfully Updated");
+                jQuery('#picPreview').attr('src', null);
+                $scope.pictureChange = false;
+                location.reload();
+            } else if (response.status === 'empty') {
+                handler.growler("Please choose an image");
+            } else if (response.status !== 'success') {
+                handler.unknown();
+            }
           }
-        }
-      });
+        }); 
+      }, 2000);
     }
     $scope.showEditProfile = function () {
-      console.log(JSON.stringify($rootScope.user));
+      alert(JSON.stringify($rootScope.user));
+      $scope.editUser.id = $rootScope.user.id;
       $scope.editUser.email = $rootScope.user.email;
       $scope.editUser.username = $rootScope.user.username;
       $scope.editUser.firstName = $rootScope.user.first_name;
@@ -95,6 +100,49 @@ microblogApp.controller('profileCtrl',
         keyboard: false,
         show : true
       });
+    }
+    $scope.saveEditProfile = function () {
+      $scope.editUser.birthDate = $('#dateOfBirth').val();
+      if ($scope.editUser.password !== $scope.confirmPassword) {
+          handler.growler("Your New Password was not confirmed correctly");
+      } else {
+          handler.showLoading(true,"Updating your profile info...");
+          $timeout(function () {
+            $http({
+              method:'POST',
+              url:'apis/users/editProfile',
+              data : {
+                token : localStorage.getItem('token'),
+                id : $scope.editUser.id,
+                first_name: $scope.editUser.firstName,
+                middle_name: $scope.editUser.middleName,
+                last_name: $scope.editUser.lastName,
+                date_of_birth : $scope.editUser.birthDate,
+                email : $scope.editUser.email,
+                username : $scope.editUser.username,
+                password : $scope.editUser.password,
+                old_password : $scope.editUser.oldPassword
+              },
+              headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+          }).then(function mySuccess(response) {
+              $timeout(function () {
+                handler.showLoading(false,"");
+              }, 2000);
+              if (response.data.status === 'success') {
+                  handler.growler("Profile successfuilly updated!");
+                  $('#editProfileModal').modal('hide');
+                  $scope.editProfileForm.$setUntouched();
+                  $scope.editProfileForm.$setPristine();
+                  $rootScope.getProfile();
+              } else if (response.data.status === 'failed') {
+                  handler.growler(response.data.message);
+              } else {
+                  handler.unknown();
+              }
+          });
+          }, 2000);
+      }
+     
     }
     jQuery('#fileId').change(function(e) {
       var reader = new FileReader();
@@ -116,4 +164,6 @@ microblogApp.controller('profileCtrl',
           jQuery('#addInternetSimulationInput').val(null);
       }
     }); 
+    //handler.showLoading(true,"Updating your profile picture...");
   }]);
+ 
