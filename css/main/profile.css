@@ -14,7 +14,20 @@
   z-index: -1;
 }
 
+.blog-post {
+  padding-top: 3px;
+  padding-bottom: auto;
+  margin-top: 0px;
+  
+}
 
+.blogger-name {
+  padding-left: 60px;
+}
+
+.blogger-post {
+  padding-left: 60px;
+}
 
 .inputfile-1 + label {
   color: #f1e5e6;

@@ -18,6 +18,10 @@ microblogApp.controller('profileCtrl',
     $filter,
     handler
   ) {
+
+    $scope.page = 1;
+    $scope.size = 5;
+    $scope.total = 3;
     
     $scope.pictureChange = false;
     $scope.editUser = {
@@ -31,7 +35,22 @@ microblogApp.controller('profileCtrl',
       password : '',
       birthDate : '',
     };
+    $scope.blogs = null;
 
+    $scope.resetVariables = function () {
+      $scope.editUser = {
+        id : '',
+        email : '',
+        username : '',
+        oldPassword : '',
+        password : '',
+        firstName : '',
+        middleName : '',
+        password : '',
+        birthDate : '',
+      };
+      $scope.confirmPassword = '';
+    }
     $scope.getExtension = function(filename) {
       var parts = filename.split('.');
       return parts[parts.length - 1];
@@ -82,7 +101,6 @@ microblogApp.controller('profileCtrl',
       }, 2000);
     }
     $scope.showEditProfile = function () {
-      alert(JSON.stringify($rootScope.user));
       $scope.editUser.id = $rootScope.user.id;
       $scope.editUser.email = $rootScope.user.email;
       $scope.editUser.username = $rootScope.user.username;
@@ -124,25 +142,55 @@ microblogApp.controller('profileCtrl',
                 old_password : $scope.editUser.oldPassword
               },
               headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
-          }).then(function mySuccess(response) {
+            }).then(function mySuccess(response) {
               $timeout(function () {
                 handler.showLoading(false,"");
               }, 2000);
               if (response.data.status === 'success') {
                   handler.growler("Profile successfuilly updated!");
-                  $('#editProfileModal').modal('hide');
-                  $scope.editProfileForm.$setUntouched();
                   $scope.editProfileForm.$setPristine();
+                  $scope.editProfileForm.$setUntouched();
+                  $scope.resetVariables();
+                  $('#editProfileModal').modal('hide');
                   $rootScope.getProfile();
               } else if (response.data.status === 'failed') {
                   handler.growler(response.data.message);
               } else {
                   handler.unknown();
               }
-          });
+            });
           }, 2000);
       }
      
+    }
+    $scope.showMyBlogs = function () {
+      handler.showLoading(true,"Getting your blogs...");
+      $timeout(function () {
+        $http({
+          method:'GET',
+          url:'apis/posts/viewMyBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.page+'&size='+$scope.size,
+          // data : {
+          //   token : localStorage.getItem('token'),
+          //   id : $rootScope.user.id,
+          //   page: $scope.page,
+          //   size: $scope.size
+          // },
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        }).then(function mySuccess(response) {
+          $timeout(function () {
+            handler.showLoading(false,"");
+          }, 2000);
+          if (response.data.status === 'success') {
+              $scope.blogs  = response.data.record;
+              $scope.total = response.data.total;
+              console.log(JSON.stringify($scope.blogs));
+          } else if (response.data.status === 'failed') {
+              handler.growler(response.data.message);
+          } else {
+              handler.unknown();
+          }
+        });
+      }, 2000);
     }
     jQuery('#fileId').change(function(e) {
       var reader = new FileReader();
@@ -164,6 +212,6 @@ microblogApp.controller('profileCtrl',
           jQuery('#addInternetSimulationInput').val(null);
       }
     }); 
-    //handler.showLoading(true,"Updating your profile picture...");
+    //$scope.showMyBlogs();
   }]);
  
