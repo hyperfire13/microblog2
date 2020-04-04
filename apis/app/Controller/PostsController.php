@@ -10,7 +10,6 @@
       $token = $this->request->query('token');
       $page = $this->request->query('page');
       $size = $this->request->query('size');
-       
       if ($this->CheckRequest('get')) {
           if ($this->CheckSession('User.token')) {
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
@@ -24,8 +23,11 @@
                     'order'=> array('Post.created DESC'),
                     'offset'=>$offset
                   ));
+                  $total = $this->Post->find('count', array(
+                    'conditions' => array('Post.user_id' => $userId,'Post.deleted'=>1)
+                  ));
                   if (!empty($blogs)) {
-                      $this->promtMessage = array('status'=>'success','total'=>sizeof($blogs) ,'record'=>$blogs);
+                      $this->promtMessage = array('status'=>'success','total'=>$total,'totalPages'=>(ceil($total/$size)),'record'=>$blogs);
                   }
                 } else {
                     $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');

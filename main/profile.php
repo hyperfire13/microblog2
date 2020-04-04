@@ -47,37 +47,47 @@
   </div>
   <div class="tab-pane fade  show" id="blogs">
     <ul class="list-group">
-      <li class="list-group-item  align-items-center blog-post">
+      <li class="list-group-item  align-items-center blog-post" ng-repeat="blog in blogs">
         <img id="menu-toggle" ng-src="pic-profiles/{{user.image}}" alt="..." alt="" style="width: 100%;max-width: 50px;height: 50px;border-radius: 50%;border-width: medium" class="rounded float-left">
         <div class="blogger-name text-warning">
-          {{user.first_name}} {{user.last_name}}
-          <small>(Tuesday 10:00:00 AM)</small>
+          {{blog.User.first_name}} {{blog.User.last_name}}
+          <small>({{blog.Post.created}})</small>
         </div>
         <div class="blogger-post">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at
-          the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+          {{blog.Post.post}}
           <div class="float-right">
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i> 14</span>&nbsp;
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i> 14</span>&nbsp;
-            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i> 14</span>&nbsp;
+            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i> 14{{blogs.length}}</span>&nbsp;
           </div>
         </div>
       </li>
     </ul>
-    <div
+    <div class="float-left">
+      Showing <b>{{(pageSize * (request.page - 1)) + 1}}</b> to <b>{{(pageSize * (request.page - 1)) + blogs.length}}</b> of <b class="text-primary">{{request.total}}</b> records
+    </div>
+    <div class="float-right">
+      Page : <select class="custom-select" ng-init="request.page=1" ng-model="request.page" ng-change="showMyBlogs()">
+        <option ng-repeat="n in [].constructor(totalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
+      </select> 
+     
+    </div>
+    <!-- <div id="paginator"
       class="float-right"
       paging
-      page="page"
-      page-size="size"
-      total="total"
+      page="request.page"
+      page-size="pageSize"
+      total="request.total"
       show-prev-next="true"
       show-first-last="true"
-      text-first-class=" btn btn-warning fa fa-fast-backward"
+      text-first-class="btn btn-warning fa fa-fast-backward"
       text-last-class="btn btn-warning fa fa-fast-forward"
       text-next-class="btn btn-warning fa fa-arrow-right"
       text-prev-class="btn btn-warning fa fa-arrow-left"
-      paging-action="showMyBlogss()">
-    </div>
+      paging-action="showMyBlogs()"
+      ng-if="blogs.length > 0">
+    </div> -->
+    <div class="clearfix"></div>
   </div>
   <div class="tab-pane fade" id="followers">
     followers

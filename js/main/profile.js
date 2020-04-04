@@ -19,9 +19,12 @@ microblogApp.controller('profileCtrl',
     handler
   ) {
 
-    $scope.page = 1;
-    $scope.size = 5;
-    $scope.total = 3;
+    $scope.pageSize = 2;
+    $scope.totalPages = 0;
+    $scope.request = {
+      page : 1,
+      total : 0
+    };
     
     $scope.pictureChange = false;
     $scope.editUser = {
@@ -164,11 +167,12 @@ microblogApp.controller('profileCtrl',
      
     }
     $scope.showMyBlogs = function () {
+      $scope.blogs = null;
       handler.showLoading(true,"Getting your blogs...");
       $timeout(function () {
         $http({
           method:'GET',
-          url:'apis/posts/viewMyBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.page+'&size='+$scope.size,
+          url:'apis/posts/viewMyBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.request.page+'&size='+$scope.pageSize,
           // data : {
           //   token : localStorage.getItem('token'),
           //   id : $rootScope.user.id,
@@ -182,8 +186,9 @@ microblogApp.controller('profileCtrl',
           }, 2000);
           if (response.data.status === 'success') {
               $scope.blogs  = response.data.record;
-              $scope.total = response.data.total;
-              console.log(JSON.stringify($scope.blogs));
+              $scope.request.total = response.data.total;
+              $scope.totalPages = response.data.totalPages;
+              console.log($scope.blogs);
           } else if (response.data.status === 'failed') {
               handler.growler(response.data.message);
           } else {
