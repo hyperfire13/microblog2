@@ -10,30 +10,21 @@
         'foreignKey' => 'user_id',
         'dependent' => true
       ),
-      'Reweet' => array (
+      'Retweet' => array (
         'className' => 'Post',
-        'fields' => array('post'),
+        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id'),
         'foreignKey' => 'post_id',
-        'dependent' => true
-      )
-      ,
-      'ReweetOwner' => array (
+        'dependent' => true 
+      ),
+      'RetweetOwner' => array (
         'className' => 'User',
-        'fields' => array('first_name','last_name'),
-        'foreignKey' => 'user_id',
-        // 'conditions' => array('ReweetOwner.id' => 219),
+        'fields' => array('RetweetOwner.first_name','RetweetOwner.last_name'),
+        'foreignKey' => false,
+        'conditions' => " RetweetOwner.id = Retweet.user_id",
         'dependent' => true
       )
     );
-    // public $hasMany = array(
-    //   'Reweet' => array(
-    //     'className' => 'Post',
-    //     'foreignKey' => 'post_id',
-    //     'fields' => array('post'),
-
-    //   )
-    // );
-    public $validate = array(
+    public $validate = array (
       'user_id' => array(
         'required' => array(
           'rule' => 'notBlank',
