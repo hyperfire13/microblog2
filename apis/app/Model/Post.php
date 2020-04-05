@@ -9,8 +9,30 @@
         'fields' => array('User.first_name','User.last_name'),
         'foreignKey' => 'user_id',
         'dependent' => true
+      ),
+      'Reweet' => array (
+        'className' => 'Post',
+        'fields' => array('post'),
+        'foreignKey' => 'post_id',
+        'dependent' => true
+      )
+      ,
+      'ReweetOwner' => array (
+        'className' => 'User',
+        'fields' => array('first_name','last_name'),
+        'foreignKey' => 'user_id',
+        // 'conditions' => array('ReweetOwner.id' => 219),
+        'dependent' => true
       )
     );
+    // public $hasMany = array(
+    //   'Reweet' => array(
+    //     'className' => 'Post',
+    //     'foreignKey' => 'post_id',
+    //     'fields' => array('post'),
+
+    //   )
+    // );
     public $validate = array(
       'user_id' => array(
         'required' => array(

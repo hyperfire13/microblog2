@@ -48,13 +48,25 @@
   <div class="tab-pane fade  show" id="blogs">
     <ul class="list-group">
       <li class="list-group-item  align-items-center blog-post" ng-repeat="blog in blogs">
-        <img id="menu-toggle" ng-src="pic-profiles/{{user.image}}" alt="..." alt="" style="width: 100%;max-width: 50px;height: 50px;border-radius: 50%;border-width: medium" class="rounded float-left">
+        <img id="postProfilePic"  ng-src="pic-profiles/{{user.image}}" alt="..." alt=""  class="rounded float-left">
         <div class="blogger-name text-warning">
           {{blog.User.first_name}} {{blog.User.last_name}}
           <small>({{blog.Post.created}})</small>
         </div>
         <div class="blogger-post">
           {{blog.Post.post}}
+          <div ng-show="blog.Post.post_id">
+            <div class="card border-warning mb-3" style="max-width: 20rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <h4 class="card-title">Warning card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div ng-show="blog.Post.images.length > 0">
+            <img ng-repeat="n in [].constructor(3)  track by $index" id="postPic" ng-src="pic-profiles/{{user.image}}" alt="">
+          </div>
           <div class="float-right">
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i> 14</span>&nbsp;
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i> 14</span>&nbsp;
