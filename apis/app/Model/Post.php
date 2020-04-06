@@ -12,18 +12,33 @@
       ),
       'Retweet' => array (
         'className' => 'Post',
-        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id'),
+        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created'),
         'foreignKey' => 'post_id',
         'dependent' => true 
       ),
       'RetweetOwner' => array (
         'className' => 'User',
-        'fields' => array('RetweetOwner.first_name','RetweetOwner.last_name'),
+        'fields' => array('RetweetOwner.first_name','RetweetOwner.last_name', 'RetweetOwner.image'),
         'foreignKey' => false,
         'conditions' => " RetweetOwner.id = Retweet.user_id",
         'dependent' => true
       )
     );
+    public $hasMany = array(
+      'Like' => array(
+        'className' => 'Like',
+        'foreignKey' => 'post_id',
+        'conditions' => array('Like.deleted' => '1'),
+        'dependent' => true
+      
+      ),
+      'Comment' => array(
+        'className' => 'Comment',
+        'foreignKey' => 'post_id',
+        'conditions' => array('Comment.deleted' => '1'),
+        'dependent' => true
+      )
+  ) ;
     public $validate = array (
       'user_id' => array(
         'required' => array(

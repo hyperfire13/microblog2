@@ -19,7 +19,7 @@ microblogApp.controller('profileCtrl',
     handler
   ) {
 
-    $scope.pageSize = 2;
+    $scope.pageSize = 3;
     $scope.totalPages = 0;
     $scope.request = {
       page : 1,

@@ -56,11 +56,17 @@
         <div class="blogger-post">
           {{blog.Post.post}}
           <div ng-show="blog.Post.post_id">
-            <div class="card border-warning mb-3" style="max-width: 20rem;">
-              <div class="card-header">Header</div>
+            <div class="card border-default " >
               <div class="card-body">
-                <h4 class="card-title">Warning card title</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <img id="postProfilePic"  ng-src="pic-profiles/{{blog.RetweetOwner.image}}" alt="..." alt=""  class="rounded float-left">
+                <div class="blogger-name text-warning">
+                  {{blog.RetweetOwner.first_name}} {{blog.RetweetOwner.last_name}}
+                  <small>({{blog.Retweet.created}})</small>
+                </div>
+                <p class="blogger-post">{{blog.Retweet.post}}</p>
+                <div ng-show="blog.Post.images.length > 0">
+                  <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-profiles/{{user.image}}" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -69,20 +75,19 @@
           </div>
           <div class="float-right">
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i> 14</span>&nbsp;
-            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i> 14</span>&nbsp;
-            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i> 14{{blogs.length}}</span>&nbsp;
+            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i>&nbsp;{{blog.Comment.length}}&nbsp;</span>&nbsp;
+            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i>&nbsp;{{blog.Like.length}}&nbsp;</span>&nbsp;
           </div>
         </div>
       </li>
     </ul>
     <div class="float-left">
-      Showing <b>{{(pageSize * (request.page - 1)) + 1}}</b> to <b>{{(pageSize * (request.page - 1)) + blogs.length}}</b> of <b class="text-primary">{{request.total}}</b> records
+      Showing <b>{{(pageSize * (request.page - 1)) + 1}}</b> to <b>{{(pageSize * (request.page - 1)) + blogs.length}}</b> of <b class="text-primary">{{request.total}}</b> blogs
     </div>
     <div class="float-right">
       Page : <select class="custom-select" ng-init="request.page=1" ng-model="request.page" ng-change="showMyBlogs()">
         <option ng-repeat="n in [].constructor(totalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
       </select> 
-     
     </div>
     <!-- <div id="paginator"
       class="float-right"
