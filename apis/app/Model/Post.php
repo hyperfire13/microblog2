@@ -37,6 +37,12 @@
         'foreignKey' => 'post_id',
         'conditions' => array('Comment.deleted' => '1'),
         'dependent' => true
+      ),
+      'Share' => array(
+        'className' => 'Post',
+        'foreignKey' => 'post_id',
+        // 'conditions' => array('Share.post_id = post_id'),
+        'dependent' => true
       )
   ) ;
     public $validate = array (
@@ -60,11 +66,11 @@
       ),
       'post' => array(
         'required' => array(
-          'rule' => 'notBlank',
+          'rule' => array('maxLength', 150),
           'type' => 'text',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'blog'
+          'message' => 'Blog must be not more than 150 characters long'
         )
       ),
       'images' => array(
@@ -85,7 +91,6 @@
       )
     );
     public function beforeSave($options = array()) {
-      
       return true;
     }
   }

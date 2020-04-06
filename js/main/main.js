@@ -39,7 +39,7 @@ microblogApp.config(['$routeProvider',function($routeProvider) {
     '/compose-blog' : {
       templateUrl:"main/compose-blog.php",
       controller:"composeCtrl",
-      // css:"css/main/compose-blog.css",
+      css:"css/main/compose-blog.css",
       js:"js/main/compose-blog.js",
       requireLogin	:	true
     }

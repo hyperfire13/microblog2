@@ -5097,3 +5097,20 @@ Stack Trace:
 #12 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #13 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2020-04-06 13:15:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.post_id' in 'where clause'
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24JqQ3EoOshBnJ1q55GjYhue4NoAj1GVAi9mr.uErwImfEeTsl1wU1i&id=214&page=1&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Share`....', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Share`....', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1472): DboSource->fetchAll('SELECT `Share`....', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Post), Object(Post), 'hasMany', 'Share', Array, Array, true, Array, 0, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(24): Model->find('all', Array)
+#8 [internal function]: PostsController->viewMyBlogs()
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}

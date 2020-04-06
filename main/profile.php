@@ -74,7 +74,7 @@
             <img ng-repeat="n in [].constructor(3)  track by $index" id="postPic" ng-src="pic-profiles/{{user.image}}" alt="">
           </div>
           <div class="float-right">
-            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i> 14</span>&nbsp;
+            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{blog.Share.length}}&nbsp;</span>&nbsp;
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i>&nbsp;{{blog.Comment.length}}&nbsp;</span>&nbsp;
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i>&nbsp;{{blog.Like.length}}&nbsp;</span>&nbsp;
           </div>

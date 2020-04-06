@@ -1,0 +1,28 @@
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+.inputfile-1 + label {
+  color: #f1e5e6;
+  background-color: #ffbf00;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+  background-color: #cc9900;
+}
+
+#profilePic,#picPreview {
+  width: 100%;
+  max-width: auto;
+  height: 200px;
+  border-width: medium
+}
