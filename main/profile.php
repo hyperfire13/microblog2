@@ -56,7 +56,7 @@
         <div class="blogger-post">
           {{blog.Post.post}}
           <div ng-show="blog.Post.post_id">
-            <div class="card border-default " >
+            <div class="card border-default">
               <div class="card-body">
                 <img id="postProfilePic"  ng-src="pic-profiles/{{blog.RetweetOwner.image}}" alt="..." alt=""  class="rounded float-left">
                 <div class="blogger-name text-warning">
@@ -65,13 +65,13 @@
                 </div>
                 <p class="blogger-post">{{blog.Retweet.post}}</p>
                 <div ng-show="blog.Post.images.length > 0">
-                  <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-profiles/{{user.image}}" alt="">
+                  <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
                 </div>
               </div>
             </div>
           </div>
           <div ng-show="blog.Post.images.length > 0">
-            <img ng-repeat="n in [].constructor(3)  track by $index" id="postPic" ng-src="pic-profiles/{{user.image}}" alt="">
+            <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
           </div>
           <div class="float-right">
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{blog.Share.length}}&nbsp;</span>&nbsp;

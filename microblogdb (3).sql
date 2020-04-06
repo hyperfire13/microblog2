@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 06, 2020 at 06:59 AM
+-- Generation Time: Apr 06, 2020 at 08:20 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -39,13 +39,6 @@ CREATE TABLE `comments` (
   `deleted` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `comments`
---
-
-INSERT INTO `comments` (`id`, `post_id`, `user_id`, `comment`, `created`, `modified`, `deleted_date`, `deleted`) VALUES
-(1, 10, 219, 'hahahah may baby ka na pala?', '2020-04-06 03:58:56', NULL, NULL, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -78,14 +71,6 @@ CREATE TABLE `likes` (
   `deleted` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `likes`
---
-
-INSERT INTO `likes` (`id`, `user_id`, `post_id`, `created`, `modified`, `date_deleted`, `deleted`) VALUES
-(1, 219, 9, '2020-04-06 03:22:57', NULL, NULL, 1),
-(2, 214, 9, '2020-04-06 03:22:57', NULL, NULL, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -109,15 +94,15 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`id`, `user_id`, `post_id`, `post`, `images`, `created`, `modified`, `deleted_date`, `deleted`) VALUES
-(2, 214, NULL, 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.', NULL, '2020-04-03 05:28:33', '2020-04-03 05:28:33', NULL, 1),
-(3, 219, NULL, 'eto ay niretweet lamang ni loloy', NULL, '2020-04-03 06:42:42', '2020-04-03 06:42:42', NULL, 1),
-(4, 214, NULL, 'Tikman ang 2-in-1 sa Laki at Nuot sa Ihaw Sarap Chicken Inasal At Iba Pang Pinoy Meals At Merienda saMang Inasal', NULL, '2020-04-03 06:43:44', '2020-04-03 06:43:44', NULL, 1),
-(5, 214, NULL, 'Pope Francis on Saturday asked Catholics to pray for those who are taking advantage of others so that they may be granted with transparent conscience during the COVID-19 pandemic.', NULL, '2020-04-04 17:01:45', '2020-04-04 17:01:45', NULL, 1),
-(6, 214, NULL, 'This 10-course, 120-hour coding bundle will take you from absolute novice to a strong foundation from which you can launch a career.', NULL, '2020-04-04 17:02:10', '2020-04-04 17:02:10', NULL, 1),
-(7, 214, NULL, 'LOOK: Photos of the Moon over Makati City tonight (60 mins interval). The next Full Moon happens on April 8th at 10:35AM.\r\n\r\n52 years ago today (04 APR 1968): Apollo 6 (AS-502), the final uncrewed test of the Saturn V vehicle, was launched. | via Bob Reyes', NULL, '2020-04-04 17:02:49', '2020-04-04 17:02:49', NULL, 1),
-(8, 214, 3, 'laptrip to', NULL, '2020-04-05 06:28:28', '2020-04-05 06:28:28', NULL, 1),
-(9, 214, 7, 'Hala ang ganda!!!', NULL, '2020-04-06 02:32:09', '2020-04-06 02:32:09', NULL, 1),
-(10, 214, NULL, 'My new Babies', '[\'1.jpg\',\'2.jpg\',\'3.jpg\']', '2020-04-06 02:36:21', '2020-04-06 02:36:21', NULL, 1);
+(24, 214, NULL, 'amen', '[\"12140-postpic.png\",\"12141-postpic.jpg\"]', '2020-04-06 16:43:37', '2020-04-06 16:43:37', NULL, 1),
+(25, 214, NULL, 'yow', NULL, '2020-04-06 16:44:05', '2020-04-06 16:44:05', NULL, 1),
+(26, 214, NULL, 'dd', NULL, '2020-04-06 16:45:32', '2020-04-06 16:45:32', NULL, 1),
+(27, 214, NULL, 'bff ko nga pala hehehe', NULL, '2020-04-06 18:08:02', '2020-04-06 18:08:02', NULL, 1),
+(28, 214, NULL, 'asd', NULL, '2020-04-06 18:09:22', '2020-04-06 18:09:22', NULL, 1),
+(29, 214, NULL, 'hehe', NULL, '2020-04-06 18:10:49', '2020-04-06 18:10:49', NULL, 1),
+(30, 214, NULL, 'x', '[\"72140-postpic.jpg\"]', '2020-04-06 18:14:20', '2020-04-06 18:14:20', NULL, 1),
+(31, 214, NULL, 'pogi ako', '[\"82140-postpic.jpg\",\"82141-postpic.jpg\"]', '2020-04-06 18:16:23', '2020-04-06 18:16:23', NULL, 1),
+(32, 214, NULL, 'mga tropa ko nga pala', '[\"92140-postpic.jpg\",\"92141-postpic.jpg\",\"92142-postpic.jpg\"]', '2020-04-06 18:17:46', '2020-04-06 18:17:46', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -148,7 +133,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `first_name`, `middle_name`, `last_name`, `date_of_birth`, `image`, `code`, `activation_status`, `created`, `modified`, `deleted_date`, `deleted`) VALUES
-(214, 'loloy', '$2a$10$RDpkgpgp86TuXARI6Oc/6./UO/ypuTtys0faThme382cn0B4NNlSG', 'kennethybanez.yns@gmail.com', 'Louisss', 'Baldado', 'Ybanez', '2011-08-31', '214-profilepic.jpg', 'MB-4039981', 1, '2020-03-31 03:09:46', '2020-04-03 09:59:00', NULL, 1),
+(214, 'loloy', '$2a$10$vACxcZTJXG6Nto0kpf9BkepRa6o4DNJY13r5cW2DLI4MCRUWUy366', 'kennethybanez.yns@gmail.com', 'Louis', 'Baldado', 'Ybanez', '2011-08-31', '214-profilepic.png', 'MB-4039981', 1, '2020-03-31 03:09:46', '2020-04-06 15:36:59', NULL, 1),
 (215, 'xxx', '$2a$10$w9O0izgFpPSJ/AvXW0eGTu0gN8LPX0bryX9p79c2lCjmxj6Bo/vcC', 'kennethybanez.yns@gmail.com', 'xxx', 'xxx', 'xxx', '2020-03-18', 'user.png', 'MB-8020532', 1, '2020-03-31 10:26:11', '2020-03-31 10:27:13', NULL, 1),
 (216, 'bbb', '$2a$10$laD0DZZiokl0jJmfrjg7lOzcR0zDSoh.e8OfKFmH13QDx6qaH4VSe', 'kennethybanez.yns@gmail.com', 'bbb', 'bbb', 'bbb', '2020-03-17', 'user.png', 'MB-6676593', 1, '2020-03-31 10:28:07', '2020-03-31 10:29:21', NULL, 1),
 (217, 'ccc', '$2a$10$CNqJ6xYAiDY43ELt.L0YoODS9q8Y2LgqGfIEOr8BsfIfqVLEYDMVu', 'kennethybanez.yns@gmail.com', 'ccc', 'ccc', 'ccc', '2020-03-27', 'user.png', 'MB-3771704', 1, '2020-03-31 10:32:38', '2020-03-31 10:36:03', NULL, 1),
@@ -166,8 +151,8 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `first_name`, `middl
 --
 ALTER TABLE `comments`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `user_id` (`user_id`),
-  ADD KEY `post_id` (`post_id`);
+  ADD KEY `comments_ibfk_1` (`user_id`),
+  ADD KEY `comments_ibfk_2` (`post_id`);
 
 --
 -- Indexes for table `followers`
@@ -180,8 +165,8 @@ ALTER TABLE `followers`
 --
 ALTER TABLE `likes`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `user_id` (`user_id`),
-  ADD KEY `post_id` (`post_id`);
+  ADD KEY `likes_ibfk_1` (`user_id`),
+  ADD KEY `likes_ibfk_2` (`post_id`);
 
 --
 -- Indexes for table `posts`
@@ -223,7 +208,7 @@ ALTER TABLE `likes`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -239,15 +224,15 @@ ALTER TABLE `users`
 -- Constraints for table `comments`
 --
 ALTER TABLE `comments`
-  ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`);
+  ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `likes`
 --
 ALTER TABLE `likes`
-  ADD CONSTRAINT `likes_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
-  ADD CONSTRAINT `likes_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`);
+  ADD CONSTRAINT `likes_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `likes_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `posts`

@@ -75,7 +75,8 @@
       ),
       'images' => array(
         'required' => array(
-          'type' => 'string',
+          'rule' => 'notBlank',
+          'type' => 'text',
           'allowEmpty' => true,
           'message' => 'images',
           'required' => false
@@ -90,8 +91,27 @@
         )
       )
     );
+   
     public function beforeSave($options = array()) {
       return true;
+    }
+    public function afterFind($results, $primary = false) {
+      foreach ($results as $key => $val) {
+          if (isset($val['Post']['images'])) {
+              $results[$key]['Post']['images'] = $this->decodeImages(
+                  $val['Post']['images']
+              );
+          }
+      }
+      return $results;
+    }
+  
+    protected function _encode($data){
+      return json_encode($data);
+    }
+    protected function decodeImages($data){
+      $decode = json_decode($data,true);
+      return $decode;
     }
   }
 ?>

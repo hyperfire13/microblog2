@@ -5114,3 +5114,115 @@ Stack Trace:
 #11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #12 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2020-04-06 23:27:06 Error: [Error] Call to a member function save() on null
+Request URL: /microblog-2/apis/posts/addPost
+Stack Trace:
+#0 [internal function]: PostsController->addPost()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-07 00:18:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /microblog-2/apis/posts/addPost
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Post), Array, Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(39): Model->save(Array)
+#6 [internal function]: PostsController->addPost()
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2020-04-07 01:43:06 Warning: Warning (2): Declaration of Post::afterFind(Model $model, $results) should be compatible with Model::afterFind($results, $primary = false) in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 103]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+include - APP\Model\Post.php, line 5
+App::load() - CORE\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+ClassRegistry::init() - CORE\Cake\Utility\ClassRegistry.php, line 146
+Controller::loadModel() - CORE\Cake\Controller\Controller.php, line 746
+Controller::__isset() - CORE\Cake\Controller\Controller.php, line 376
+Controller::__get() - CORE\Cake\Controller\Controller.php, line 414
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 71
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 01:43:06 Error: [TypeError] Argument 1 passed to Post::afterFind() must be an instance of Model, array given, called in C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php on line 1311
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24IJflPPLUDNQyNAHLYcIciuZG1Q918l763t8l6veb92P2J9yUSwKh.&id=214&page=1&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1311): Post->afterFind(Array, false)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1269): DboSource->_filterResults(Array, Object(Post), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#5 [internal function]: PostsController->viewMyBlogs()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-04-07 01:43:37 Error: [TypeError] Argument 1 passed to Post::afterFind() must be an instance of Model, array given, called in C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php on line 1311
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24IJflPPLUDNQyNAHLYcIciuZG1Q918l763t8l6veb92P2J9yUSwKh.&id=214&page=1&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1311): Post->afterFind(Array, false)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1269): DboSource->_filterResults(Array, Object(Post), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#5 [internal function]: PostsController->viewMyBlogs()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-04-07 01:44:28 Error: [TypeError] Argument 1 passed to Post::afterFind() must be an instance of Post, array given, called in C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php on line 1311
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24IJflPPLUDNQyNAHLYcIciuZG1Q918l763t8l6veb92P2J9yUSwKh.&id=214&page=1&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1311): Post->afterFind(Array, false)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1269): DboSource->_filterResults(Array, Object(Post), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#5 [internal function]: PostsController->viewMyBlogs()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-04-07 01:51:19 Error: [TypeError] Argument 1 passed to Post::afterFind() must be an instance of Post, array given, called in C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php on line 1311
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24IJflPPLUDNQyNAHLYcIciuZG1Q918l763t8l6veb92P2J9yUSwKh.&id=214&page=1&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1311): Post->afterFind(Array, false)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1269): DboSource->_filterResults(Array, Object(Post), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#5 [internal function]: PostsController->viewMyBlogs()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-04-07 01:56:07 Error: [TypeError] Argument 1 passed to Post::afterFind() must be an instance of Post, array given, called in C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php on line 1311
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24IJflPPLUDNQyNAHLYcIciuZG1Q918l763t8l6veb92P2J9yUSwKh.&id=214&page=1&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1311): Post->afterFind(Array, false)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1269): DboSource->_filterResults(Array, Object(Post), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#5 [internal function]: PostsController->viewMyBlogs()
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

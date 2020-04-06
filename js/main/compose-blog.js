@@ -31,37 +31,46 @@ microblogApp.controller('composeCtrl',
           var form_data = new FormData();
           if ($scope.imageGenerator > 0) {
               for (let id = 0; id < $scope.imageGenerator; id++) {
-                form_data.append("file[]", $("#"+i)[0].files[0]);
+                form_data.append("file[]", $("#"+id)[0].files[0]);
               }
-              form_data.append("token", localStorage.getItem('token'));
-              form_data.append("blog", $scope.blogBody);
-              handler.showLoading(true,"Uploading your blog...");
-              $timeout(function () {
-                $.ajax({
-                  method: 'POST',
-                  data: formSample ,
-                  processData: false,
-                  contentType: false,
-                  url: 'apis/users/profilePic',
-                  success: function(data) {
-                    var response = data;
-                    $timeout(function () {
-                      handler.showLoading(false,"");
-                    }, 2000);
-                    if (response.status === 'success') {
-                        handler.growler("Image Successfully Updated");
-                        jQuery('#picPreview').attr('src', null);
-                        $scope.pictureChange = false;
-                        location.reload();
-                    } else if (response.status === 'empty') {
-                        handler.growler("Please choose an image");
-                    } else if (response.status !== 'success') {
-                        handler.unknown();
-                    }
-                  }
-                }); 
-              }, 2000);
           }
+          form_data.append("token", localStorage.getItem('token'));
+          form_data.append("user_id", $rootScope.user.id);
+          form_data.append("post", $scope.blogBody);
+          handler.showLoading(true,"Uploading your blog...");
+          $timeout(function () {
+            $.ajax({
+              method: 'POST',
+              data: form_data ,
+              processData: false,
+              contentType: false,
+              url: 'apis/posts/addPost',
+              success: function(data) {
+                var response = data;
+                $timeout(function () {
+                  handler.showLoading(false,"");
+                }, 2000);
+                if (response.status === 'success') {
+                    handler.growler(response.message);
+                    $scope.blogBody = '';
+                    $scope.imageGenerator = 0;
+                } else if (response.status === 'failed') {
+                    handler.growler(response.message);
+                } else if (response.status !== 'success') {
+                    handler.unknown();
+                }
+              },
+              error: function() {
+                setTimeout(function() {
+                  handler.showLoading(false,"");
+                }, 1000);
+                setTimeout(function() {
+                  handler.growler("Something went wrong","It's not on you,It's on us");
+                },1000);
+              }
+            }); 
+          }, 2000);
+          
       }
     }
 
@@ -80,11 +89,14 @@ microblogApp.controller('composeCtrl',
       }
       return false;
     };
+    
 
     $scope.addImageSelector  = function () {
       if ($scope.imageGenerator < 3) {
-        $scope.imageGenerator++;
-        counter = $scope.imageGenerator;
+          $scope.imageGenerator++;
+          counter = $scope.imageGenerator;
+      } else {
+          handler.growler('Max of 3 images only');
       }
     }
 
