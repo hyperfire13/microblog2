@@ -51,29 +51,29 @@
         <img id="postProfilePic"  ng-src="pic-profiles/{{user.image}}" alt="..." alt=""  class="rounded float-left">
         <div class="blogger-name text-warning">
           {{blog.User.first_name}} {{blog.User.last_name}}
-          <small>({{blog.Post.created}})</small>
+          <small>({{blog.Post.modified}})</small>
           <span ng-click="deletePostPrompt(blog.Post.id,blog.Post.post)" data-toggle="tooltip" title="Delete post?"onmouseenter="$(this).tooltip('show');" class="fa fa-trash fa-lg"></span>
           <span ng-click="editPostPrompt(blog.Post)" data-toggle="tooltip" title="Edit post?"onmouseenter="$(this).tooltip('show');" class="fa fa-pen-square fa-lg"></span>
         </div>
         <div class="blogger-post">
           {{blog.Post.post}}
+          <div ng-show="blog.Post.images.length > 0">
+            <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
+          </div>
           <div ng-show="blog.Post.post_id">
             <div class="card border-default">
               <div class="card-body">
                 <img id="postProfilePic"  ng-src="pic-profiles/{{blog.RetweetOwner.image}}" alt="..." alt=""  class="rounded float-left">
                 <div class="blogger-name text-warning">
                   {{blog.RetweetOwner.first_name}} {{blog.RetweetOwner.last_name}}
-                  <small>({{blog.Retweet.created}})</small>
+                  <small>({{blog.Retweet.modified}})</small>
                 </div>
                 <p class="blogger-post">{{blog.Retweet.post}}</p>
-                <div ng-show="blog.Post.images.length > 0">
-                  <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
+                <div ng-show="blog.Retweet.images.length > 0">
+                  <img ng-repeat="n in [].constructor(blog.Retweet.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Retweet.images[$index]}}" alt="">
                 </div>
               </div>
             </div>
-          </div>
-          <div ng-show="blog.Post.images.length > 0">
-            <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
           </div>
           <div class="float-right">
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{blog.Share.length}}&nbsp;</span>&nbsp;
@@ -202,33 +202,41 @@
     <div class="modal-dialog"  role="document">
       <div class="modal-content bg-warning text-white">
         <div class="modal-header">
-          <h5  class="modal-title"> Are you sure you want to delete this post? :</h5>
+          <h5  class="modal-title"> Are you sure you want to Edit this post? :</h5>
         </div>
         <div class="modal-body d-flex justify-content-center">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-12">
               <div class="form-group">
-                <label for="exampleTextarea">Compose here : </label>
+                <label for="exampleTextarea">Compose here : {{editPost.images}} </label>
                 <textarea ng-model="editPost.post" class="form-control" id="exampleTextarea" placeholder="What's up!" rows="3"></textarea>
-                <button ng-disabled="blogBody.length > 150 || blogBody.length === 0" type="button" class="btn btn-outline-success" ng-click="savePost()">Save</button>
               </div>
             </div>
-            <div class="col-md-9" >
-              <label for="exampleTextarea">Want to upload image? : </label>
-              <button type="button" class="btn btn-outline-warning" ng-click="addImageSelector()">Add Image</button>
-              <div class="row" ng-repeat="n in [].constructor(editPost.images.length) track by $index">
-                <div class="col-md-4">
-                  <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-2"ng-repeat="n in [].constructor(editPost.images.length) track by $index">
+                  <img  style="max-width: 50px;height: 50px;" ng-src="pic-posts/{{editPost.images[$index]}}" class="profile-user-img img-responsive">
+                  <span ng-click="removeExistingPhoto($index)"  class="fa fa-times fa-lg"></span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-outline-success" ng-click="addImageSelector()">Add Image</button>
+                </div>
+              </div>
+              <div class="row" ng-repeat="n in [].constructor(imageGenerator) track by $index">
+                <div class="col-md-6">
+                  <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
+                  <span ng-click="removeNewPhoto($index)"  class="fa fa-times fa-lg"></span>
+                </div>
+                <div class="col-md-6">
                   <img style="max-width: 50px;height: 50px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
                 </div>
               </div>
+             
             </div>
           </div>
         </div>
         <div class="modal-footer">
-        <button type="submit" class="btn btn-success" ng-click="saveEditPost(editPost.id)">Delete</button>
+        <button ng-disabled=" editPost.post.length === 0" type="submit" class="btn btn-success" ng-click="saveEditPost()">Save</button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
       </div>
       </div>

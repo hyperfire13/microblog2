@@ -312,3 +312,1757 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 117
 
+2020-04-07 14:05:02 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 101]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 101
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:05:02 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 101]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 101
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:11:02 Debug: Notice (8): Trying to access array offset on value of type int in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 101]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 101
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:13:26 Debug: Notice (8): Undefined variable: record in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 101]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 101
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:17:21 Debug: Notice (8): Undefined offset: 2 in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 101]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 101
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:17:21 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 101]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 101
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:17:21 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 101]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 101
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:22:50 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:22:50 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:23:05 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:23:05 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:23:27 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:23:27 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:23:29 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:23:29 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:28:24 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Undefined index: Reweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:30:32 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:33:22 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:33:22 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:33:22 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:33:22 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 105]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 105
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:40:14 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:40:14 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:50:37 Debug: Notice (8): Trying to access array offset on value of type int in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:50:37 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 107
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:51:27 Debug: Notice (8): Trying to access array offset on value of type int in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:51:27 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:51:27 Debug: Notice (8): Trying to access array offset on value of type int in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:51:27 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:52:48 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:52:48 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:53:16 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:53:16 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:53:16 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:53:16 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:53:16 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:53:16 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:55:28 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:55:28 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:55:59 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:55:59 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:56:07 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:56:07 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:58:25 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:58:25 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:58:56 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:58:56 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:04 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:04 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:04 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:04 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:33 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:33 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:33 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:33 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::_filterResultsInclusive() - CORE\Cake\Model\Datasource\DboSource.php, line 1344
+DboSource::queryAssociation() - CORE\Cake\Model\Datasource\DboSource.php, line 1418
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1257
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Undefined index: Retweet in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 106
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:38 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:38 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:39 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:39 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:50 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:01:18 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:01:18 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:01:18 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:01:30 Debug: Notice (8): Undefined offset: 1 in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:01:30 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:01:30 Debug: Notice (8): Trying to access array offset on value of type null in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 18:11:24 Debug: Notice (8): Array to string conversion in [C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php, line 134]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+PostsController::editPost() - APP\Controller\PostsController.php, line 134
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+

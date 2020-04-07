@@ -19,6 +19,7 @@ microblogApp.controller('profileCtrl',
     handler
   ) {
 
+    $scope.photoSelected = false;
     $scope.pageSize = 3;
     $scope.totalPages = 0;
     $scope.request = {
@@ -32,7 +33,7 @@ microblogApp.controller('profileCtrl',
     $scope.editPost = {
       id : '',
       post : '',
-      images : ''
+      images : []
     };
     $scope.pictureChange = false;
     $scope.editUser = {
@@ -47,11 +48,130 @@ microblogApp.controller('profileCtrl',
       birthDate : '',
     };
     $scope.blogs = null;
+    $scope.imageGenerator = 0;
+
+    $scope.getExtension = function(filename) {
+      var parts = filename.split('.');
+      return parts[parts.length - 1];
+    };
+
+    $scope.isImage = function(filename) {
+      var ext = $scope.getExtension(filename);
+      switch (ext.toLowerCase()) {
+        case 'jpg':
+        case 'jpeg':
+        case 'png':
+        return true;
+      }
+      return false;
+    };
+
+    $scope.removeNewPhoto = function () {
+      $scope.imageGenerator--;
+    }
+    
+    $scope.removeExistingPhoto = function (index) {
+      $scope.editPost.images.splice(index,1);
+    }
+
+    $scope.addImageSelector  = function () {
+      if (($scope.editPost.images.length + $scope.imageGenerator)  > 2) {
+          handler.growler('Max of 3 images only');
+      } else {
+          $scope.imageGenerator++;
+      }
+    }
+
+    $scope.saveEditPost = function () {
+      if ($scope.editPost.post.length > 150) {
+          handler.growler('your blog should not be more than 150 characters');
+      } 
+      else {
+          var form_data = new FormData();
+          if ($scope.imageGenerator > 0) {
+              for (let id = 0; id < $scope.imageGenerator; id++) {
+                form_data.append("file[]", $("#"+id)[0].files[0]);
+              }
+          }
+          form_data.append("token", localStorage.getItem('token'));
+          form_data.append("user_id", $rootScope.user.id);
+          form_data.append("post_id", $scope.editPost.id);
+          form_data.append("post", $scope.editPost.post);
+          form_data.append("existing_pics",JSON.stringify($scope.editPost.images));
+          handler.showLoading(true,"Editing your blog...");
+          $timeout(function () {
+            $.ajax({
+              method: 'POST',
+              data: form_data ,
+              processData: false,
+              contentType: false,
+              url: 'apis/posts/editPost',
+              success: function(data) {
+                var response = data;
+                $timeout(function () {
+                  handler.showLoading(false,"");
+                }, 2000);
+                if (response.status === 'success') {
+                    handler.growler(response.message);
+                    $scope.editPost = {
+                      id : '',
+                      post : '',
+                      images : ''
+                    };
+                    $scope.imageGenerator = 0;
+                    $('#editPostModal').modal('hide');
+                    $scope.showMyBlogs()
+                } else if (response.status === 'failed') {
+                    handler.growler(response.message);
+                } else if (response.status !== 'success') {
+                    handler.unknown();
+                }
+              },
+              error: function() {
+                setTimeout(function() {
+                  handler.showLoading(false,"");
+                }, 1000);
+                setTimeout(function() {
+                  handler.growler("Something went wrong","It's not on you,It's on us");
+                },1000);
+              }
+            }); 
+          }, 2000);
+      }
+    }
+
+    $scope.viewImage = function (element, index) {
+      var reader = new FileReader();
+      var imageInput = jQuery('#'+element.id);
+      var imagePreview = jQuery('#picPreview-'+element.id);
+      var imageFile = imageInput[0].files[0];
+      var imageName = imageFile.name;
+      reader.onload = function(e) {
+        $scope.$apply();
+        imagePreview.attr('src', e.target.result);
+      };
+      if ($scope.isImage(imageName)) {
+          reader.readAsDataURL(imageFile);
+          $scope.photoSelected = true;
+          
+      } else {
+          handler.growler('Accepts only .jpg, .jpeg, .png image format');
+          //alert();
+          $scope.photoSelected = false;
+          jQuery('#picPreview-'+element.id).attr('src', null);
+          jQuery('#'+element.id).val(null);
+      }
+    }
 
     $scope.editPostPrompt = function (post) {
+     
+      $scope.imageGenerator = 0;
       $scope.editPost.id = post.id;
       $scope.editPost.post = post.post;
-      $scope.editPost.images = post.images;
+      if (post.images !== null) {
+        $scope.editPost.images = post.images.slice();
+      }
+      
       $('#editPostModal').modal({
         backdrop: 'static',
         keyboard: false,

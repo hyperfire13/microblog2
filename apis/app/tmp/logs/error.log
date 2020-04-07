@@ -5245,3 +5245,665 @@ Request URL: /microblog-2/apis/post/deletePost
 Stack Trace:
 #0 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2020-04-07 14:33:13 Error: [ParseError] syntax error, unexpected 'if' (T_IF), expecting ';' or ','
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%246Ykx6m6TyS%2FYGpB62bp6Dec2y.pXe5zw%2FPY487FtOC2eCxbmJWMCC&id=223&page=1&size=3
+Stack Trace:
+#0 [internal function]: App::load('Post')
+#1 [internal function]: spl_autoload_call('Post')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Utility\ClassRegistry.php(146): class_exists('Post')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(746): ClassRegistry::init('Post')
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(376): Controller->loadModel('Post')
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(414): Controller->__isset('Post')
+#6 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(71): Controller->__get('Post')
+#7 [internal function]: PostsController->viewMyBlogs()
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2020-04-07 14:35:56 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 119]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 119
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:37:40 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 119]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 119
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:41:04 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 119]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 119
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:42:10 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%246Ykx6m6TyS%2FYGpB62bp6Dec2y.pXe5zw%2FPY487FtOC2eCxbmJWMCC&id=223&page=1&size=3
+Stack Trace:
+#0 [internal function]: App::load('Post')
+#1 [internal function]: spl_autoload_call('Post')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Utility\ClassRegistry.php(146): class_exists('Post')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(746): ClassRegistry::init('Post')
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(376): Controller->loadModel('Post')
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(414): Controller->__isset('Post')
+#6 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(71): Controller->__get('Post')
+#7 [internal function]: PostsController->viewMyBlogs()
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2020-04-07 14:43:33 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:44:20 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:47:20 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:47:42 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 107]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::afterFind() - APP\Model\Post.php, line 107
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:54:31 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:55:28 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:55:59 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:56:07 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:56:21 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:58:25 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:58:56 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:04 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 14:59:33 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:07 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:38 Warning: Warning (2): Illegal offset type in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+DboSource::_filterResults() - CORE\Cake\Model\Datasource\DboSource.php, line 1311
+DboSource::read() - CORE\Cake\Model\Datasource\DboSource.php, line 1269
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3053
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:38 Warning: Warning (2): Illegal offset type in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 108]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+Post::afterFind() - APP\Model\Post.php, line 108
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:39 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:00:50 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:01:18 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:01:30 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:05:37 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:07:38 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 109]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:13:06 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:16:43 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:18:53 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:20:06 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:20:26 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 15:20:28 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 121]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 121
+Post::afterFind() - APP\Model\Post.php, line 110
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 17:46:43 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 17:47:28 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 17:51:56 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 17:52:08 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 18:06:55 Warning: Warning (2): array_push() expects parameter 1 to be array, null given in [C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php, line 150]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+array_push - [internal], line ??
+PostsController::editPost() - APP\Controller\PostsController.php, line 150
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 18:09:41 Warning: Warning (2): array_push() expects parameter 1 to be array, null given in [C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php, line 150]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+array_push - [internal], line ??
+PostsController::editPost() - APP\Controller\PostsController.php, line 150
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 18:10:59 Warning: Warning (2): array_push() expects parameter 1 to be array, null given in [C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php, line 150]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+array_push - [internal], line ??
+PostsController::editPost() - APP\Controller\PostsController.php, line 150
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-07 18:19:20 Warning: Warning (2): array_push() expects parameter 1 to be array, string given in [C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php, line 150]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+array_push - [internal], line ??
+PostsController::editPost() - APP\Controller\PostsController.php, line 150
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+

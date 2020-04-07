@@ -12,7 +12,7 @@
       ),
       'Retweet' => array (
         'className' => 'Post',
-        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created'),
+        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created,Retweet.images'),
         'foreignKey' => 'post_id',
         'dependent' => true 
       ),
@@ -103,6 +103,13 @@
               );
           }
       }
+      for ($i=0; $i < sizeof($results); $i++) { 
+        if (isset($results[$i]['Retweet']['images'])) {
+          $results[$key]['Retweet']['images'] = $this->decodeImages(
+              $val['Retweet']['images']
+          );
+        }
+      }
       return $results;
     }
   
@@ -111,7 +118,7 @@
     }
     protected function decodeImages($data){
       $decode = json_decode($data,true);
-      return $decode;
+      return is_object($decode) ? (array)$decode : $decode;
     }
   }
 ?>
