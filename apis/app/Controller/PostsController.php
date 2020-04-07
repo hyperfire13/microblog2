@@ -48,7 +48,7 @@
                   }
               } else {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
-            }
+              }
           }
       }
       $this->response->type('application/json');
@@ -89,6 +89,39 @@
       $this->response->body(json_encode($this->promtMessage));
       return $this->response->send();
     } 
+    public function deletePost () {
+      $this->layout = false;
+      $data = $this->request->input('json_decode', true);
+      if ($this->CheckRequest('post')) { 
+          if ($this->CheckSession('User.token')) { 
+              $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
+              $baseToken = $this->Session->read('User.token');
+              $baseId = $this->Session->read('User.id');
+              if ($data['token'] === $baseToken && $baseId === $data['user_id']) { 
+                  if (empty($data)) {
+                      $data = $this->request->data;
+                  } elseif (!empty($data)) { 
+                      $this->Post->id = $data['post_id'];
+                      if ($this->Post->saveField('deleted',0)) { 
+                          $this->promtMessage = array('status'=>'success','message'=>'Your post was deleted');
+                      } else {
+                          $errorList = ['Missing :'];
+                          $errors = $this->Post->validationErrors;
+                          foreach ($errors as $value) {
+                          array_push($errorList," ".$value[0]);
+                          } 
+                          $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
+                      } 
+                  }
+              } else {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
+              }
+          }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
   }
 
 ?>

@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <div id="profileCard" class="card border-warning mb-3">
           <div class="card-header">Compose a Blog
-          <span ng-click="showEditProfile()" data-toggle="tooltip" title="Edit"onmouseenter="$(this).tooltip('show');" class="fa fa-pen-square fa-lg float-right"></span>
+          
           </div>
           <div class="card-body">
             <div class="row">

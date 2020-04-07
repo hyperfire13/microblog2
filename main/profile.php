@@ -52,6 +52,8 @@
         <div class="blogger-name text-warning">
           {{blog.User.first_name}} {{blog.User.last_name}}
           <small>({{blog.Post.created}})</small>
+          <span ng-click="deletePostPrompt(blog.Post.id,blog.Post.post)" data-toggle="tooltip" title="Delete post?"onmouseenter="$(this).tooltip('show');" class="fa fa-trash fa-lg"></span>
+          <span ng-click="editPostPrompt(blog.Post)" data-toggle="tooltip" title="Edit post?"onmouseenter="$(this).tooltip('show');" class="fa fa-pen-square fa-lg"></span>
         </div>
         <div class="blogger-post">
           {{blog.Post.post}}
@@ -177,3 +179,58 @@
     </form>
   </div>
 </div>
+<!-- delete post Modal -->
+<div id="deleteModal" class="modal fade " tabindex="-1" role="dialog">
+    <div class="modal-dialog"  role="document">
+      <div class="modal-content bg-warning text-white">
+        <div class="modal-header">
+          <h5  class="modal-title"> Are you sure you want to delete this post? :</h5>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          
+          <p ng-model="delete.post">{{delete.post}}</p>
+        </div>
+        <div class="modal-footer">
+        <button type="submit" class="btn btn-success" ng-click="deletePost(delete.id)">Delete</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- edit post Modal -->
+  <div id="editPostModal" class="modal fade " tabindex="-1" role="dialog">
+    <div class="modal-dialog"  role="document">
+      <div class="modal-content bg-warning text-white">
+        <div class="modal-header">
+          <h5  class="modal-title"> Are you sure you want to delete this post? :</h5>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="exampleTextarea">Compose here : </label>
+                <textarea ng-model="editPost.post" class="form-control" id="exampleTextarea" placeholder="What's up!" rows="3"></textarea>
+                <button ng-disabled="blogBody.length > 150 || blogBody.length === 0" type="button" class="btn btn-outline-success" ng-click="savePost()">Save</button>
+              </div>
+            </div>
+            <div class="col-md-9" >
+              <label for="exampleTextarea">Want to upload image? : </label>
+              <button type="button" class="btn btn-outline-warning" ng-click="addImageSelector()">Add Image</button>
+              <div class="row" ng-repeat="n in [].constructor(editPost.images.length) track by $index">
+                <div class="col-md-4">
+                  <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
+                </div>
+                <div class="col-md-4">
+                  <img style="max-width: 50px;height: 50px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        <button type="submit" class="btn btn-success" ng-click="saveEditPost(editPost.id)">Delete</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+      </div>
+    </div>
+  </div>

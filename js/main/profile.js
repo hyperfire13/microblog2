@@ -25,7 +25,15 @@ microblogApp.controller('profileCtrl',
       page : 1,
       total : 0
     };
-    
+    $scope.delete = {
+      id : '',
+      post : ''
+    };
+    $scope.editPost = {
+      id : '',
+      post : '',
+      images : ''
+    };
     $scope.pictureChange = false;
     $scope.editUser = {
       id : '',
@@ -39,6 +47,56 @@ microblogApp.controller('profileCtrl',
       birthDate : '',
     };
     $scope.blogs = null;
+
+    $scope.editPostPrompt = function (post) {
+      $scope.editPost.id = post.id;
+      $scope.editPost.post = post.post;
+      $scope.editPost.images = post.images;
+      $('#editPostModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+    }
+
+    $scope.deletePost = function (id) {
+        handler.showLoading(true,"Deleting this post...");
+        $timeout(function () {
+          $http({
+            method:'POST',
+            url:'apis/posts/deletePost',
+            data : {
+              token : localStorage.getItem('token'),
+              user_id : $rootScope.user.id,
+              post_id : id
+            },
+            headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+          }).then(function mySuccess(response) {
+            $timeout(function () {
+              handler.showLoading(false,"");
+            }, 2000);
+            if (response.data.status === 'success') {
+                handler.growler("Post successfuilly deleted!");
+                $('#deleteModal').modal('hide');
+                $scope.showMyBlogs();
+            } else if (response.data.status === 'failed') {
+                handler.growler(response.data.message);
+            } else {
+                handler.unknown();
+            }
+          });
+        }, 2000);
+    }
+
+    $scope.deletePostPrompt = function (id,post) {
+      $scope.delete.id = id;
+      $scope.delete.post = post;
+      $('#deleteModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+    }
 
     $scope.resetVariables = function () {
       $scope.editUser = {
