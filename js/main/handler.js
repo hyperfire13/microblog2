@@ -1,13 +1,25 @@
 microblogApp.service('handler',
-  [
+  [ 
+    '$rootScope',
     '$timeout',
     '$log',
+    '$timeout',
+    '$http',
+    '$log',
+    '$httpParamSerializerJQLike',
   function(
+    $rootScope,
     $timeout,
-    $log
+    $log,
+    $timeout,
+    $http,
+    $log,
+    $httpParamSerializerJQLike,
   ) {
-
-    this.growler = function (growl){
+    // this.likePost = function (postId) {
+      
+    // };
+    this.growler = function (growl) {
       var growlMessage = growl;
       jQuery.jGrowl(growlMessage, {
         header: 'Notice meee!',

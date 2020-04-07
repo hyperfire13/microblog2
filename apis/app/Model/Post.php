@@ -12,7 +12,7 @@
       ),
       'Retweet' => array (
         'className' => 'Post',
-        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created,Retweet.images'),
+        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created,Retweet.modified,Retweet.images'),
         'foreignKey' => 'post_id',
         'dependent' => true 
       ),

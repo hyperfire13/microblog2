@@ -150,7 +150,7 @@
                             array_push($data['existing_pics'],$imgNewName);
                             if (!move_uploaded_file($tmp,$path)) {
                                 $this->promtMessage = array('status'=>'failed', 'message'=>"Image not uploaded to server and database");
-                            } 
+                            }
                           }
                           $data['images'] = json_encode($data['existing_pics']);
                       } else {
@@ -178,8 +178,6 @@
       $this->response->body(json_encode($this->promtMessage));
       return $this->response->send();
     }
-
-
   }
 
 ?>

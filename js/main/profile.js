@@ -18,7 +18,7 @@ microblogApp.controller('profileCtrl',
     $filter,
     handler
   ) {
-
+    $scope.likeAdd = 0;
     $scope.photoSelected = false;
     $scope.pageSize = 3;
     $scope.totalPages = 0;
@@ -47,7 +47,7 @@ microblogApp.controller('profileCtrl',
       password : '',
       birthDate : '',
     };
-    $scope.blogs = null;
+    $scope.blogs = [];
     $scope.imageGenerator = 0;
 
     $scope.getExtension = function(filename) {
@@ -80,6 +80,31 @@ microblogApp.controller('profileCtrl',
       } else {
           $scope.imageGenerator++;
       }
+    }
+
+    $scope.likePost = function (postId,index) {
+      
+      $http({
+        method:'POST',
+        url:'apis/likes/likePost',
+        data : {
+          token : localStorage.getItem('token'),
+          user_id : $rootScope.user.id,
+          post_id : postId
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+      }).then(function mySuccess(response) {
+        if (response.data.status === 'success') {
+          $scope.likeAdd = 0;
+           handler.growler('you  liked this post');
+           $scope.blogs[index].Like.push('');
+           //$scope.likeAdd = 1;
+        } else if (response.data.status === 'failed') {
+            handler.growler('you already liked this post');
+        } else {
+            
+        }
+      });
     }
 
     $scope.saveEditPost = function () {
@@ -344,23 +369,16 @@ microblogApp.controller('profileCtrl',
       }
      
     }
-    $scope.showMyBlogs = function () {
-      $scope.blogs = null;
-      handler.showLoading(true,"Getting your blogs...");
+    $scope.showMyBlogs = function (realTime) {
+      $scope.blogs = [];
       $timeout(function () {
         $http({
           method:'GET',
           url:'apis/posts/viewMyBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.request.page+'&size='+$scope.pageSize,
-          // data : {
-          //   token : localStorage.getItem('token'),
-          //   id : $rootScope.user.id,
-          //   page: $scope.page,
-          //   size: $scope.size
-          // },
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
           $timeout(function () {
-            handler.showLoading(false,"");
+           // handler.showLoading(false,"");
           }, 2000);
           if (response.data.status === 'success') {
               $scope.blogs  = response.data.record;
@@ -374,6 +392,7 @@ microblogApp.controller('profileCtrl',
           }
         });
       }, 2000);
+     
     }
     jQuery('#fileId').change(function(e) {
       var reader = new FileReader();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="microblogApp"ng-cloak>
+<html  ng-app="microblogApp" >
   <head>
     <?php $version = '1a';?>
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@
       </div>
       <!-- /#sidebar-wrapper -->
       <!-- Page Content -->
-      <div id="page-content-wrapper">
+      <div id="page-content-wrapper" ng-cloak>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" ng-controller="headerCtrl">
           <img id="menu-toggle" ng-src="pic-profiles/{{user.image}}" alt="..." alt="" style="width: 100%;max-width: 50px;height: 50px;border-radius: 50%;border-width: medium" class="rounded">
           <!-- <button class="btn btn-primary" id="menu-toggle">{{user.image}}</button> -->

@@ -3,7 +3,7 @@
     <a  class="nav-link active" data-toggle="tab" href="#about"><span class="fa fa-user "></span>&nbsp;About me</a>
   </li>
   <li class="nav-item">
-    <a ng-click="showMyBlogs()" class="nav-link " data-toggle="tab" href="#blogs"><span class="fa fa-pen-square"></span>&nbsp;My Blogs</a>
+    <a ng-click="showMyBlogs(true)" class="nav-link " data-toggle="tab" href="#blogs"><span class="fa fa-pen-square"></span>&nbsp;My Blogs</a>
   </li>
   <li class="nav-item">
     <a class="nav-link " data-toggle="tab" href="#followers"><span class="fa fa-users"></span>&nbsp;Followers</a>
@@ -45,8 +45,13 @@
       </div>
     </div>
   </div>
-  <div class="tab-pane fade  show" id="blogs">
-    <ul class="list-group">
+  <div class="tab-pane fade  show" id="blogs" ng-cloak>
+    <div class="d-flex justify-content-center">
+      <div ng-show="blogs.length === 0" class="spinner-border text-primary" role="status">
+        <span  class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <ul ng-show="blogs.length > 0" class="list-group">
       <li class="list-group-item  align-items-center blog-post" ng-repeat="blog in blogs">
         <img id="postProfilePic"  ng-src="pic-profiles/{{user.image}}" alt="..." alt=""  class="rounded float-left">
         <div class="blogger-name text-warning">
@@ -57,10 +62,10 @@
         </div>
         <div class="blogger-post">
           {{blog.Post.post}}
-          <div ng-show="blog.Post.images.length > 0">
+          <div ng-cloak ng-show="blog.Post.images.length > 0">
             <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
           </div>
-          <div ng-show="blog.Post.post_id">
+          <div  ng-show="blog.Post.post_id">
             <div class="card border-default">
               <div class="card-body">
                 <img id="postProfilePic"  ng-src="pic-profiles/{{blog.RetweetOwner.image}}" alt="..." alt=""  class="rounded float-left">
@@ -78,7 +83,7 @@
           <div class="float-right">
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{blog.Share.length}}&nbsp;</span>&nbsp;
             <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i>&nbsp;{{blog.Comment.length}}&nbsp;</span>&nbsp;
-            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i>&nbsp;{{blog.Like.length}}&nbsp;</span>&nbsp;
+            <span ng-click="likePost(blog.Post.id,$index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i>&nbsp;{{(blog.Like.length + likeAdd)}}&nbsp;</span>&nbsp;
           </div>
         </div>
       </li>

@@ -34,6 +34,8 @@
                   </div>
                 </div>
               </div>
+              <a href="signup.php" class="btn btn-primary float-left">Signup</a>
+              <a href="activate-account.php" class="btn btn-primary float-left">Activate Account</a>
               <button type="submit" class="btn btn-primary float-right">Login</button>
             </div>
           </div>
