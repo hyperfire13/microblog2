@@ -30,7 +30,6 @@
         'foreignKey' => 'post_id',
         'conditions' => array('Like.deleted' => '1'),
         'dependent' => true
-      
       ),
       'Comment' => array(
         'className' => 'Comment',

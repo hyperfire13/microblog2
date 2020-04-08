@@ -18,7 +18,12 @@ microblogApp.controller('profileCtrl',
     $filter,
     handler
   ) {
+    var backupPostId;
+    var bakcupIndex;
+    $scope.saving = false;
     $scope.likeAdd = 0;
+    $scope.shareAdd = 0;
+    $scope.commentAdd = 0;
     $scope.photoSelected = false;
     $scope.pageSize = 3;
     $scope.totalPages = 0;
@@ -35,6 +40,7 @@ microblogApp.controller('profileCtrl',
       post : '',
       images : []
     };
+    $scope.displayComments = [];
     $scope.pictureChange = false;
     $scope.editUser = {
       id : '',
@@ -82,8 +88,91 @@ microblogApp.controller('profileCtrl',
       }
     }
 
+    $scope.sharePost = function (postId) {
+      $http({
+        method:'POST',
+        url:'apis/posts/sharePost',
+        data : {
+          token : localStorage.getItem('token'),
+          user_id : $rootScope.user.id,
+          post_id : postId,
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+      }).then(function mySuccess(response) {
+        if (response.data.status === 'success') {
+           handler.growler('you shared this post');
+           $scope.showMyBlogs();
+        } else if (response.data.status === 'failed') {
+            handler.growler(response.data.message);
+        } else {
+            handler.unknown();
+        }
+      });
+    }
+
+    $scope.saveComment = function (index,myComment) {
+      alert(index)
+      if (myComment === undefined) {
+          handler.growler('enter a comment');
+      } else {
+          $scope.saving = true;
+          $http({
+            method:'POST',
+            url:'apis/comments/saveComment',
+            data : {
+              token : localStorage.getItem('token'),
+              user_id : $rootScope.user.id,
+              post_id : backupPostId,
+              comment : myComment
+            },
+            headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+          }).then(function mySuccess(response) {
+            if (response.data.status === 'success') {
+              $scope.saving = false;
+              handler.growler('comment saved');
+              $scope.showComments(backupPostId);
+            } else if (response.data.status === 'failed') {
+                handler.growler(response.data.message);
+                $scope.saving = false;
+            } else {
+                handler.unknown();
+                $scope.saving = false;
+            }
+          });
+      }
+    }
+
+    $scope.showComments = function (postId,index) {
+      bakcupIndex = index;
+      backupPostId = postId;
+      $scope.displayComments = [];
+      $('#commentModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+      $timeout(function () {
+        
+        $http({
+          method:'GET',
+          url:'apis/comments/viewComments'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&postId='+postId,
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        }).then(function mySuccess(response) {
+          $timeout(function () {
+           // handler.showLoading(false,"");
+          }, 2000);
+          if (response.data.status === 'success') {
+              
+              $scope.displayComments  = response.data.record;
+          } else if (response.data.status === 'failed') {
+              $scope.displayComments = null;
+          } else {
+              handler.unknown();
+          }
+        });
+      }, 2000);
+    }
     $scope.likePost = function (postId,index) {
-      
       $http({
         method:'POST',
         url:'apis/likes/likePost',
@@ -145,7 +234,7 @@ microblogApp.controller('profileCtrl',
                     };
                     $scope.imageGenerator = 0;
                     $('#editPostModal').modal('hide');
-                    $scope.showMyBlogs()
+                    $scope.showMyBlogs();
                 } else if (response.status === 'failed') {
                     handler.growler(response.message);
                 } else if (response.status !== 'success') {

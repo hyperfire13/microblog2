@@ -65,7 +65,7 @@
           <div ng-cloak ng-show="blog.Post.images.length > 0">
             <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
           </div>
-          <div  ng-show="blog.Post.post_id">
+          <div ng-show="blog.Post.post_id">
             <div class="card border-default">
               <div class="card-body">
                 <img id="postProfilePic"  ng-src="pic-profiles/{{blog.RetweetOwner.image}}" alt="..." alt=""  class="rounded float-left">
@@ -81,8 +81,8 @@
             </div>
           </div>
           <div class="float-right">
-            <span class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{blog.Share.length}}&nbsp;</span>&nbsp;
-            <span ng-click class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i>&nbsp;{{blog.Comment.length}}&nbsp;</span>&nbsp;
+            <span ng-click="sharePost(blog.Post.post_id ? blog.Post.post_id : blog.Post.id)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{(blog.Share.length) + shareAdd}}&nbsp;</span>&nbsp;
+            <span ng-click="showComments(blog.Post.id,index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i>&nbsp;{{blog.Comment.length}}&nbsp;</span>&nbsp;
             <span ng-click="likePost(blog.Post.id,$index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i>&nbsp;{{(blog.Like.length + likeAdd)}}&nbsp;</span>&nbsp;
           </div>
         </div>
@@ -132,49 +132,48 @@
           </button>
         </div>
         <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input ng-model="editUser.email" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-                </div>
-                <div class="form-group">
-                  <label class="col-form-label" for="inputDefault">Username</label>
-                  <input ng-model="editUser.username" type="text" name="username" class="form-control" placeholder="Enter username" id="username" required>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Old Password</label>
-                  <input ng-model="editUser.oldPassword" type="password" name="password" class="form-control" id="password" placeholder="Enter Old Password" required>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1"> New/Old Password</label>
-                  <input ng-model="editUser.password" type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Confirm Password</label>
-                  <input ng-model="confirmPassword" type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
-                </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input ng-model="editUser.email" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
               </div>
-              <div class="col-lg-6">
-                <div class="form-group">
-                  <label class="col-form-label" for="inputDefault">Firstname</label>
-                  <input ng-model="editUser.firstName" type="text" name="firstName" class="form-control" placeholder="Enter firstname" id="firstName" required>
-                </div>
-                <div class="form-group">
-                  <label class="col-form-label" for="inputDefault">Middlename</label>
-                  <input ng-model="editUser.middleName" type="text" name="middleName" class="form-control" placeholder="Enter middlename" id="middleName" required>
-                </div>
-                <div class="form-group">
-                  <label class="col-form-label" for="inputDefault">Lastname</label>
-                  <input ng-model="editUser.lastName" type="text" name="lastName" class="form-control" placeholder="Enter lastname" id="lastName" required>
-                </div>
-                <div class="form-group">
-                  <label class="col-form-label" for="inputDefault">Birthday</label>
-                  <input  type="date" name="dateOfBirth" class="form-control" placeholder="Enter birthday" id="dateOfBirth" required>
-                </div>
+              <div class="form-group">
+                <label class="col-form-label" for="inputDefault">Username</label>
+                <input ng-model="editUser.username" type="text" name="username" class="form-control" placeholder="Enter username" id="username" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Old Password</label>
+                <input ng-model="editUser.oldPassword" type="password" name="password" class="form-control" id="password" placeholder="Enter Old Password" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1"> New/Old Password</label>
+                <input ng-model="editUser.password" type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input ng-model="confirmPassword" type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
               </div>
             </div>
-        
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="col-form-label" for="inputDefault">Firstname</label>
+                <input ng-model="editUser.firstName" type="text" name="firstName" class="form-control" placeholder="Enter firstname" id="firstName" required>
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="inputDefault">Middlename</label>
+                <input ng-model="editUser.middleName" type="text" name="middleName" class="form-control" placeholder="Enter middlename" id="middleName" required>
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="inputDefault">Lastname</label>
+                <input ng-model="editUser.lastName" type="text" name="lastName" class="form-control" placeholder="Enter lastname" id="lastName" required>
+              </div>
+              <div class="form-group">
+                <label class="col-form-label" for="inputDefault">Birthday</label>
+                <input  type="date" name="dateOfBirth" class="form-control" placeholder="Enter birthday" id="dateOfBirth" required>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-outline-success" >Save</button>
@@ -186,64 +185,108 @@
 </div>
 <!-- delete post Modal -->
 <div id="deleteModal" class="modal fade " tabindex="-1" role="dialog">
-    <div class="modal-dialog"  role="document">
-      <div class="modal-content bg-warning text-white">
-        <div class="modal-header">
-          <h5  class="modal-title"> Are you sure you want to delete this post? :</h5>
-        </div>
-        <div class="modal-body d-flex justify-content-center">
-          
-          <p ng-model="delete.post">{{delete.post}}</p>
-        </div>
-        <div class="modal-footer">
-        <button type="submit" class="btn btn-success" ng-click="deletePost(delete.id)">Delete</button>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content bg-warning text-white">
+      <div class="modal-header">
+        <h5  class="modal-title"> Are you sure you want to delete this post? :</h5>
       </div>
+      <div class="modal-body d-flex justify-content-center">
+        
+        <p ng-model="delete.post">{{delete.post}}</p>
       </div>
+      <div class="modal-footer">
+      <button type="submit" class="btn btn-success" ng-click="deletePost(delete.id)">Delete</button>
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    </div>
     </div>
   </div>
-  <!-- edit post Modal -->
-  <div id="editPostModal" class="modal fade " tabindex="-1" role="dialog">
-    <div class="modal-dialog"  role="document">
-      <div class="modal-content bg-warning text-white">
-        <div class="modal-header">
-          <h5  class="modal-title"> Are you sure you want to Edit this post? :</h5>
-        </div>
-        <div class="modal-body d-flex justify-content-center">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="exampleTextarea">Compose here : {{editPost.images}} </label>
-                <textarea ng-model="editPost.post" class="form-control" id="exampleTextarea" placeholder="What's up!" rows="3"></textarea>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-2"ng-repeat="n in [].constructor(editPost.images.length) track by $index">
-                  <img  style="max-width: 50px;height: 50px;" ng-src="pic-posts/{{editPost.images[$index]}}" class="profile-user-img img-responsive">
-                  <span ng-click="removeExistingPhoto($index)"  class="fa fa-times fa-lg"></span>
-                </div>
-                <div class="col-md-2">
-                  <button type="button" class="btn btn-outline-success" ng-click="addImageSelector()">Add Image</button>
-                </div>
-              </div>
-              <div class="row" ng-repeat="n in [].constructor(imageGenerator) track by $index">
-                <div class="col-md-6">
-                  <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
-                  <span ng-click="removeNewPhoto($index)"  class="fa fa-times fa-lg"></span>
-                </div>
-                <div class="col-md-6">
-                  <img style="max-width: 50px;height: 50px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
-                </div>
-              </div>
-             
+</div>
+<!-- edit post Modal -->
+<div id="editPostModal" class="modal fade " tabindex="-1" role="dialog">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content bg-warning text-white">
+      <div class="modal-header">
+        <h5  class="modal-title"> Are you sure you want to Edit this post? :</h5>
+      </div>
+      <div class="modal-body d-flex justify-content-center">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="exampleTextarea">Compose here : {{editPost.images}} </label>
+              <textarea ng-model="editPost.post" class="form-control" id="exampleTextarea" placeholder="What's up!" rows="3"></textarea>
             </div>
           </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-2"ng-repeat="n in [].constructor(editPost.images.length) track by $index">
+                <img  style="max-width: 50px;height: 50px;" ng-src="pic-posts/{{editPost.images[$index]}}" class="profile-user-img img-responsive">
+                <span ng-click="removeExistingPhoto($index)"  class="fa fa-times fa-lg"></span>
+              </div>
+              <div class="col-md-2">
+                <button type="button" class="btn btn-outline-success" ng-click="addImageSelector()">Add Image</button>
+              </div>
+            </div>
+            <div class="row" ng-repeat="n in [].constructor(imageGenerator) track by $index">
+              <div class="col-md-6">
+                <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
+                <span ng-click="removeNewPhoto($index)"  class="fa fa-times fa-lg"></span>
+              </div>
+              <div class="col-md-6">
+                <img style="max-width: 50px;height: 50px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
+              </div>
+            </div>
+            
+          </div>
         </div>
-        <div class="modal-footer">
-        <button ng-disabled=" editPost.post.length === 0" type="submit" class="btn btn-success" ng-click="saveEditPost()">Save</button>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
       </div>
+      <div class="modal-footer">
+      <button ng-disabled=" editPost.post.length === 0" type="submit" class="btn btn-success" ng-click="saveEditPost()">Save</button>
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- comment modal Modal -->
+<div id="commentModal" class="modal fade " tabindex="-1" role="dialog">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content bg-warning text-white">
+      <div class="modal-header">
+        <h5  class="modal-title">Comments</h5>
+      </div>
+      <div ng-show="displayComments.length <= 0" class="modal-body d-flex justify-content-center">
+       
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <div>
+      <div ng-show="!displayComments" class="modal-body d-flex justify-content-center">
+        <p >No comments yet</p>
+      </div>
+        <ul class="list-group">
+          <li ng-repeat="comment in displayComments" class="list-group-item  align-items-center blog-post" style="padding-bottom: 0px;">
+            <img id="postProfilePic"  ng-src="pic-profiles/{{comment.User.image}}" alt="..." alt=""  class="rounded float-left">
+            <div class="blogger-name text-warning">
+              {{comment.User.first_name}} {{comment.User.last_name}}
+              <small>({{comment.Comment.modified}})</small>
+              <hr style=" margin-top: 0px;margin-bottom: 0px;">
+            </div>
+            <div class="blogger-post text-primary">
+              <p>"{{comment.Comment.comment}}"</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
+        <div ng-show="saving" class="modal-body d-flex justify-content-center">
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <textarea ng-show="!saving" class="form-control" ng-model="myComment" id="comment" rows="3" placeholder="enter comment" required></textarea>
+        <button ng-show="!saving" type="submit" class="btn btn-success" ng-click="saveComment($index,myComment)">Comment</button>
+        <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>

@@ -5907,3 +5907,430 @@ Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
 Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
 [main] - APP\webroot\index.php, line 117
 
+2020-04-08 10:44:54 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 10:45:27 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 10:56:36 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 10:56:38 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 10:56:38 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 11:00:36 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 11:01:59 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 11:09:41 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 11:14:24 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 11:16:32 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 11:25:59 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 11:37:57 Warning: Warning (2): json_decode() expects parameter 1 to be string, array given in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 120]
+Trace:
+ErrorHandler::handleError() - CORE\Cake\Error\ErrorHandler.php, line 230
+json_decode - [internal], line ??
+Post::decodeImages() - APP\Model\Post.php, line 120
+Post::afterFind() - APP\Model\Post.php, line 109
+CakeEventManager::dispatch() - CORE\Cake\Event\CakeEventManager.php, line 242
+Model::_filterResults() - CORE\Cake\Model\Model.php, line 3371
+Model::_readDataSource() - CORE\Cake\Model\Model.php, line 3057
+Model::find() - CORE\Cake\Model\Model.php, line 3025
+PostsController::viewMyBlogs() - APP\Controller\PostsController.php, line 75
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 499
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 117
+
+2020-04-08 11:55:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CommentOwner.user_id' in 'where clause'
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24Lt.wKb9GiqLfeZZiKVpGj.GVi201.jGr6s3xn8oue14p8Uzt1nJZy&id=214&page=2&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Comment...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1472): DboSource->fetchAll('SELECT `Comment...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Post), Object(User), 'hasMany', 'CommentOwner', Array, Array, true, Array, 0, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#8 [internal function]: PostsController->viewMyBlogs()
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2020-04-08 11:56:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Comment.user_id' in 'where clause'
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24Lt.wKb9GiqLfeZZiKVpGj.GVi201.jGr6s3xn8oue14p8Uzt1nJZy&id=214&page=2&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Comment...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1472): DboSource->fetchAll('SELECT `Comment...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Post), Object(User), 'hasMany', 'CommentOwner', Array, Array, true, Array, 0, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#8 [internal function]: PostsController->viewMyBlogs()
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2020-04-08 11:57:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Comment.user_id' in 'where clause'
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24Lt.wKb9GiqLfeZZiKVpGj.GVi201.jGr6s3xn8oue14p8Uzt1nJZy&id=214&page=2&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Comment...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1472): DboSource->fetchAll('SELECT `Comment...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Post), Object(User), 'hasMany', 'CommentOwner', Array, Array, true, Array, 0, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#8 [internal function]: PostsController->viewMyBlogs()
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2020-04-08 12:01:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CommentOwner.user_id' in 'field list'
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24Lt.wKb9GiqLfeZZiKVpGj.GVi201.jGr6s3xn8oue14p8Uzt1nJZy&id=214&page=2&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Comment...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1564): DboSource->fetchAll('SELECT `Comment...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1398): DboSource->_fetchHasMany(Object(Post), 'SELECT `Comment...', Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Post), Object(User), 'hasMany', 'CommentOwner', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#8 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#9 [internal function]: PostsController->viewMyBlogs()
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2020-04-08 12:16:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CommentOwner.user_id' in 'field list'
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24rmr7RuvQEgclO0DR1ebzUOxfXBICSXcz7X6FD0i.tkMzUeQXPMRAG&id=214&page=2&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Comment...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1564): DboSource->fetchAll('SELECT `Comment...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1398): DboSource->_fetchHasMany(Object(Post), 'SELECT `Comment...', Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Post), Object(User), 'hasMany', 'CommentOwner', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#8 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#9 [internal function]: PostsController->viewMyBlogs()
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2020-04-08 13:09:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CommentOwner.user_id' in 'field list'
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%2430xAToS2mk%2FdnB8qcaFmGOI%2FkV1qYC08aZIC5Ny3%2FqenL6DMGSEG.&id=214&page=2&size=3
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Comment...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1564): DboSource->fetchAll('SELECT `Comment...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1398): DboSource->_fetchHasMany(Object(Post), 'SELECT `Comment...', Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Post), Object(User), 'hasMany', 'CommentOwner', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Post), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#8 C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php(75): Model->find('all', Array)
+#9 [internal function]: PostsController->viewMyBlogs()
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#13 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2020-04-08 13:41:15 Error: [MissingViewException] View file "Comments\view_comments.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Comments\\view_comments.ctp',
+)
+Request URL: /microblog-2/apis/comments/viewComments?token=%242a%2410%2430xAToS2mk%2FdnB8qcaFmGOI%2FkV1qYC08aZIC5Ny3%2FqenL6DMGSEG.&id=214&page=2&size=3&post_id=41
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\View\View.php(470): View->_getViewFileName('Comments\\view_c...')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-08 13:41:54 Error: [MissingViewException] View file "Comments\view_comments.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Comments\\view_comments.ctp',
+)
+Request URL: /microblog-2/apis/comments/viewComments?token=%242a%2410%2430xAToS2mk%2FdnB8qcaFmGOI%2FkV1qYC08aZIC5Ny3%2FqenL6DMGSEG.&id=214&page=2&size=3&post_id=41
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\View\View.php(470): View->_getViewFileName('Comments\\view_c...')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-08 13:47:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Comment.user_ids' in 'where clause'
+Request URL: /microblog-2/apis/comments/viewComments?token=%242a%2410%2430xAToS2mk%2FdnB8qcaFmGOI%2FkV1qYC08aZIC5Ny3%2FqenL6DMGSEG.&id=214&page=2&size=3&postId=41
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Comment...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Comment...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Comment...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Comment), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\microblog-2\apis\app\Controller\CommentsController.php(24): Model->find('all', Array)
+#7 [internal function]: CommentsController->viewComments()
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2020-04-08 15:46:44 Error: [Error] Call to a member function save() on null
+Request URL: /microblog-2/apis/comments/saveComment
+Stack Trace:
+#0 [internal function]: CommentsController->saveComment()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-08 15:48:10 Error: [Error] Call to a member function save() on null
+Request URL: /microblog-2/apis/comments/saveComment
+Stack Trace:
+#0 [internal function]: CommentsController->saveComment()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-08 16:00:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`microblogdb`.`comments`, CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /microblog-2/apis/comments/saveComment
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Comment), Array, Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\app\Controller\CommentsController.php(46): Model->save(Array)
+#6 [internal function]: CommentsController->saveComment()
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2020-04-08 16:00:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`microblogdb`.`comments`, CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /microblog-2/apis/comments/saveComment
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Comment), Array, Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\app\Controller\CommentsController.php(46): Model->save(Array)
+#6 [internal function]: CommentsController->saveComment()
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2020-04-08 16:01:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`microblogdb`.`comments`, CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /microblog-2/apis/comments/saveComment
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Comment), Array, Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\app\Controller\CommentsController.php(46): Model->save(Array)
+#6 [internal function]: CommentsController->saveComment()
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2020-04-08 16:02:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`microblogdb`.`comments`, CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /microblog-2/apis/comments/saveComment
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Comment), Array, Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\app\Controller\CommentsController.php(46): Model->save(Array)
+#6 [internal function]: CommentsController->saveComment()
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(CommentsController), Array)
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
