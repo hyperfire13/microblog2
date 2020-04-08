@@ -70,7 +70,7 @@
           'type' => 'text',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'Blog must be not more than 150 characters long'
+          'message' => 'Blog must not be blank or not more than 150 characters long'
         )
       ),
       'images' => array(
