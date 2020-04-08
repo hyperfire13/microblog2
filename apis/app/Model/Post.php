@@ -90,7 +90,7 @@
         )
       )
     );
-   
+    
     public function beforeSave($options = array()) {
       return true;
     }
@@ -102,10 +102,11 @@
               );
           }
       }
-      for ($i=0; $i < sizeof($results); $i++) { 
+      //echo json_encode($results);
+      for ($i=0; $i < sizeof($results); $i++) {
         if (isset($results[$i]['Retweet']['images'])) {
-          $results[$key]['Retweet']['images'] = $this->decodeImages(
-              $val['Retweet']['images']
+          $results[$i]['Retweet']['images'] = $this->decodeImages(
+            is_string($results[$i]['Retweet']['images']) ? $results[$i]['Retweet']['images'] : json_encode($results[$i]['Retweet']['images'])
           );
         }
       }
@@ -116,8 +117,14 @@
       return json_encode($data);
     }
     protected function decodeImages($data){
-      $decode = json_decode($data,true);
-      return is_object($decode) ? (array)$decode : $decode;
+      //echo $data;
+      if (is_string($data)) {
+        $decode = json_decode($data,true);
+        //print_r($decode);
+        return $decode;
+      }
+      // $decode = json_decode($data,true);
+      // return is_object($decode) ? (array)$decode : $decode;
     }
   }
 ?>

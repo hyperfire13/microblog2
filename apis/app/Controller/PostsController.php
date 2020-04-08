@@ -68,21 +68,21 @@
               $baseId = $this->Session->read('User.id');
               if ($token === $baseToken && $baseId === $userId) {
                   $offset = ($page - 1) * $size;
+                  $total = $this->Post->find('count', array(
+                    'conditions' => array('Post.user_id' => $userId,'Post.deleted'=>1)
+                  ));
                   $blogs =  $this->Post->find('all',array(
                     'conditions'=>array('Post.user_id'=>$userId,'Post.deleted'=>1),
                     'limit'=>$size,
                     'order'=> array('Post.created DESC'),
                     'offset'=>$offset
                   ));
-                  $total = $this->Post->find('count', array(
-                    'conditions' => array('Post.user_id' => $userId,'Post.deleted'=>1)
-                  ));
                   if (!empty($blogs)) {
                       $this->promtMessage = array('status'=>'success','total'=>$total,'totalPages'=>(ceil($total/$size)),'record'=>$blogs);
                   }
-                } else {
-                    $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
-                }
+              } else {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
+              }
           }
       }
       $this->response->type('application/json');

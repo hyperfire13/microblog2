@@ -6334,3 +6334,12 @@ Stack Trace:
 #9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
 #10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2020-04-08 20:05:13 Error: Fatal Error (64): Cannot use [] for reading in [C:\xampp\htdocs\microblog-2\apis\app\Model\Post.php, line 106]
+2020-04-08 20:05:13 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /microblog-2/apis/posts/viewMyBlogs?token=%242a%2410%24bdoZdI5yyfBlJtcETb%2Fz4O5FSTZaAp9vf2J9q3NCA5wjGfBidpR2m&id=214&page=1&size=2
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', 'C:\\xampp\\htdocs...', 106)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot use [] f...', 'C:\\xampp\\htdocs...', 106, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}

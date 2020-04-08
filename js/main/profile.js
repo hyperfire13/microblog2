@@ -25,7 +25,7 @@ microblogApp.controller('profileCtrl',
     $scope.shareAdd = 0;
     $scope.commentAdd = 0;
     $scope.photoSelected = false;
-    $scope.pageSize = 3;
+    $scope.pageSize = 2;
     $scope.totalPages = 0;
     $scope.request = {
       page : 1,
@@ -459,7 +459,7 @@ microblogApp.controller('profileCtrl',
      
     }
     $scope.showMyBlogs = function (realTime) {
-      $scope.blogs = [];
+      $scope.blogs = null;
       $timeout(function () {
         $http({
           method:'GET',
@@ -475,6 +475,7 @@ microblogApp.controller('profileCtrl',
               $scope.totalPages = response.data.totalPages;
               console.log($scope.blogs);
           } else if (response.data.status === 'failed') {
+              $scope.blogs = []
               handler.growler(response.data.message);
           } else {
               handler.unknown();

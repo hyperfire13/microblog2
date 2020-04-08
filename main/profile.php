@@ -47,8 +47,11 @@
   </div>
   <div class="tab-pane fade  show" id="blogs" ng-cloak>
     <div class="d-flex justify-content-center">
-      <div ng-show="blogs.length === 0" class="spinner-border text-primary" role="status">
+      <div ng-show="!blogs" class="spinner-border text-primary" role="status">
         <span  class="sr-only">Loading...</span>
+      </div>
+      <div ng-show="blogs.length === 0" class=" text-primary" role="status">
+        <p >No blogs yet</p>
       </div>
     </div>
     <ul ng-show="blogs.length > 0" class="list-group">
