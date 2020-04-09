@@ -106,4 +106,32 @@
       $token = $passwordHasher->hash($username);
       return $token;
     }
+
+    public function cleanString($value) {
+
+      // Removes leading and trailing spaces
+      $data = trim($value);
+  
+      // Removes Unwanted Characters
+      $data = filter_var($data, FILTER_SANITIZE_STRING);
+  
+      // Sanitizes HTML Characters
+      $data = htmlspecialchars_decode($data, ENT_QUOTES);
+  
+      return $data;
+    }
+
+    public function cleanNumber($value) {
+
+      // Removes leading and trailing spaces
+      $data = trim($value);
+
+      // Removes Unwanted Characters
+      $data = filter_var($data, FILTER_SANITIZE_NUMBER_INT);
+
+      // Sanitizes HTML Characters
+      $data = htmlspecialchars_decode($data, ENT_QUOTES);
+
+      return $data;
+    }
   }

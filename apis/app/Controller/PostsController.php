@@ -57,10 +57,10 @@
     }
     public function viewMyBlogs () {
       $this->layout = false;
-      $userId = $this->request->query('id');
-      $token = $this->request->query('token');
-      $page = $this->request->query('page');
-      $size = $this->request->query('size');
+      $userId = $this->cleanNumber($this->request->query('id'));
+      $token = $this->cleanString($this->request->query('token'));
+      $page = $this->cleanNumber($this->request->query('page'));
+      $size = $this->cleanNumber($this->request->query('size'));
       if ($this->CheckRequest('get')) {
           if ($this->CheckSession('User.token')) {
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
@@ -101,8 +101,10 @@
                   if (empty($data)) {
                       $data = $this->request->data;
                   } elseif (!empty($data)) { 
+                      $data['deleted_date'] = date("Y-m-d H:i:s");
+                      $data['deleted'] = false;
                       $this->Post->id = $data['post_id'];
-                      if ($this->Post->saveField('deleted',0)) { 
+                      if ($this->Post->save($data,true,['deleted_date','deleted'])) { 
                           $this->promtMessage = array('status'=>'success','message'=>'Your post was deleted');
                       } else {
                           $errorList = ['Missing :'];

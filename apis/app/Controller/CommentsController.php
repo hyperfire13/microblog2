@@ -5,9 +5,9 @@
   class CommentsController extends AppController { 
     public function viewComments () {
       $this->layout = false;
-      $userId = $this->request->query('id');
-      $postId = $this->request->query('postId');
-      $token = $this->request->query('token');
+      $userId = $this->cleanNumber($this->request->query('id'));
+      $postId = $this->cleanNumber($this->request->query('postId'));
+      $token = $this->cleanString($this->request->query('token'));
       if ($this->CheckRequest('get')) {
           if ($this->CheckSession('User.token')) {
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');

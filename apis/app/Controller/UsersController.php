@@ -119,6 +119,8 @@
           if (empty($data)) {
               $data = $this->request->data;
           } elseif (!empty($data)) {
+              $data['username'] = $this->cleanString($data['username']);
+              $data['password'] = $this->cleanString($data['password']);
               $record = $this->User->find('first', array( 'conditions' => array('User.username' => $data['username'])));
               if (empty($record)) {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');

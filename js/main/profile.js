@@ -25,7 +25,7 @@ microblogApp.controller('profileCtrl',
     $scope.shareAdd = 0;
     $scope.commentAdd = 0;
     $scope.photoSelected = false;
-    $scope.pageSize = 2;
+    $scope.pageSize = 5;
     $scope.totalPages = 0;
     $scope.request = {
       page : 1,
@@ -40,6 +40,7 @@ microblogApp.controller('profileCtrl',
       post : '',
       images : []
     };
+    $scope.followers = [];
     $scope.displayComments = [];
     $scope.pictureChange = false;
     $scope.editUser = {
@@ -195,7 +196,6 @@ microblogApp.controller('profileCtrl',
         }
       });
     }
-
     $scope.saveEditPost = function () {
       if ($scope.editPost.post.length > 150) {
           handler.growler('your blog should not be more than 150 characters');
@@ -253,7 +253,6 @@ microblogApp.controller('profileCtrl',
           }, 2000);
       }
     }
-
     $scope.viewImage = function (element, index) {
       var reader = new FileReader();
       var imageInput = jQuery('#'+element.id);
@@ -276,7 +275,6 @@ microblogApp.controller('profileCtrl',
           jQuery('#'+element.id).val(null);
       }
     }
-
     $scope.editPostPrompt = function (post) {
      
       $scope.imageGenerator = 0;
@@ -292,7 +290,6 @@ microblogApp.controller('profileCtrl',
         show : true
       });
     }
-
     $scope.deletePost = function (id) {
         handler.showLoading(true,"Deleting this post...");
         $timeout(function () {
@@ -321,7 +318,6 @@ microblogApp.controller('profileCtrl',
           });
         }, 2000);
     }
-
     $scope.deletePostPrompt = function (id,post) {
       $scope.delete.id = id;
       $scope.delete.post = post;
@@ -331,7 +327,6 @@ microblogApp.controller('profileCtrl',
         show : true
       });
     }
-
     $scope.resetVariables = function () {
       $scope.editUser = {
         id : '',
@@ -489,9 +484,23 @@ microblogApp.controller('profileCtrl',
     $scope.showMyFollowers = function () {
       $scope.fetching = true;
       $timeout(function () {
-        $scope.fetching = false;
-        $scope.followers = [];
-      },2000);
+        $http({
+          method:'GET',
+          url:'apis/followers/viewFollowing'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id,
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        }).then(function mySuccess(response) {
+          $timeout(function () {
+            $scope.fetching = false;
+          }, 2000);
+          if (response.data.status === 'success') {
+              $scope.followers  = response.data.followers;
+          } else if (response.data.status === 'failed') {
+              $scope.followers = [];
+          } else {
+              handler.unknown();
+          }
+        });
+      }, 2000);
     };
     jQuery('#fileId').change(function(e) {
       var reader = new FileReader();

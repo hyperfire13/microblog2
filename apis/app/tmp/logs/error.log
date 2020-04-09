@@ -6343,3 +6343,391 @@ Stack Trace:
 #2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
 #3 [internal function]: App::shutdown()
 #4 {main}
+2020-04-09 15:45:08 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:10 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:12 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:15 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:18 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:21 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:24 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:26 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:29 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:32 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:35 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:37 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:40 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:43 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:45 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:48 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:51 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 15:45:53 Error: [ParseError] syntax error, unexpected '$record' (T_VARIABLE)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-09 16:06:52 Error: [MissingControllerException] Controller class FollowersController could not be found.
+Exception Attributes: array (
+  'class' => 'FollowersController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%24Sykberka9D%2FvkjV.GlzWEu35lm0tDtRsrt6hTZS53NuUyTuA616KK&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-04-09 16:20:38 Error: [MissingControllerException] Controller class FollowersController could not be found.
+Exception Attributes: array (
+  'class' => 'FollowersController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%24Sykberka9D%2FvkjV.GlzWEu35lm0tDtRsrt6hTZS53NuUyTuA616KK&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-04-09 16:22:00 Error: [MissingControllerException] Controller class FollowersController could not be found.
+Exception Attributes: array (
+  'class' => 'FollowersController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%24Sykberka9D%2FvkjV.GlzWEu35lm0tDtRsrt6hTZS53NuUyTuA616KK&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-04-09 16:31:42 Error: [MissingControllerException] Controller class FollowersController could not be found.
+Exception Attributes: array (
+  'class' => 'FollowersController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%24Sykberka9D%2FvkjV.GlzWEu35lm0tDtRsrt6hTZS53NuUyTuA616KK&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-04-09 16:50:58 Error: [MissingActionException] Action CommentsController::viewFollowers() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommentsController',
+  'action' => 'viewFollowers',
+)
+Request URL: /microblog-2/apis/comments/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-04-09 16:51:23 Error: [MissingActionException] Action CommentsController::viewFollowers() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommentsController',
+  'action' => 'viewFollowers',
+)
+Request URL: /microblog-2/apis/comments/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-04-09 16:51:56 Error: [MissingActionException] Action CommentsController::viewFollowers() could not be found.
+Exception Attributes: array (
+  'controller' => 'CommentsController',
+  'action' => 'viewFollowers',
+)
+Request URL: /microblog-2/apis/comments/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CommentsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-04-09 16:52:43 Error: [Error] Call to a member function find() on null
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 [internal function]: FollowersController->viewFollowers()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-09 16:53:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Followers.user_id' in 'where clause'
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Followe...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Followe...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Followe...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Follower), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(17): Model->find('all', Array)
+#7 [internal function]: FollowersController->viewFollowers()
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2020-04-09 16:56:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Followers.created' in 'order clause'
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Followe...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Followe...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Followe...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Follower), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(17): Model->find('all', Array)
+#7 [internal function]: FollowersController->viewFollowers()
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2020-04-09 16:56:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Follower.user_id' in 'field list'
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Followe...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Followe...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1564): DboSource->fetchAll('SELECT `Followe...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1398): DboSource->_fetchHasMany(Object(Follower), 'SELECT `Followe...', Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Follower), Object(User), 'hasMany', 'Follower', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Follower), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#8 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(17): Model->find('all', Array)
+#9 [internal function]: FollowersController->viewFollowers()
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#13 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2020-04-09 16:57:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Followers.user_id' in 'field list'
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Followe...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Followe...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1564): DboSource->fetchAll('SELECT `Followe...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1398): DboSource->_fetchHasMany(Object(Follower), 'SELECT `Followe...', Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Follower), Object(User), 'hasMany', 'Followers', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Follower), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#8 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(17): Model->find('all', Array)
+#9 [internal function]: FollowersController->viewFollowers()
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#13 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2020-04-09 16:59:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Followersss.user_id' in 'where clause'
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Followe...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Followe...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Followe...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Follower), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(17): Model->find('all', Array)
+#7 [internal function]: FollowersController->viewFollowers()
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2020-04-09 17:00:04 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Followers.user_id' in 'field list'
+Request URL: /microblog-2/apis/followers/viewFollowers?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Followe...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Followe...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1564): DboSource->fetchAll('SELECT `Followe...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1398): DboSource->_fetchHasMany(Object(Follower), 'SELECT `Followe...', Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1257): DboSource->queryAssociation(Object(Follower), Object(User), 'hasMany', 'Followers', Array, Array, true, Array, 0, Array)
+#6 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Follower), Array)
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#8 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(17): Model->find('all', Array)
+#9 [internal function]: FollowersController->viewFollowers()
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#11 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#13 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2020-04-09 17:05:45 Error: [MissingViewException] View file "Followers\view_following.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Followers\\view_following.ctp',
+)
+Request URL: /microblog-2/apis/followers/viewFollowing?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\View\View.php(470): View->_getViewFileName('Followers\\view_...')
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-09 17:23:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Followee.first_name' in 'field list'
+Request URL: /microblog-2/apis/followers/viewFollowing?token=%242a%2410%242F1VEH4C14XtY3WWbihbKup9fUahSDbgOQt9ilHFXhKruCfgrMDpS&id=214
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Followe...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Followe...', Array, Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Followe...', Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3053): DboSource->read(Object(Follower), Array)
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(3025): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(17): Model->find('all', Array)
+#7 [internal function]: FollowersController->viewFollowing()
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#11 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
