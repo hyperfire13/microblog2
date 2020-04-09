@@ -459,7 +459,8 @@ microblogApp.controller('profileCtrl',
      
     }
     $scope.showMyBlogs = function (realTime) {
-      $scope.blogs = null;
+      //$scope.blogs = null;
+      $scope.fetching = true;
       $timeout(function () {
         $http({
           method:'GET',
@@ -473,6 +474,7 @@ microblogApp.controller('profileCtrl',
               $scope.blogs  = response.data.record;
               $scope.request.total = response.data.total;
               $scope.totalPages = response.data.totalPages;
+              $scope.fetching = false;
               console.log($scope.blogs);
           } else if (response.data.status === 'failed') {
               $scope.blogs = []
@@ -484,6 +486,13 @@ microblogApp.controller('profileCtrl',
       }, 2000);
      
     }
+    $scope.showMyFollowers = function () {
+      $scope.fetching = true;
+      $timeout(function () {
+        $scope.fetching = false;
+        $scope.followers = [];
+      },2000);
+    };
     jQuery('#fileId').change(function(e) {
       var reader = new FileReader();
       var imageInput = jQuery('#fileId');

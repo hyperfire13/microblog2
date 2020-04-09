@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html  ng-app="microblogApp" ng-cloak>
+<html  ng-app="microblogApp" >
   <head>
     <?php $version = '1a';?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/microblog-2/">
-    <link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css?ver=<?php echo $version; ?>">
+    <link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css">
     <!-- <link rel="stylesheet" type="text/css" href="dependencies/css/custom.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/main.css?ver=<?php echo $version; ?>">
-    <link href="css/simple-sidebar.css?ver=<?php echo $version; ?>" rel="stylesheet">
-    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/all.min.css?ver=<?php echo $version; ?>">
-    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/fontawesome-animation.min.css?ver=<?php echo $version; ?>">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/all.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/fontawesome-animation.min.css">
     <link rel="stylesheet" href="dependencies/jGrowl-1.2.7/jquery.jgrowl.css">
     <script type = "text/javascript" src = "dependencies/angularjs/angular.min.js"></script>
     <script type = "text/javascript" src = "dependencies/angularjs/angular-route.min.js"></script>
     <title>Microblog</title>
   </head>
-  <body>
+  <body ng-cloak>
     <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
       <div class="bg-warning border-right" id="sidebar-wrapper">

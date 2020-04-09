@@ -40,7 +40,7 @@
       'Share' => array(
         'className' => 'Post',
         'foreignKey' => 'post_id',
-        // 'conditions' => array('Share.post_id = post_id'),
+        'conditions' => array('Share.deleted' => 1),
         'dependent' => true
       )
   ) ;
@@ -92,6 +92,10 @@
     );
     
     public function beforeSave($options = array()) {
+      
+      if (isset($this->data[$this->alias]['post'])) {
+          $this->data[$this->alias]['post'] = $this->clean_string($this->data[$this->alias]['post']);
+      }
       return true;
     }
     public function afterFind($results, $primary = false) {

@@ -30,4 +30,18 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+
+  public function clean_string($value) {
+
+    // Removes leading and trailing spaces
+    $data = trim($value);
+
+    // Removes Unwanted Characters
+    $data = filter_var($data, FILTER_SANITIZE_STRING);
+
+    // Sanitizes HTML Characters
+    $data = htmlspecialchars_decode($data, ENT_QUOTES);
+
+    return $data;
+  }
 }

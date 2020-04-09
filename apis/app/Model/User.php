@@ -93,6 +93,19 @@
               $this->data[$this->alias]['password']
           );
       }
+      if (isset($this->data[$this->alias]['first_name'])) {
+          $this->data[$this->alias]['first_name'] = trim($this->clean_string($this->data[$this->alias]['first_name']),'"');
+      }
+      if (isset($this->data[$this->alias]['middle_name'])) {
+          $this->data[$this->alias]['middle_name'] = trim($this->clean_string($this->data[$this->alias]['middle_name']),'"');
+      }
+      if (isset($this->data[$this->alias]['last_name'])) {
+          $this->data[$this->alias]['last_name'] = trim($this->clean_string($this->data[$this->alias]['last_name']),'"');
+      }
+      if (isset($this->data[$this->alias]['username'])) {
+          $this->data[$this->alias]['username'] = $this->clean_string($this->data[$this->alias]['username']);
+      }
+      
       return true;
     }
   }

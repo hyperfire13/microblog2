@@ -48,5 +48,13 @@
         )
       )
     );
+
+    public function beforeSave($options = array()) {
+      
+      if (isset($this->data[$this->alias]['comment'])) {
+          $this->data[$this->alias]['comment'] = $this->clean_string($this->data[$this->alias]['comment']);
+      }
+      return true;
+    }
   }
 ?>

@@ -6,7 +6,7 @@
     <a ng-click="showMyBlogs(true)" class="nav-link " data-toggle="tab" href="#blogs"><span class="fa fa-pen-square"></span>&nbsp;My Blogs</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link " data-toggle="tab" href="#followers"><span class="fa fa-users"></span>&nbsp;Followers</a>
+    <a ng-click="showMyFollowers(true)" class="nav-link " data-toggle="tab" href="#followers"><span class="fa fa-users"></span>&nbsp;Followers</a>
   </li>
   <li class="nav-item">
     <a class="nav-link " data-toggle="tab" href="#following"><span class="fa fa-users"></span>&nbsp;Following</a>
@@ -47,7 +47,7 @@
   </div>
   <div class="tab-pane fade  show" id="blogs" ng-cloak>
     <div class="d-flex justify-content-center">
-      <div ng-show="!blogs" class="spinner-border text-primary" role="status">
+      <div ng-show="fetching" class="spinner-border text-primary" role="status">
         <span  class="sr-only">Loading...</span>
       </div>
       <div ng-show="blogs.length === 0" class=" text-primary" role="status">
@@ -117,7 +117,23 @@
     <div class="clearfix"></div>
   </div>
   <div class="tab-pane fade" id="followers">
-    followers
+    <div class="col-md-6">
+      <div class="d-flex justify-content-center">
+        <div ng-show="fetching" class="spinner-border text-primary" role="status">
+          <span  class="sr-only">Loading...</span>
+        </div>
+        <div ng-show="followers.length === 0" class=" text-primary" role="status">
+          <p >No Followers yet</p>
+        </div>
+      </div>
+      <ul class="list-group" ng-show="followers.length > 0">
+        <li ng-repeat="follower in followers" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
+          <img id="postProfilePic"  ng-src="pic-profiles/{{comment.User.image}}" alt="..." alt=""  class="rounded float-left">
+          <div class="blogger-name text-warning"style=" margin-bottom: 0px;margin-top: 8px;">
+            Kenneth pogi
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="tab-pane fade" id="following">
     following

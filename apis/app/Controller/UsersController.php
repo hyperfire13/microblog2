@@ -24,8 +24,11 @@
               $duplicateCount = $this->User->find('count', array(
                   'conditions' => array('User.username' => $data['username'])
               ));
+              $duplicateEmail = $this->User->find('count', array(
+                'conditions' => array('User.email' => $data['email'])
+              ));
               // check if username is existing
-              if ($duplicateCount === 0) {
+              if ($duplicateCount === 0 && $duplicateEmail === 0) {
                   // saving user
                   if ($this->User->save($data)) {
                       $this->Flash->success(__('The user has been saved'));
@@ -41,7 +44,7 @@
                   }
               } else {
                     // response if email/username is existing
-                    $this->promtMessage = array('status'=>'failed','message'=>'Username already taken');
+                    $this->promtMessage = array('status'=>'failed','message'=>'Username/Email already taken');
               }
           }
       }

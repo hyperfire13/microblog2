@@ -40,7 +40,8 @@ function login () {
             if (status === 'success') {
               moduleRequested = "login";
               localStorage.setItem('token',response.token);
-              showSuccess(response.message);
+              location.href = "main/#!home";
+              //showSuccess(response.message);
             } else if (status === 'failed') {
               $("#usernameLogin").addClass("is-invalid");
               $("#passwordLogin").addClass("is-invalid");
