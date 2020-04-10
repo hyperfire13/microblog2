@@ -31,6 +31,17 @@ microblogApp.controller('profileCtrl',
       page : 1,
       total : 0
     };
+    $scope.followerPageSize = 3;
+    $scope.followerTotalPages = 0;
+    $scope.followingTotalPages = 0;
+    $scope.followerRequest = {
+      page : 1,
+      total : 0
+    };
+    $scope.followingRequest = {
+      page : 1,
+      total : 0
+    };
     $scope.delete = {
       id : '',
       post : ''
@@ -40,6 +51,7 @@ microblogApp.controller('profileCtrl',
       post : '',
       images : []
     };
+    $scope.followings = [];
     $scope.followers = [];
     $scope.displayComments = [];
     $scope.pictureChange = false;
@@ -61,7 +73,6 @@ microblogApp.controller('profileCtrl',
       var parts = filename.split('.');
       return parts[parts.length - 1];
     };
-
     $scope.isImage = function(filename) {
       var ext = $scope.getExtension(filename);
       switch (ext.toLowerCase()) {
@@ -72,15 +83,12 @@ microblogApp.controller('profileCtrl',
       }
       return false;
     };
-
     $scope.removeNewPhoto = function () {
       $scope.imageGenerator--;
     }
-    
     $scope.removeExistingPhoto = function (index) {
       $scope.editPost.images.splice(index,1);
     }
-
     $scope.addImageSelector  = function () {
       if (($scope.editPost.images.length + $scope.imageGenerator)  > 2) {
           handler.growler('Max of 3 images only');
@@ -88,7 +96,6 @@ microblogApp.controller('profileCtrl',
           $scope.imageGenerator++;
       }
     }
-
     $scope.sharePost = function (postId) {
       $http({
         method:'POST',
@@ -110,7 +117,6 @@ microblogApp.controller('profileCtrl',
         }
       });
     }
-
     $scope.saveComment = function (index,myComment) {
       alert(index)
       if (myComment === undefined) {
@@ -142,7 +148,6 @@ microblogApp.controller('profileCtrl',
           });
       }
     }
-
     $scope.showComments = function (postId,index) {
       bakcupIndex = index;
       backupPostId = postId;
@@ -481,27 +486,73 @@ microblogApp.controller('profileCtrl',
       }, 2000);
      
     }
-    $scope.showMyFollowers = function () {
+    $scope.showPeople = function () {
       $scope.fetching = true;
       $timeout(function () {
         $http({
           method:'GET',
-          url:'apis/followers/viewFollowing'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id,
+          url:'apis/followers/viewPeople'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.followerRequest.page+'&size='+$scope.followerPageSize,
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
-          $timeout(function () {
-            $scope.fetching = false;
-          }, 2000);
+          $scope.fetching = false;
           if (response.data.status === 'success') {
               $scope.followers  = response.data.followers;
+              $scope.followings  = response.data.followings;
+              $scope.followerRequest.total = response.data.totalFollowers;
+              $scope.followingRequest.total = response.data.totalFollowings;
+              $scope.followerTotalPages = response.data.followerTotalPages;
+              $scope.followingTotalPages = response.data.followingTotalPages;
           } else if (response.data.status === 'failed') {
               $scope.followers = [];
+              $scope.following = [];
           } else {
               handler.unknown();
           }
         });
       }, 2000);
     };
+    $scope.unfollow = function (id) {
+      $scope.fetching = true;
+      $http({
+        method:'POST',
+        url:'apis/followers/unfollow',
+        data : {
+          token : localStorage.getItem('token'),
+          user_id : $rootScope.user.id,
+          id : id
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+      }).then(function mySuccess(response) {
+        if (response.data.status === 'success') {
+            $scope.showPeople();
+        } else if (response.data.status === 'failed') {
+            handler.growler(response.data.message);
+        } else {
+            
+        }
+      });
+    }
+    $scope.follow = function (id) {
+      $scope.fetching = true;
+      $http({
+        method:'POST',
+        url:'apis/followers/follow',
+        data : {
+          token : localStorage.getItem('token'),
+          user_id : $rootScope.user.id,
+          following_id : id
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+      }).then(function mySuccess(response) {
+        if (response.data.status === 'success') {
+            $scope.showPeople();
+        } else if (response.data.status === 'failed') {
+            handler.growler(response.data.message);
+        } else {
+            
+        }
+      });
+    }
     jQuery('#fileId').change(function(e) {
       var reader = new FileReader();
       var imageInput = jQuery('#fileId');

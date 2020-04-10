@@ -6,10 +6,10 @@
     <a ng-click="showMyBlogs(true)" class="nav-link " data-toggle="tab" href="#blogs"><span class="fa fa-pen-square"></span>&nbsp;My Blogs</a>
   </li>
   <li class="nav-item">
-    <a ng-click="showMyFollowers(true)" class="nav-link " data-toggle="tab" href="#followers"><span class="fa fa-users"></span>&nbsp;Followers</a>
+    <a ng-click="showPeople()" class="nav-link " data-toggle="tab" href="#followers"><span class="fa fa-users"></span>&nbsp;Followers</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link " data-toggle="tab" href="#following"><span class="fa fa-users"></span>&nbsp;Following</a>
+    <a ng-click="showPeople()" class="nav-link " data-toggle="tab" href="#following"><span class="fa fa-users"></span>&nbsp;Following</a>
   </li>
 </ul> 
 <div id="myTabContent" class="tab-content">
@@ -123,20 +123,55 @@
           <span  class="sr-only">Loading...</span>
         </div>
         <div ng-show="followers.length === 0" class=" text-primary" role="status">
-          <p >No Followers yet</p>
+          <p>No Followers yet</p>
         </div>
       </div>
       <ul class="list-group" ng-show="followers.length > 0">
         <li ng-repeat="follower in followers" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
-          <img id="postProfilePic"  ng-src="pic-profiles/{{comment.User.image}}" alt="..." alt=""  class="rounded float-left">
+          <img id="postProfilePic"  ng-src="pic-profiles/{{follower.MyFollower.image}}" alt="..." alt=""  class="rounded float-left">
           <div class="blogger-name text-warning"style=" margin-bottom: 0px;margin-top: 8px;">
-            Kenneth pogi
+            {{follower.MyFollower.first_name}} {{follower.MyFollower.last_name}}
+            <span ng-show="follower.MyFollower.followed" class="badge badge-warning float-right">Following</span>
+            <button ng-show="!follower.MyFollower.followed" ng-click="follow(follower.MyFollower.id)" type="submit" class="btn btn-outline-warning float-right" >Follow</button>
         </li>
       </ul>
     </div>
+    <div class="float-left">
+      Showing <b>{{(followerPageSize * (followerRequest.page - 1)) + 1}}</b> to <b>{{(followerPageSize * (followerRequest.page - 1)) + followers.length}}</b> of <b class="text-primary">{{followerRequest.total}}</b> followers
+    </div>
+    <div class="float-right">
+      Page : <select class="custom-select" ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
+        <option ng-repeat="n in [].constructor(followerTotalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
+      </select> 
+    </div>
   </div>
   <div class="tab-pane fade" id="following">
-    following
+    <div class="col-md-6">
+      <div class="d-flex justify-content-center">
+        <div ng-show="fetching" class="spinner-border text-primary" role="status">
+          <span  class="sr-only">Loading...</span>
+        </div>
+        <div ng-show="followings.length === 0" class=" text-primary" role="status">
+          <p>You did not followed any people yet</p>
+        </div>
+      </div>
+      <ul class="list-group" ng-show="followings.length > 0">
+        <li ng-repeat="following in followings" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
+          <img id="postProfilePic"  ng-src="pic-profiles/{{following.MyFollowing.image}}" alt="..." alt=""  class="rounded float-left">
+          <div class="blogger-name text-warning"style=" margin-bottom: 0px;margin-top: 8px;">
+            {{following.MyFollowing.first_name}} {{following.MyFollowing.last_name}}
+            <button ng-click="unfollow(following.Follower.id)" type="submit" class="btn btn-outline-warning float-right" >Unfollow</button>
+        </li>
+      </ul>
+    </div>
+    <div class="float-left">
+      Showing <b>{{(followerPageSize * (followerRequest.page - 1)) + 1}}</b> to <b>{{(followerPageSize * (followerRequest.page - 1)) + followings.length}}</b> of <b class="text-primary">{{$scope.followingRequest.total}}</b> followed
+    </div>
+    <div class="float-right">
+      Page : <select class="custom-select" ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
+        <option ng-repeat="n in [].constructor(followingTotalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
+      </select> 
+    </div>
   </div>
 </div>
 <!-- edit Profile Modal -->

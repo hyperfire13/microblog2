@@ -5,13 +5,14 @@
     public $belongsTo  = array(
       'MyFollower' => array (
         'className' => 'User',
-        'fields' => array('MyFollower.first_name','MyFollower.last_name'),
+        'fields' => array('MyFollower.id','MyFollower.first_name','MyFollower.last_name','MyFollower.image'),
         'foreignKey' => 'user_id',
+        'conditions' => array('MyFollower.deleted' => '1'),
         'dependent' => true
       ),
       'MyFollowing' => array (
         'className' => 'User',
-        'fields' => array('MyFollowing.first_name','MyFollowing.last_name'),
+        'fields' => array('MyFollowing.id','MyFollowing.first_name','MyFollowing.last_name','MyFollowing.image'),
         'foreignKey' => 'following_id',
         'conditions' => array('MyFollowing.deleted' => '1'),
         'dependent' => true
