@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  ng-app="microblogApp" >
   <head>
-    <?php $version = '2';?>
+    <?php $version = '3.0.0';?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/microblog-2/">
@@ -11,6 +11,7 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/all.min.css">
     <link rel = "stylesheet" type = "text/css" href = "dependencies/fontawesome/css/fontawesome-animation.min.css">
+    <link href="dependencies/bootstrap-select-1.13.1/css/bootstrap-select.min.css" rel="stylesheet">
     <link rel="stylesheet" href="dependencies/jGrowl-1.2.7/jquery.jgrowl.css">
     <script type = "text/javascript" src = "dependencies/angularjs/angular.min.js"></script>
     <script type = "text/javascript" src = "dependencies/angularjs/angular-route.min.js"></script>
@@ -92,6 +93,7 @@
     <script type="text/javascript" src ="dependencies/angularjs/angular-sanitize.min.js"></script>
     <script type="text/javascript" src="dependencies/angularjs/angular-pagination-2.2.2/src/paging.js"></script>
     <script src="dependencies/jGrowl-1.2.7/jquery.jgrowl.js"></script>
+    <script src="dependencies/bootstrap-select-1.13.1/js/bootstrap-select.min.js" charset="utf-8" charset="utf-8"></script>
 
     <script type="text/javascript" src ="js/main/main.js?ver=<?php echo $version; ?>"></script>
     <script type="text/javascript" src ="js/main/main-ctrl.js?ver=<?php echo $version; ?>"></script>

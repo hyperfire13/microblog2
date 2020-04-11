@@ -219,7 +219,111 @@ microblogApp.controller('homeCtrl',
           }
         });
       }, 2000);
-     
+    }
+    $scope.likePost = function (postId,index) {
+      $http({
+        method:'POST',
+        url:'apis/likes/likePost',
+        data : {
+          token : localStorage.getItem('token'),
+          user_id : $rootScope.user.id,
+          post_id : postId
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+      }).then(function mySuccess(response) {
+        if (response.data.status === 'success') {
+          $scope.likeAdd = 0;
+           handler.growler('you  liked this post');
+           $scope.blogs[index].Like.push('');
+           //$scope.likeAdd = 1;
+        } else if (response.data.status === 'failed') {
+            handler.growler('you already liked this post');
+        } else {
+            
+        }
+      });
+    }
+    $scope.sharePost = function (postId) {
+      $http({
+        method:'POST',
+        url:'apis/posts/sharePost',
+        data : {
+          token : localStorage.getItem('token'),
+          user_id : $rootScope.user.id,
+          post_id : postId,
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+      }).then(function mySuccess(response) {
+        if (response.data.status === 'success') {
+           handler.growler('you shared this post');
+           $scope.viewAllBlogs();
+        } else if (response.data.status === 'failed') {
+            handler.growler(response.data.message);
+        } else {
+            handler.unknown();
+        }
+      });
+    }
+    $scope.showComments = function (postId,index) {
+      bakcupIndex = index;
+      backupPostId = postId;
+      $scope.displayComments = [];
+      $('#commentModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+      $timeout(function () {
+        
+        $http({
+          method:'GET',
+          url:'apis/comments/viewComments'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&postId='+postId,
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        }).then(function mySuccess(response) {
+          $timeout(function () {
+           // handler.showLoading(false,"");
+          }, 2000);
+          if (response.data.status === 'success') {
+              
+              $scope.displayComments  = response.data.record;
+          } else if (response.data.status === 'failed') {
+              $scope.displayComments = null;
+          } else {
+              handler.unknown();
+          }
+        });
+      }, 2000);
+    }
+    $scope.saveComment = function (index,myComment) {
+      alert(index)
+      if (myComment === undefined) {
+          handler.growler('enter a comment');
+      } else {
+          $scope.saving = true;
+          $http({
+            method:'POST',
+            url:'apis/comments/saveComment',
+            data : {
+              token : localStorage.getItem('token'),
+              user_id : $rootScope.user.id,
+              post_id : backupPostId,
+              comment : myComment
+            },
+            headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+          }).then(function mySuccess(response) {
+            if (response.data.status === 'success') {
+              $scope.saving = false;
+              handler.growler('comment saved');
+              $scope.showComments(backupPostId);
+            } else if (response.data.status === 'failed') {
+                handler.growler(response.data.message);
+                $scope.saving = false;
+            } else {
+                handler.unknown();
+                $scope.saving = false;
+            }
+          });
+      }
     }
     $scope.viewAllBlogs();
 

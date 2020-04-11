@@ -385,7 +385,9 @@ microblogApp.controller('profileCtrl',
                 handler.growler("Image Successfully Updated");
                 jQuery('#picPreview').attr('src', null);
                 $scope.pictureChange = false;
-                location.reload();
+                $timeout(function () {
+                  $rootScope.getProfile();
+                }, 2000);
             } else if (response.status === 'empty') {
                 handler.growler("Please choose an image");
             } else if (response.status !== 'success') {

@@ -75,7 +75,7 @@ function auth () {
     success: function(data) {
       var response = data;
       if (response.status === "success") {
-          location.href = "main/#!home";;
+          location.href = "main/#!home";
       } 
     },
     error: function() {

@@ -53,6 +53,9 @@
       <div ng-show="blogs.length === 0" class=" text-primary" role="status">
         <p >No blogs yet</p>
       </div>
+      <div ng-show="!fetching" class=" text-primary" role="status">
+        <button ng-click="showMyBlogs()" type="submit" class="btn btn-warning" >Refresh</button>
+      </div>
     </div>
     <ul ng-show="blogs.length > 0" class="list-group">
       <li class="list-group-item  align-items-center blog-post" ng-repeat="blog in blogs">
@@ -69,14 +72,14 @@
             <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
           </div>
           <div ng-show="blog.Post.post_id">
-            <div class="card border-default">
+            <div class="card border-default" style="margin-top: 29px;">
               <div class="card-body">
                 <img id="postProfilePic"  ng-src="pic-profiles/{{blog.RetweetOwner.image}}" alt="..." alt=""  class="rounded float-left">
                 <div class="blogger-name text-warning">
                   {{blog.RetweetOwner.first_name}} {{blog.RetweetOwner.last_name}}
                   <small>({{blog.Retweet.modified}})</small>
                 </div>
-                <p class="blogger-post">{{blog.Retweet.post}}</p>
+                <p class="blogger-post" style="margin-top: 30px;padding-left: 0px;">{{blog.Retweet.post}}</p>
                 <div ng-show="blog.Retweet.images.length > 0">
                   <img ng-repeat="n in [].constructor(blog.Retweet.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Retweet.images[$index]}}" alt="">
                 </div>
@@ -104,24 +107,15 @@
         <option ng-repeat="n in [].constructor(totalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
       </select> 
     </div>
-    <!-- <div id="paginator"
-      class="float-right"
-      paging
-      page="request.page"
-      page-size="pageSize"
-      total="request.total"
-      show-prev-next="true"
-      show-first-last="true"
-      text-first-class="btn btn-warning fa fa-fast-backward"
-      text-last-class="btn btn-warning fa fa-fast-forward"
-      text-next-class="btn btn-warning fa fa-arrow-right"
-      text-prev-class="btn btn-warning fa fa-arrow-left"
-      paging-action="showMyBlogs()"
-      ng-if="blogs.length > 0">
-    </div> -->
     <div class="clearfix"></div>
   </div>
   <div class="tab-pane fade" id="followers">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2  border-bottom">
+    <div class="btn-group mr-2">
+      <input type="text" name="search" class="form-control" placeholder="find followers..." id="search" required>
+      <button class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
+    </div>
+  </div>
     <div class="col-md-6">
       <div class="d-flex justify-content-center">
         <div ng-show="fetching" class="spinner-border text-primary" role="status">
@@ -150,7 +144,7 @@
           <span  class="sr-only">Loading...</span>
         </div>
       </div>
-      Page : <select class="custom-select" ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
+      Page : <select class="custom-select " ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
         <option ng-repeat="n in [].constructor(followerTotalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
       </select> 
     </div>
