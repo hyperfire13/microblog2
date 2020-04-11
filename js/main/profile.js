@@ -477,7 +477,8 @@ microblogApp.controller('profileCtrl',
               $scope.fetching = false;
               console.log($scope.blogs);
           } else if (response.data.status === 'failed') {
-              $scope.blogs = []
+              $scope.blogs = [];
+              $scope.fetching = false;
               handler.growler(response.data.message);
           } else {
               handler.unknown();

@@ -26,7 +26,7 @@ microblogApp.config(['$routeProvider',function($routeProvider) {
     '/home' : {
       templateUrl:"main/home.php",
       controller:"homeCtrl",
-      // css:"css/main/home.css",
+      css:"css/main/home.css",
       js:"js/main/home.js",
       requireLogin	:	true
     },'/profile' : {

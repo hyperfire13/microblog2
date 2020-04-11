@@ -6,7 +6,7 @@
     public $belongsTo  = array(
       'User' => array (
         'className' => 'User',
-        'fields' => array('User.first_name','User.last_name'),
+        'fields' => array('User.id','User.first_name','User.last_name','User.image'),
         'foreignKey' => 'user_id',
         'dependent' => true
       ),

@@ -19,6 +19,208 @@ microblogApp.controller('homeCtrl',
     handler
   ) {
 
-    
+    $scope.pageSize = 5;
+    $scope.totalPages = 0;
+    $scope.request = {
+      page : 1,
+      total : 0
+    };
+    $scope.delete = {
+      id : '',
+      post : ''
+    };
+    $scope.editPost = {
+      id : '',
+      post : '',
+      images : []
+    };
+    $scope.removeNewPhoto = function () {
+      $scope.imageGenerator--;
+    }
+    $scope.removeExistingPhoto = function (index) {
+      $scope.editPost.images.splice(index,1);
+    }
+    $scope.addImageSelector  = function () {
+      if (($scope.editPost.images.length + $scope.imageGenerator)  > 2) {
+          handler.growler('Max of 3 images only');
+      } else {
+          $scope.imageGenerator++;
+      }
+    }
+    $scope.getExtension = function(filename) {
+      var parts = filename.split('.');
+      return parts[parts.length - 1];
+    };
+    $scope.isImage = function(filename) {
+      var ext = $scope.getExtension(filename);
+      switch (ext.toLowerCase()) {
+        case 'jpg':
+        case 'jpeg':
+        case 'png':
+        return true;
+      }
+      return false;
+    };
+    $scope.viewImage = function (element, index) {
+      var reader = new FileReader();
+      var imageInput = jQuery('#'+element.id);
+      var imagePreview = jQuery('#picPreview-'+element.id);
+      var imageFile = imageInput[0].files[0];
+      var imageName = imageFile.name;
+      reader.onload = function(e) {
+        $scope.$apply();
+        imagePreview.attr('src', e.target.result);
+      };
+      if ($scope.isImage(imageName)) {
+          reader.readAsDataURL(imageFile);
+          $scope.photoSelected = true;
+          
+      } else {
+          handler.growler('Accepts only .jpg, .jpeg, .png image format');
+          //alert();
+          $scope.photoSelected = false;
+          jQuery('#picPreview-'+element.id).attr('src', null);
+          jQuery('#'+element.id).val(null);
+      }
+    }
+    $scope.saveEditPost = function () {
+      if ($scope.editPost.post.length > 150) {
+          handler.growler('your blog should not be more than 150 characters');
+      } 
+      else {
+          var form_data = new FormData();
+          if ($scope.imageGenerator > 0) {
+              for (let id = 0; id < $scope.imageGenerator; id++) {
+                form_data.append("file[]", $("#"+id)[0].files[0]);
+              }
+          }
+          form_data.append("token", localStorage.getItem('token'));
+          form_data.append("user_id", $rootScope.user.id);
+          form_data.append("post_id", $scope.editPost.id);
+          form_data.append("post", $scope.editPost.post);
+          form_data.append("existing_pics",JSON.stringify($scope.editPost.images));
+          handler.showLoading(true,"Editing your blog...");
+          $timeout(function () {
+            $.ajax({
+              method: 'POST',
+              data: form_data ,
+              processData: false,
+              contentType: false,
+              url: 'apis/posts/editPost',
+              success: function(data) {
+                var response = data;
+                $timeout(function () {
+                  handler.showLoading(false,"");
+                }, 2000);
+                if (response.status === 'success') {
+                    handler.growler(response.message);
+                    $scope.editPost = {
+                      id : '',
+                      post : '',
+                      images : ''
+                    };
+                    $scope.imageGenerator = 0;
+                    $('#editPostModal').modal('hide');
+                    $scope.viewAllBlogs();
+                } else if (response.status === 'failed') {
+                    handler.growler(response.message);
+                } else if (response.status !== 'success') {
+                    handler.unknown();
+                }
+              },
+              error: function() {
+                setTimeout(function() {
+                  handler.showLoading(false,"");
+                }, 1000);
+                setTimeout(function() {
+                  handler.growler("Something went wrong","It's not on you,It's on us");
+                },1000);
+              }
+            }); 
+          }, 2000);
+      }
+    }
+    $scope.editPostPrompt = function (post) {
+     
+      $scope.imageGenerator = 0;
+      $scope.editPost.id = post.id;
+      $scope.editPost.post = post.post;
+      if (post.images !== null) {
+        $scope.editPost.images = post.images.slice();
+      }
+      
+      $('#editPostModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+    }
+    $scope.deletePostPrompt = function (id,post) {
+      $scope.delete.id = id;
+      $scope.delete.post = post;
+      $('#deleteModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+    }
+    $scope.deletePost = function (id) {
+      handler.showLoading(true,"Deleting this post...");
+      $timeout(function () {
+        $http({
+          method:'POST',
+          url:'apis/posts/deletePost',
+          data : {
+            token : localStorage.getItem('token'),
+            user_id : $rootScope.user.id,
+            post_id : id
+          },
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        }).then(function mySuccess(response) {
+          $timeout(function () {
+            handler.showLoading(false,"");
+          }, 2000);
+          if (response.data.status === 'success') {
+              handler.growler("Post successfuilly deleted!");
+              $('#deleteModal').modal('hide');
+              $scope.viewAllBlogs();
+          } else if (response.data.status === 'failed') {
+              handler.growler(response.data.message);
+          } else {
+              handler.unknown();
+          }
+        });
+      }, 2000);
+    }
+    $scope.viewAllBlogs = function (realTime) {
+      //$scope.blogs = null;
+      $scope.fetching = true;
+      $timeout(function () {
+        $http({
+          method:'GET',
+          url:'apis/posts/viewAllBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.request.page+'&size='+$scope.pageSize,
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        }).then(function mySuccess(response) {
+          $timeout(function () {
+           // handler.showLoading(false,"");
+          }, 2000);
+          if (response.data.status === 'success') {
+              $scope.blogs  = response.data.record;
+              $scope.request.total = response.data.total;
+              $scope.totalPages = response.data.totalPages;
+              $scope.fetching = false;
+              console.log($scope.blogs);
+          } else if (response.data.status === 'failed') {
+              $scope.blogs = [];
+              $scope.fetching = false;
+              handler.growler(response.data.message);
+          } else {
+              handler.unknown();
+          }
+        });
+      }, 2000);
+     
+    }
+    $scope.viewAllBlogs();
 
   }]);
