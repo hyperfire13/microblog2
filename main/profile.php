@@ -3,7 +3,7 @@
     <a  class="nav-link active" data-toggle="tab" href="#about"><span class="fa fa-user "></span>&nbsp;About me</a>
   </li>
   <li class="nav-item">
-    <a ng-click="showMyBlogs(true)" class="nav-link " data-toggle="tab" href="#blogs"><span class="fa fa-pen-square"></span>&nbsp;My Blogs</a>
+    <a ng-click="showMyBlogs()" class="nav-link " data-toggle="tab" href="#blogs"><span class="fa fa-pen-square"></span>&nbsp;My Blogs</a>
   </li>
   <li class="nav-item">
     <a ng-click="showPeople()" class="nav-link " data-toggle="tab" href="#followers"><span class="fa fa-users"></span>&nbsp;Followers</a>
@@ -103,9 +103,15 @@
           <span  class="sr-only">Loading...</span>
         </div>
       </div>
-      Page : <select class="custom-select" ng-init="request.page=1" ng-model="request.page" ng-change="showMyBlogs()">
-        <option ng-repeat="n in [].constructor(totalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
-      </select> 
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button id="paginatorBtn" type="button" class="btn btn-success">Page</button>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
+            <a ng-click="showMyBlogs($index+1)" ng-repeat="n in [].constructor(totalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
+          </div>
+        </div>
+      </div> 
     </div>
     <div class="clearfix"></div>
   </div>

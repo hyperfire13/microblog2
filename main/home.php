@@ -1,10 +1,10 @@
 <div class="container-fluid">
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Blogs{{user.id}}</h1>
+    <h1 class="h2">Blogs</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
       <div class="btn-group mr-2">
-        <input type="text" name="search" class="form-control" placeholder="find blogs..." id="search" required>
-        <button class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
+        <input type="text" ng-model="findBlog" name="search" class="form-control" placeholder="find blogs..." id="search" required>
+        <button ng-click="searchBlogs(findBlog)" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
       </div>
     </div>
   </div>
@@ -61,19 +61,16 @@
   </div>
   <div class="float-right">
     <div class="d-flex justify-content-center">
-        <div ng-show="fetching" class="spinner-border text-primary" role="status">
-          <span  class="sr-only">Loading...</span>
-        </div>
+      <div ng-show="fetching" class="spinner-border text-primary" role="status">
+        <span  class="sr-only">Loading...</span>
       </div>
-    Page : <select class="custom-select" ng-init="request.page=1" ng-model="request.page" ng-change="viewAllBlogs()">
-      <option ng-repeat="n in [].constructor(totalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
-    </select> 
+    </div>
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-      <button type="button" class="btn btn-success">Page</button>
+      <button id="paginatorBtn" type="button" class="btn btn-success">Page</button>
       <div class="btn-group" role="group">
         <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop2" style="">
-          <a ng-model="request.page" ng-click="viewAllBlogs()" ng-repeat="n in [].constructor(totalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
+          <a ng-click="viewAllBlogs($index+1)" ng-repeat="n in [].constructor(totalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
         </div>
       </div>
     </div>
@@ -202,6 +199,52 @@
         </div>
         <textarea ng-show="!saving" class="form-control" ng-model="myComment" id="comment" rows="3" placeholder="enter comment" required></textarea>
         <button ng-show="!saving" type="submit" class="btn btn-success" ng-click="saveComment($index,myComment)">Comment</button>
+        <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- search modal Modal -->
+<div id="searchModal" class="modal fade " tabindex="-1" role="dialog">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content bg-warning text-white">
+      <div class="modal-header">
+        <h5  class="modal-title">Blogs related to "{{findBlog}}"</h5>
+      </div>
+      <div ng-show="searchBlogResult.length <= 0" class="modal-body d-flex justify-content-center">
+       
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <div>
+      <div ng-show="!searchBlogResult" class="modal-body d-flex justify-content-center">
+        <p >No results Found</p>
+      </div>
+      <ul ng-show="searchBlogResult.length > 0" class="list-group">
+        <li class="list-group-item  align-items-center blog-post" ng-repeat="blog in searchBlogResult">
+          <img id="postProfilePic"  ng-src="pic-profiles/{{blog.User.image}}" alt="..." alt=""  class="rounded float-left">
+          <div class="blogger-name text-warning">
+            {{blog.User.first_name}} {{blog.User.last_name}}
+            <small>({{blog.Post.modified}})</small>
+            <span ng-show="blog.User.id === user.id" ng-click="deletePostPrompt(blog.Post.id,blog.Post.post)" data-toggle="tooltip" title="Delete post?"onmouseenter="$(this).tooltip('show');" class="fa fa-trash fa-lg"></span>
+            <span ng-show="blog.User.id === user.id" ng-click="editPostPrompt(blog.Post)" data-toggle="tooltip" title="Edit post?"onmouseenter="$(this).tooltip('show');" class="fa fa-pen-square fa-lg"></span>
+          </div>
+          <div class="blogger-post">
+            {{blog.Post.post}}
+            <div ng-cloak ng-show="blog.Post.images.length > 0">
+              <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
+            </div>
+            <div class="float-right">
+              <span ng-click="sharePost(blog.Post.post_id ? blog.Post.post_id : blog.Post.id)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{(blog.Share.length) + shareAdd}}&nbsp;</span>&nbsp;
+              <span ng-click="showComments(blog.Post.id,index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i>&nbsp;{{blog.Comment.length}}&nbsp;</span>&nbsp;
+              <span ng-click="likePost(blog.Post.id,$index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i>&nbsp;{{(blog.Like.length + likeAdd)}}&nbsp;</span>&nbsp;
+            </div>
+          </div>
+        </li>
+      </ul>
+      </div>
+      <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
         <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>

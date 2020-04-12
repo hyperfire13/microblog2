@@ -460,8 +460,12 @@ microblogApp.controller('profileCtrl',
       }
      
     }
-    $scope.showMyBlogs = function (realTime) {
-      //$scope.blogs = null;
+    $scope.showMyBlogs = function (pageNum) {
+      $scope.fetching = true;
+      if (pageNum) {
+          $scope.request.page = pageNum;
+      }
+      $('#paginatorBtn').text("Page "+ $scope.request.page);
       $scope.fetching = true;
       $timeout(function () {
         $http({

@@ -34,6 +34,42 @@ microblogApp.controller('homeCtrl',
       post : '',
       images : []
     };
+    $scope.searchBlogs = function (findBlog) {
+      $scope.searchBlogResult = [];
+      if (findBlog === undefined) {
+        
+      } else {
+          $('#searchModal').modal({
+            backdrop: 'static',
+            keyboard: false,
+            show : true
+          });
+          $timeout(function () {
+            $http({
+              method:'GET',
+              url:'apis/posts/searchAllBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.request.page+'&size='+$scope.pageSize+'&search='+findBlog,
+              headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+            }).then(function mySuccess(response) {
+              $timeout(function () {
+                // handler.showLoading(false,"");
+              }, 2000);
+              if (response.data.status === 'success') {
+                  $scope.searchBlogResult  = response.data.record;
+                  $scope.request.total = response.data.total;
+                  $scope.totalPages = response.data.totalPages;
+                  $scope.fetching = false;
+                  console.log($scope.searchBlogResult);
+              } else if (response.data.status === 'failed') {
+                  $scope.searchBlogResult = [];
+                  $scope.fetching = false;
+                  handler.growler(response.data.message);
+              } else {
+                  handler.unknown();
+              }
+            },handler.unknown());
+          }, 2000);
+      }
+    }
     $scope.removeNewPhoto = function () {
       $scope.imageGenerator--;
     }
@@ -192,9 +228,13 @@ microblogApp.controller('homeCtrl',
         });
       }, 2000);
     }
-    $scope.viewAllBlogs = function (realTime) {
+    $scope.viewAllBlogs = function (pageNum) {
       //$scope.blogs = null;
       $scope.fetching = true;
+      if (pageNum) {
+          $scope.request.page = pageNum;
+      }
+      $('#paginatorBtn').text("Page "+ $scope.request.page);
       $timeout(function () {
         $http({
           method:'GET',

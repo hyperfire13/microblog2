@@ -6867,3 +6867,25 @@ Stack Trace:
 #10 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
 #11 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2020-04-12 14:43:35 Error: [MissingActionException] Action PostsController::searchAllBlogs() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'searchAllBlogs',
+)
+Request URL: /microblog-2/apis/posts/searchAllBlogs?token=%242a%2410%24IRzbgr4hIauzMXwdMRFI8.oTrwk4jiT87lXvzWqB4T9sWzWcaUIWS&id=214&page=1&size=5&search=d
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-04-12 14:44:18 Error: [MissingActionException] Action PostsController::searchAllBlogs() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'searchAllBlogs',
+)
+Request URL: /microblog-2/apis/posts/searchAllBlogs?token=%242a%2410%24IRzbgr4hIauzMXwdMRFI8.oTrwk4jiT87lXvzWqB4T9sWzWcaUIWS&id=214&page=1&size=5&search=w
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

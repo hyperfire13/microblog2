@@ -240,36 +240,44 @@
       return $this->response->send();
     }
     public function sharePost () {
-        $this->layout = false;
-        $data = $this->request->input('json_decode', true);
-        if ($this->CheckRequest('post')) { 
-            if ($this->CheckSession('User.token')) { 
-                $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
-                $baseToken = $this->Session->read('User.token');
-                $baseId = $this->Session->read('User.id');
-                if ($data['token'] === $baseToken && $baseId === $data['user_id']) { 
-                    if (empty($data)) {
-                        $data = $this->request->data;
-                    } elseif (!empty($data)) { 
-                        if ($this->Post->save($data,true,['user_id','post_id'])) { 
-                            $this->promtMessage = array('status'=>'success','message'=>'You shared this post');
-                        } else {
-                            $errorList = ['Missing :'];
-                            $errors = $this->Post->validationErrors;
-                            foreach ($errors as $value) {
-                            array_push($errorList," ".$value[0]);
-                            } 
-                            $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
-                        }  
-                    }
-                } else {
-                    $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
-                }
-            }
-        }
-        $this->response->type('application/json');
-        $this->response->body(json_encode($this->promtMessage));
-        return $this->response->send();
+      $this->layout = false;
+      $data = $this->request->input('json_decode', true);
+      if ($this->CheckRequest('post')) { 
+          if ($this->CheckSession('User.token')) { 
+              $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
+              $baseToken = $this->Session->read('User.token');
+              $baseId = $this->Session->read('User.id');
+              if ($data['token'] === $baseToken && $baseId === $data['user_id']) { 
+                  if (empty($data)) {
+                      $data = $this->request->data;
+                  } elseif (!empty($data)) { 
+                      if ($this->Post->save($data,true,['user_id','post_id'])) { 
+                          $this->promtMessage = array('status'=>'success','message'=>'You shared this post');
+                      } else {
+                          $errorList = ['Missing :'];
+                          $errors = $this->Post->validationErrors;
+                          foreach ($errors as $value) {
+                          array_push($errorList," ".$value[0]);
+                          } 
+                          $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
+                      }  
+                  }
+              } else {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
+              }
+          }
       }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
+    public function searchAllBlogs () {
+      $this->layout = false;
+    echo  $userId = $this->cleanNumber($this->request->query('id'));
+    echo  $token = $this->cleanString($this->request->query('token'));
+    echo  $page = $this->cleanNumber($this->request->query('page'));
+    echo  $size = $this->cleanNumber($this->request->query('size'));
+    echo  $search = $this->cleanString($this->request->query('search'));
+    }
   }
 ?>
