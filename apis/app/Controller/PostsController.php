@@ -273,11 +273,48 @@
     }
     public function searchAllBlogs () {
       $this->layout = false;
-    echo  $userId = $this->cleanNumber($this->request->query('id'));
-    echo  $token = $this->cleanString($this->request->query('token'));
-    echo  $page = $this->cleanNumber($this->request->query('page'));
-    echo  $size = $this->cleanNumber($this->request->query('size'));
-    echo  $search = $this->cleanString($this->request->query('search'));
+      $userId = $this->cleanNumber($this->request->query('id'));
+      $token = $this->cleanString($this->request->query('token'));
+      $page = $this->cleanNumber($this->request->query('page'));
+      $size = $this->cleanNumber($this->request->query('size'));
+      $search = '%'.(empty($this->cleanString($this->request->query('search'))) ? 'blank' : $this->cleanString($this->request->query('search'))).'%';
+      if ($this->CheckRequest('get')) {
+          if ($this->CheckSession('User.token')) {
+              $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
+              $baseToken = $this->Session->read('User.token');
+              $baseId = $this->Session->read('User.id');
+              if ($token === $baseToken && $baseId === $userId) {
+                  $followingModel = new Follower();
+                  $offset = ($page - 1) * $size;
+                  $followingIds = [];
+                  $followings =  $followingModel->find('all',array(
+                    'conditions'=>array('Follower.user_id'=>$userId,'Follower.deleted'=>1),
+                    'order'=> array('Follower.created ASC'),
+                  ));
+                  for ($followingCount=0; $followingCount < sizeof($followings); $followingCount++) { 
+                      array_push($followingIds,$followings[$followingCount]['MyFollowing']['id']);
+                  }
+                  array_push($followingIds,$userId);
+                  $total = $this->Post->find('count', array(
+                    'conditions' => array('Post.user_id' => $followingIds,'Post.post LIKE' => $search,'Post.deleted'=>1)
+                  ));
+                  $blogs =  $this->Post->find('all',array(
+                    'conditions'=>array('Post.user_id'=>$followingIds,'Post.post LIKE' => $search,'Post.deleted'=>1),
+                    'limit'=>$size,
+                    'order'=> array('Post.created DESC'),
+                    'offset'=>$offset
+                  ));
+                  if (!empty($blogs)) {
+                      $this->promtMessage = array('status'=>'success','total'=>$total,'totalPages'=>(ceil($total/$size)),'record'=>$blogs);
+                  }
+              } else {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
+              }
+          }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
     }
   }
 ?>

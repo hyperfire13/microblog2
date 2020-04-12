@@ -18,10 +18,15 @@ microblogApp.controller('homeCtrl',
     $filter,
     handler
   ) {
-
+    $scope.findBlog = '';
     $scope.pageSize = 5;
+    $scope.searchRequesttotalPages =0;
     $scope.totalPages = 0;
     $scope.request = {
+      page : 1,
+      total : 0
+    };
+    $scope.searchRequest = {
       page : 1,
       total : 0
     };
@@ -34,41 +39,42 @@ microblogApp.controller('homeCtrl',
       post : '',
       images : []
     };
-    $scope.searchBlogs = function (findBlog) {
+    $scope.searchBlogs = function (page) {
       $scope.searchBlogResult = [];
-      if (findBlog === undefined) {
-        
-      } else {
-          $('#searchModal').modal({
-            backdrop: 'static',
-            keyboard: false,
-            show : true
-          });
+      $('#searchModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+      $scope.searchRequest.page = page;
+      alert($scope.searchRequest.page);
+      $scope.fetching = true;
+      $timeout(function () {
+        $http({
+          method:'GET',
+          url:'apis/posts/searchAllBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.searchRequest.page+'&size='+$scope.pageSize+'&search='+$scope.findBlog,
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        }).then(function mySuccess(response) {
           $timeout(function () {
-            $http({
-              method:'GET',
-              url:'apis/posts/searchAllBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.request.page+'&size='+$scope.pageSize+'&search='+findBlog,
-              headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
-            }).then(function mySuccess(response) {
-              $timeout(function () {
-                // handler.showLoading(false,"");
-              }, 2000);
-              if (response.data.status === 'success') {
-                  $scope.searchBlogResult  = response.data.record;
-                  $scope.request.total = response.data.total;
-                  $scope.totalPages = response.data.totalPages;
-                  $scope.fetching = false;
-                  console.log($scope.searchBlogResult);
-              } else if (response.data.status === 'failed') {
-                  $scope.searchBlogResult = [];
-                  $scope.fetching = false;
-                  handler.growler(response.data.message);
-              } else {
-                  handler.unknown();
-              }
-            },handler.unknown());
+            // handler.showLoading(false,"");
           }, 2000);
-      }
+          if (response.data.status === 'success') {
+              $scope.searchBlogResult  = response.data.record;
+              $scope.searchRequest.total = response.data.total;
+              $scope.searchRequesttotalPages = response.data.totalPages;
+              $scope.fetching = false;
+              console.log($scope.searchBlogResult);
+          } else if (response.data.status === 'failed') {
+              $scope.searchBlogResult = [];
+              $scope.fetching = false;
+              handler.growler(response.data.message);
+          } else {
+              handler.unknown();
+          }
+          $('#paginatorBtn2').text("Page "+ $scope.searchRequest.page);
+        });
+      }, 2000);
+      
     }
     $scope.removeNewPhoto = function () {
       $scope.imageGenerator--;
@@ -274,6 +280,7 @@ microblogApp.controller('homeCtrl',
         if (response.data.status === 'success') {
           $scope.likeAdd = 0;
            handler.growler('you  liked this post');
+           $('#commentModal').modal('hide');
            $scope.blogs[index].Like.push('');
            //$scope.likeAdd = 1;
         } else if (response.data.status === 'failed') {
@@ -296,6 +303,7 @@ microblogApp.controller('homeCtrl',
       }).then(function mySuccess(response) {
         if (response.data.status === 'success') {
            handler.growler('you shared this post');
+           $('#commentModal').modal('hide');
            $scope.viewAllBlogs();
         } else if (response.data.status === 'failed') {
             handler.growler(response.data.message);
@@ -308,6 +316,7 @@ microblogApp.controller('homeCtrl',
       bakcupIndex = index;
       backupPostId = postId;
       $scope.displayComments = [];
+      $('#searchModal').modal('hide');
       $('#commentModal').modal({
         backdrop: 'static',
         keyboard: false,

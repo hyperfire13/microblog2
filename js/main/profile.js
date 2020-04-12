@@ -31,6 +31,19 @@ microblogApp.controller('profileCtrl',
       page : 1,
       total : 0
     };
+    $scope.people = [];
+    $scope.searchName = '';
+    $scope.peoplePageSize = 3;
+    $scope.peopleTotalPages = 0;
+    $scope.peopleRequest = {
+      page : 1,
+      total : 0
+    };
+    $scope.searchFollowingRequest = {
+      page : 1,
+      total : 0
+    };
+
     $scope.followerPageSize = 3;
     $scope.followerTotalPages = 0;
     $scope.followingTotalPages = 0;
@@ -493,8 +506,11 @@ microblogApp.controller('profileCtrl',
       }, 2000);
      
     }
-    $scope.showPeople = function () {
+    $scope.showPeople = function (pageNum) {
       $scope.fetching = true;
+      if (pageNum) {
+        $scope.followerRequest.page = pageNum;
+      }
       $timeout(function () {
         $http({
           method:'GET',
@@ -515,9 +531,39 @@ microblogApp.controller('profileCtrl',
           } else {
               handler.unknown();
           }
+          $('#paginatorBtn2').text("Page "+ $scope.followerRequest.page);
         });
       }, 2000);
     };
+    $scope.searchPeople = function (pageNum) {
+      $('#searchModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+      if (pageNum) {
+        $scope.searchFollowerRequest.page = pageNum;
+      }
+      $timeout(function () {
+        $http({
+          method:'GET',
+          url:'apis/followers/searchPeople'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.peopleRequest.page+'&size='+$scope.peoplePageSize+'&search='+$scope.searchName,
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        }).then(function mySuccess(response) {
+          $scope.fetching = false;
+          if (response.data.status === 'success') {
+              $scope.people  = response.data.people;
+              $scope.peopleRequest.total = response.data.totalPeople;
+              $scope.peopleTotalPages = response.data.peopleTotalPages;
+          } else if (response.data.status === 'failed') {
+              $scope.people = [];
+          } else {
+              handler.unknown();
+          }
+          $('#paginatorBtn2').text("Page "+ $scope.followerRequest.page);
+        });
+      }, 2000);
+    }
     $scope.unfollow = function (id) {
       $scope.fetching = true;
       $http({

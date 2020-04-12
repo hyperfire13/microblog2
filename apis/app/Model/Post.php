@@ -12,7 +12,8 @@
       ),
       'Retweet' => array (
         'className' => 'Post',
-        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created,Retweet.modified,Retweet.images'),
+        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created,Retweet.modified,Retweet.images,Retweet.deleted'),
+        'conditions' => "Retweet.deleted = 1",
         'foreignKey' => 'post_id',
         'dependent' => true 
       ),
@@ -92,7 +93,6 @@
     );
     
     public function beforeSave($options = array()) {
-      
       if (isset($this->data[$this->alias]['post'])) {
           $this->data[$this->alias]['post'] = $this->clean_string($this->data[$this->alias]['post']);
       }
@@ -116,7 +116,6 @@
       }
       return $results;
     }
-  
     protected function _encode($data){
       return json_encode($data);
     }

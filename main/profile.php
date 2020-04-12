@@ -73,7 +73,7 @@
           </div>
           <div ng-show="blog.Post.post_id">
             <div class="card border-default" style="margin-top: 29px;">
-              <div class="card-body">
+              <div class="card-body" ng-show="blog.Retweet.deleted">
                 <img id="postProfilePic"  ng-src="pic-profiles/{{blog.RetweetOwner.image}}" alt="..." alt=""  class="rounded float-left">
                 <div class="blogger-name text-warning">
                   {{blog.RetweetOwner.first_name}} {{blog.RetweetOwner.last_name}}
@@ -84,6 +84,9 @@
                   <img ng-repeat="n in [].constructor(blog.Retweet.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Retweet.images[$index]}}" alt="">
                 </div>
               </div>
+              <div class="card-body" ng-show="!blog.Retweet.deleted"> 
+              <p class="blogger-post">Blog is not available right now...</p>
+            </div>
             </div>
           </div>
           <div class="float-right">
@@ -118,8 +121,8 @@
   <div class="tab-pane fade" id="followers">
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2  border-bottom">
     <div class="btn-group mr-2">
-      <input type="text" name="search" class="form-control" placeholder="find followers..." id="search" required>
-      <button class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
+      <input type="text" ng-model="searchName" name="search" class="form-control" placeholder="find people." id="search" required>
+      <button ng-click="searchPeople()" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
     </div>
   </div>
     <div class="col-md-6">
@@ -150,9 +153,18 @@
           <span  class="sr-only">Loading...</span>
         </div>
       </div>
-      Page : <select class="custom-select " ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
+      <!-- Page : <select class="custom-select " ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
         <option ng-repeat="n in [].constructor(followerTotalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
-      </select> 
+      </select>  -->
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button id="paginatorBtn2" type="button" class="btn btn-success">Page</button>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
+            <a ng-click="showPeople($index+1)" ng-repeat="n in [].constructor(followerTotalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="tab-pane fade" id="following">
@@ -349,6 +361,48 @@
         </div>
         <textarea ng-show="!saving" class="form-control" ng-model="myComment" id="comment" rows="3" placeholder="enter comment" required></textarea>
         <button ng-show="!saving" type="submit" class="btn btn-success" ng-click="saveComment($index,myComment)">Comment</button>
+        <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- search modal Modal -->
+<div id="searchModal" class="modal fade " tabindex="-1" role="dialog">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content bg-warning text-white">
+      <div class="modal-header">
+        <h5  class="modal-title">People related to "{{findBlog}}"</h5>
+      </div>
+      <div ng-show="fetching" class="modal-body d-flex justify-content-center">
+       
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <div>
+      <div ng-show="searchPeopleResult.length <= 0 && !fetching" class="modal-body d-flex justify-content-center">
+        <p >No results Found</p>
+      </div>
+      <ul class="list-group" ng-show="followers.length > 0">
+        <li ng-repeat="follower in followers" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
+          <img id="postProfilePic"  ng-src="pic-profiles/{{follower.MyFollower.image}}" alt="..." alt=""  class="rounded float-left">
+          <div class="blogger-name text-warning"style=" margin-bottom: 0px;margin-top: 8px;">
+            {{follower.MyFollower.first_name}} {{follower.MyFollower.last_name}}
+            <span ng-show="follower.MyFollower.followed" class="badge badge-warning float-right">Following</span>
+            <button ng-show="!follower.MyFollower.followed" ng-click="follow(follower.MyFollower.id)" type="submit" class="btn btn-outline-warning float-right" >Follow</button>
+        </li>
+      </ul>
+      </div>
+      <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button id="paginatorBtn2" type="button" class="btn btn-success">Page</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
+              <a ng-click="searchBlogs($index+1)" ng-repeat="n in [].constructor(searchRequesttotalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
+            </div>
+          </div>
+        </div>
         <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>

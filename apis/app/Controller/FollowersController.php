@@ -137,6 +137,14 @@
       $this->response->body(json_encode($this->promtMessage));
       return $this->response->send();
     }
+    public function searchPeople () {
+      $this->layout = false;
+    echo  $userId = $this->cleanNumber($this->request->query('id'));
+    echo  $token = $this->cleanString($this->request->query('token'));
+    echo  $page = $this->cleanNumber($this->request->query('page'));
+    echo  $size = $this->cleanNumber($this->request->query('size'));
+    echo  $search = $this->cleanString($this->request->query('search'));
+    }
   }
 ?>
 

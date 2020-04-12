@@ -4,7 +4,7 @@
     <div class="btn-toolbar mb-2 mb-md-0">
       <div class="btn-group mr-2">
         <input type="text" ng-model="findBlog" name="search" class="form-control" placeholder="find blogs..." id="search" required>
-        <button ng-click="searchBlogs(findBlog)" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
+        <button ng-click="searchBlogs(1)" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
     <div ng-show="blogs.length === 0" class=" text-primary" role="status">
       <p >No blogs yet</p>
     </div>
-    <div ng-show="!fetching" class=" text-primary" role="status">
+    <div ng-show="!fetching" class="text-primary" role="status">
       <button ng-click="viewAllBlogs()" type="submit" class="btn btn-warning" >Refresh</button>
     </div>
   </div>
@@ -35,7 +35,7 @@
         </div>
         <div ng-show="blog.Post.post_id">
           <div class="card border-default" style="margin-top: 29px;">
-            <div class="card-body">
+            <div class="card-body" ng-show="blog.Retweet.deleted">
               <img id="postProfilePic"  ng-src="pic-profiles/{{blog.RetweetOwner.image}}" alt="..." alt=""  class="rounded float-left">
               <div class="blogger-name text-warning">
                 {{blog.RetweetOwner.first_name}} {{blog.RetweetOwner.last_name}}
@@ -45,6 +45,9 @@
               <div ng-show="blog.Retweet.images.length > 0">
                 <img ng-repeat="n in [].constructor(blog.Retweet.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Retweet.images[$index]}}" alt="">
               </div>
+            </div>
+            <div class="card-body" ng-show="!blog.Retweet.deleted"> 
+              <p class="blogger-post">Blog is not available right now...</p>
             </div>
           </div>
         </div>
@@ -211,14 +214,14 @@
       <div class="modal-header">
         <h5  class="modal-title">Blogs related to "{{findBlog}}"</h5>
       </div>
-      <div ng-show="searchBlogResult.length <= 0" class="modal-body d-flex justify-content-center">
+      <div ng-show="fetching" class="modal-body d-flex justify-content-center">
        
         <div class="spinner-border text-primary" role="status">
           <span class="sr-only">Loading...</span>
         </div>
       </div>
       <div>
-      <div ng-show="!searchBlogResult" class="modal-body d-flex justify-content-center">
+      <div ng-show="searchBlogResult.length <= 0 && !fetching" class="modal-body d-flex justify-content-center">
         <p >No results Found</p>
       </div>
       <ul ng-show="searchBlogResult.length > 0" class="list-group">
@@ -227,24 +230,33 @@
           <div class="blogger-name text-warning">
             {{blog.User.first_name}} {{blog.User.last_name}}
             <small>({{blog.Post.modified}})</small>
-            <span ng-show="blog.User.id === user.id" ng-click="deletePostPrompt(blog.Post.id,blog.Post.post)" data-toggle="tooltip" title="Delete post?"onmouseenter="$(this).tooltip('show');" class="fa fa-trash fa-lg"></span>
-            <span ng-show="blog.User.id === user.id" ng-click="editPostPrompt(blog.Post)" data-toggle="tooltip" title="Edit post?"onmouseenter="$(this).tooltip('show');" class="fa fa-pen-square fa-lg"></span>
+            <!-- <span ng-show="blog.User.id === user.id" ng-click="deletePostPrompt(blog.Post.id,blog.Post.post)" data-toggle="tooltip" title="Delete post?"onmouseenter="$(this).tooltip('show');" class="fa fa-trash fa-lg"></span>
+            <span ng-show="blog.User.id === user.id" ng-click="editPostPrompt(blog.Post)" data-toggle="tooltip" title="Edit post?"onmouseenter="$(this).tooltip('show');" class="fa fa-pen-square fa-lg"></span> -->
           </div>
-          <div class="blogger-post">
+          <div class="blogger-post text-primary">
             {{blog.Post.post}}
             <div ng-cloak ng-show="blog.Post.images.length > 0">
               <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
             </div>
-            <div class="float-right">
+            <!-- <div class="float-right">
               <span ng-click="sharePost(blog.Post.post_id ? blog.Post.post_id : blog.Post.id)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{(blog.Share.length) + shareAdd}}&nbsp;</span>&nbsp;
               <span ng-click="showComments(blog.Post.id,index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i>&nbsp;{{blog.Comment.length}}&nbsp;</span>&nbsp;
               <span ng-click="likePost(blog.Post.id,$index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i>&nbsp;{{(blog.Like.length + likeAdd)}}&nbsp;</span>&nbsp;
-            </div>
+            </div> -->
           </div>
         </li>
       </ul>
       </div>
       <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button id="paginatorBtn2" type="button" class="btn btn-success">Page</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
+              <a ng-click="searchBlogs($index+1)" ng-repeat="n in [].constructor(searchRequesttotalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
+            </div>
+          </div>
+        </div>
         <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
