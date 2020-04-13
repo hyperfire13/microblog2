@@ -53,10 +53,7 @@
                   Hi {{user.first_name}}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Settings</a>
                   <a class="dropdown-item" ng-click="logout()" href="">Logout</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
             </ul>

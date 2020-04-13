@@ -46,6 +46,9 @@
     </div>
   </div>
   <div class="tab-pane fade  show" id="blogs" ng-cloak>
+    <div ng-show="!fetching" class=" text-primary" role="status">
+        <button ng-click="showMyBlogs()" type="submit" class="btn btn-warning" >Refresh</button>
+    </div>
     <div class="d-flex justify-content-center">
       <div ng-show="fetching" class="spinner-border text-primary" role="status">
         <span  class="sr-only">Loading...</span>
@@ -53,9 +56,7 @@
       <div ng-show="blogs.length === 0" class=" text-primary" role="status">
         <p >No blogs yet</p>
       </div>
-      <div ng-show="!fetching" class=" text-primary" role="status">
-        <button ng-click="showMyBlogs()" type="submit" class="btn btn-warning" >Refresh</button>
-      </div>
+      
     </div>
     <ul ng-show="blogs.length > 0" class="list-group">
       <li class="list-group-item  align-items-center blog-post" ng-repeat="blog in blogs">

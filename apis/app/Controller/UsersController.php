@@ -43,8 +43,14 @@
                       $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
                   }
               } else {
+                  if ($duplicateCount > 0 ) { 
+                      // response if email/username is existing
+                      $this->promtMessage = array('status'=>'failed','message'=>'Username already taken');
+                  }
+                  if ($duplicateEmail > 0 ) { 
                     // response if email/username is existing
-                    $this->promtMessage = array('status'=>'failed','message'=>'Username/Email already taken');
+                    $this->promtMessage = array('status'=>'failed','message'=>'Email already taken');
+                  }
               }
           }
       }

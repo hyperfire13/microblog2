@@ -150,6 +150,7 @@ microblogApp.controller('profileCtrl',
             if (response.data.status === 'success') {
               $scope.saving = false;
               handler.growler('comment saved');
+              $scope.showMyBlogs($scope.request.page);
               $scope.showComments(backupPostId);
             } else if (response.data.status === 'failed') {
                 handler.growler(response.data.message);
