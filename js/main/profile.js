@@ -33,7 +33,7 @@ microblogApp.controller('profileCtrl',
     };
     $scope.people = [];
     $scope.searchName = '';
-    $scope.peoplePageSize = 10;
+    $scope.peoplePageSize = 1;
     $scope.peopleTotalPages = 0;
     $scope.peopleRequest = {
       page : 1,
@@ -560,7 +560,7 @@ microblogApp.controller('profileCtrl',
           } else {
               handler.unknown();
           }
-          $('#paginatorBtn2').text("Page "+ $scope.followerRequest.page);
+          $('#paginatorBtn3').text("Page "+ $scope.peopleRequest.page);
         });
       }, 2000);
     }

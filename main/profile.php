@@ -402,7 +402,7 @@
       </div>
       <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-          <button id="paginatorBtn2" type="button" class="btn btn-success">Page</button>
+          <button id="paginatorBtn3" type="button" class="btn btn-success">Page</button>
           <div class="btn-group" role="group">
             <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
