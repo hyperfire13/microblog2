@@ -18,7 +18,7 @@
       <div class="col-lg-6">
         <form id="loginForm" method="POST" autocomplete="off">
           <div class="card text-white bg-warning mb-3">
-            <div class="card-header">Microblog 2</div>
+            <div class="card-header">Microblog 2 haha</div>
             <div class="card-body">
               <div class="row">
                 <div class="col-lg-12">
