@@ -28,7 +28,6 @@ microblogApp.service('handler',
       });
     };
     this.showLoading = function(show,title) {
-      console.log(title);
       $('#loadingTitle').text(title);
       if (show === true) {
           $('#loadingModal').modal({

@@ -119,12 +119,12 @@
     <div class="clearfix"></div>
   </div>
   <div class="tab-pane fade" id="followers">
-  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2  border-bottom">
-    <div class="btn-group mr-2">
-      <input type="text" ng-model="searchName" name="search" class="form-control" placeholder="find people." id="search" required>
-      <button ng-click="searchPeople()" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2  border-bottom">
+      <div class="btn-group mr-2">
+        <input type="text" ng-model="searchName" name="search" class="form-control" placeholder="find people." id="search" required>
+        <button ng-click="searchPeople()" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
+      </div>
     </div>
-  </div>
     <div class="col-md-6">
       <div class="d-flex justify-content-center">
         <div ng-show="fetching" class="spinner-border text-primary" role="status">
@@ -168,6 +168,12 @@
     </div>
   </div>
   <div class="tab-pane fade" id="following">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2  border-bottom">
+      <div class="btn-group mr-2">
+        <input type="text" ng-model="searchName" name="search" class="form-control" placeholder="find people." id="search" required>
+        <button ng-click="searchPeople()" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
+      </div>
+    </div>
     <div class="col-md-6">
       <div class="d-flex justify-content-center">
         <div ng-show="fetching" class="spinner-border text-primary" role="status">
@@ -371,7 +377,7 @@
   <div class="modal-dialog"  role="document">
     <div class="modal-content bg-warning text-white">
       <div class="modal-header">
-        <h5  class="modal-title">People related to "{{findBlog}}"</h5>
+        <h5  class="modal-title">People related to "{{searchName}}"</h5>
       </div>
       <div ng-show="fetching" class="modal-body d-flex justify-content-center">
        
@@ -380,16 +386,17 @@
         </div>
       </div>
       <div>
-      <div ng-show="searchPeopleResult.length <= 0 && !fetching" class="modal-body d-flex justify-content-center">
+      <div ng-show="people.length <= 0 && !fetching" class="modal-body d-flex justify-content-center">
         <p >No results Found</p>
       </div>
-      <ul class="list-group" ng-show="followers.length > 0">
-        <li ng-repeat="follower in followers" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
-          <img id="postProfilePic"  ng-src="pic-profiles/{{follower.MyFollower.image}}" alt="..." alt=""  class="rounded float-left">
+      <ul class="list-group" ng-show="people.length > 0">
+        <li ng-repeat="person in people" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
+          <img id="postProfilePic"  ng-src="pic-profiles/{{person.User.image}}" alt="..." alt=""  class="rounded float-left">
           <div class="blogger-name text-warning"style=" margin-bottom: 0px;margin-top: 8px;">
-            {{follower.MyFollower.first_name}} {{follower.MyFollower.last_name}}
-            <span ng-show="follower.MyFollower.followed" class="badge badge-warning float-right">Following</span>
-            <button ng-show="!follower.MyFollower.followed" ng-click="follow(follower.MyFollower.id)" type="submit" class="btn btn-outline-warning float-right" >Follow</button>
+            {{person.User.first_name}} {{person.User.last_name}}
+            <button ng-show="!person.User.myFollowing" ng-click="follow(person.User.id)" type="submit" class="btn btn-outline-warning float-right" >Follow</button>
+            <button ng-show="person.User.myFollowing" ng-click="unfollow(person.User.myFollowingId)" type="submit" class="btn btn-outline-warning float-right" >Unfollow</button>
+            <span ng-show="person.User.myFollower" class="badge badge-warning float-right">Follows you</span>
         </li>
       </ul>
       </div>
@@ -399,7 +406,7 @@
           <div class="btn-group" role="group">
             <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
-              <a ng-click="searchBlogs($index+1)" ng-repeat="n in [].constructor(searchRequesttotalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
+              <a ng-click="searchPeople($index+1)" ng-repeat="n in [].constructor(peopleTotalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
             </div>
           </div>
         </div>

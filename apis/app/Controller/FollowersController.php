@@ -1,7 +1,7 @@
 <?php 
   App::uses('AppController', 'Controller');
   App::uses('CakeEmail', 'Network/Email');
-
+  App::uses('User', 'Model');
   class FollowersController extends AppController { 
     public function viewPeople () {
       $this->layout = false;
@@ -139,11 +139,78 @@
     }
     public function searchPeople () {
       $this->layout = false;
-    echo  $userId = $this->cleanNumber($this->request->query('id'));
-    echo  $token = $this->cleanString($this->request->query('token'));
-    echo  $page = $this->cleanNumber($this->request->query('page'));
-    echo  $size = $this->cleanNumber($this->request->query('size'));
-    echo  $search = $this->cleanString($this->request->query('search'));
+      $userId = $this->cleanNumber($this->request->query('id'));
+      $token = $this->cleanString($this->request->query('token'));
+      $page = $this->cleanNumber($this->request->query('page'));
+      $size = $this->cleanNumber($this->request->query('size'));
+      $search = '%'.(empty($this->cleanString($this->request->query('search'))) ? 'blank' : $this->cleanString($this->request->query('search'))).'%';
+      $followers = [];
+      $followings = [];
+      $people = [];
+      $peopleIds = [];
+      if ($this->CheckRequest('get')) {
+          if ($this->CheckSession('User.token')) { 
+              $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
+              $baseToken = $this->Session->read('User.token');
+              $baseId = $this->Session->read('User.id');
+              if ($token === $baseToken && $baseId === $userId) { 
+                  $userModel = new User();
+                  $offset = ($page - 1) * $size;
+                  $peopleName = $userModel->find('all',array(
+                    'conditions'=>array(array("OR" => array(
+                      "User.first_name LIKE" => $search,
+                      "User.middle_name LIKE" => $search,
+                      "User.last_name LIKE" => $search
+                    )),'User.deleted'=>1,'User.activation_status'=>1),
+                    'fields' => array('id','first_name','middle_name','last_name','image'),
+                    'limit'=>$size,
+                    'offset'=>$offset,
+                    'order'=> array('User.created ASC'),
+                     ));
+                  if (!empty($peopleName)) {
+                      for ($i=0; $i < sizeof($peopleName) ; $i++) { 
+                        array_push($peopleIds,$peopleName[$i]['User']['id']);
+                        $myFollower =  $this->Follower->find('count',array(
+                          'conditions'=>array('Follower.user_id'=>$peopleName[$i]['User']['id'],'Follower.following_id'=>$userId,'Follower.deleted'=>1),
+                          'order'=> array('Follower.created ASC'),
+                          'limit'=>$size,
+                          'offset'=>$offset
+                        ));
+                        $myFollowing =  $this->Follower->find('all',array(
+                          'conditions'=>array('Follower.user_id'=>$userId,'Follower.following_id'=>$peopleName[$i]['User']['id'],'Follower.deleted'=>1),
+                          'order'=> array('Follower.created ASC'),
+                          'fields' => array('id'),
+                          'limit'=>$size,
+                          'offset'=>$offset
+                        ));
+                        if ($myFollower === 1) {
+                            $peopleName[$i]['User']['myFollower'] = true;
+                        }
+                        if (sizeof($myFollowing) === 1) {
+                            $peopleName[$i]['User']['myFollowing'] = true;
+                            $peopleName[$i]['User']['myFollowingId'] = $myFollowing[0]['Follower']['id'];
+                        }
+                      }
+                      $total = $userModel->find('count',array(
+                        'conditions'=>array(array("OR" => array(
+                          "User.first_name LIKE" => $search,
+                          "User.middle_name LIKE" => $search,
+                          "User.last_name LIKE" => $search
+                        )),'User.deleted'=>1,'User.activation_status'=>1)
+                         ));
+                      $this->promtMessage = array('status'=>'success', 'people'=>$peopleName,'total'=>$total,'totalPages'=>(ceil($total/$size)));
+                  } else {
+                      $people = [];
+                      $this->promtMessage = array('status'=>'success', 'people'=>$peopleName);
+                  }
+              } else {
+                  $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
+              }
+          }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
     }
   }
 ?>

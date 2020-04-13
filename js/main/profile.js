@@ -33,7 +33,7 @@ microblogApp.controller('profileCtrl',
     };
     $scope.people = [];
     $scope.searchName = '';
-    $scope.peoplePageSize = 3;
+    $scope.peoplePageSize = 10;
     $scope.peopleTotalPages = 0;
     $scope.peopleRequest = {
       page : 1,
@@ -131,7 +131,7 @@ microblogApp.controller('profileCtrl',
       });
     }
     $scope.saveComment = function (index,myComment) {
-      alert(index)
+      
       if (myComment === undefined) {
           handler.growler('enter a comment');
       } else {
@@ -422,7 +422,6 @@ microblogApp.controller('profileCtrl',
       var month = ("0" + (bday.getMonth() + 1)).slice(-2);
       var today = bday.getFullYear()+"-"+(month)+"-"+(day) ;
       $('#dateOfBirth').val(today);
-      console.log(bday);
       $('#editProfileModal').modal({
         backdrop: 'static',
         keyboard: false,
@@ -494,7 +493,6 @@ microblogApp.controller('profileCtrl',
               $scope.request.total = response.data.total;
               $scope.totalPages = response.data.totalPages;
               $scope.fetching = false;
-              console.log($scope.blogs);
           } else if (response.data.status === 'failed') {
               $scope.blogs = [];
               $scope.fetching = false;
@@ -542,8 +540,10 @@ microblogApp.controller('profileCtrl',
         show : true
       });
       if (pageNum) {
-        $scope.searchFollowerRequest.page = pageNum;
+        $scope.peopleRequest.page = pageNum;
       }
+      $scope.fetching = true;
+      $scope.people = [];
       $timeout(function () {
         $http({
           method:'GET',
@@ -553,8 +553,8 @@ microblogApp.controller('profileCtrl',
           $scope.fetching = false;
           if (response.data.status === 'success') {
               $scope.people  = response.data.people;
-              $scope.peopleRequest.total = response.data.totalPeople;
-              $scope.peopleTotalPages = response.data.peopleTotalPages;
+              $scope.peopleRequest.total = response.data.total;
+              $scope.peopleTotalPages = response.data.totalPages;
           } else if (response.data.status === 'failed') {
               $scope.people = [];
           } else {
@@ -578,6 +578,7 @@ microblogApp.controller('profileCtrl',
       }).then(function mySuccess(response) {
         if (response.data.status === 'success') {
             $scope.showPeople();
+            $('#searchModal').modal('hide');
         } else if (response.data.status === 'failed') {
             handler.growler(response.data.message);
         } else {
@@ -599,6 +600,7 @@ microblogApp.controller('profileCtrl',
       }).then(function mySuccess(response) {
         if (response.data.status === 'success') {
             $scope.showPeople();
+            $('#searchModal').modal('hide');
         } else if (response.data.status === 'failed') {
             handler.growler(response.data.message);
         } else {

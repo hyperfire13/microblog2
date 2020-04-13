@@ -6,9 +6,9 @@
   vertical-align: text-bottom;
 }
 
-/*
- * Sidebar
- */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
 
 .sidebar {
   position: fixed;

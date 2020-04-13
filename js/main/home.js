@@ -47,7 +47,6 @@ microblogApp.controller('homeCtrl',
         show : true
       });
       $scope.searchRequest.page = page;
-      alert($scope.searchRequest.page);
       $scope.fetching = true;
       $timeout(function () {
         $http({
@@ -63,7 +62,6 @@ microblogApp.controller('homeCtrl',
               $scope.searchRequest.total = response.data.total;
               $scope.searchRequesttotalPages = response.data.totalPages;
               $scope.fetching = false;
-              console.log($scope.searchBlogResult);
           } else if (response.data.status === 'failed') {
               $scope.searchBlogResult = [];
               $scope.fetching = false;
@@ -255,7 +253,6 @@ microblogApp.controller('homeCtrl',
               $scope.request.total = response.data.total;
               $scope.totalPages = response.data.totalPages;
               $scope.fetching = false;
-              console.log($scope.blogs);
           } else if (response.data.status === 'failed') {
               $scope.blogs = [];
               $scope.fetching = false;
@@ -265,6 +262,9 @@ microblogApp.controller('homeCtrl',
           }
         });
       }, 2000);
+      // $timeout(function () {
+      //   $scope.viewAllBlogs($scope.request.page);
+      // },3000);
     }
     $scope.likePost = function (postId,index) {
       $http({
@@ -344,7 +344,6 @@ microblogApp.controller('homeCtrl',
       }, 2000);
     }
     $scope.saveComment = function (index,myComment) {
-      alert(index)
       if (myComment === undefined) {
           handler.growler('enter a comment');
       } else {
