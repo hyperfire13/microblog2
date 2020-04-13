@@ -7,20 +7,20 @@
     public $validate = array(
       'username' => array(
         'required' => array(
-          'rule' => 'notBlank',
+          'rule' => array('minLength', 8),
           'type' => 'string',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'username'
+          'message' => 'username must not be blank and more than 8 characters'
         )
       ),
       'password' => array(
         'required' => array(
-          'rule' => 'notBlank',
+          'rule' => array('minLength', 6),
           'type' => 'string',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'password'
+          'message' => 'password must be more than 6 characters'
         )
       ),
       'email' => array(

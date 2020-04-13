@@ -47,7 +47,7 @@
 
     public function sendValidationLink ($token,$name,$email) {
       try {
-          $this->link = 'http://192.168.254.168/microblog-2/activate-user.php';
+          $this->link = '/activate-user.php';
           $this->name = $name;
           $this->token = $token;
           $this->email = $email;
