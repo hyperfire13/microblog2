@@ -156,7 +156,7 @@
       if ($this->CheckRequest('post')) {
           $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
           if (empty($data)) {
-            $data = $this->request->data;
+              $data = $this->request->data;
           } elseif (!empty($data)) {
               if ($this->Session->check('User.token')) {
                   $baseToken = $this->Session->read('User.token');
@@ -277,6 +277,33 @@
                   $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
               }
           }
+      }
+      $this->response->type('application/json');
+      $this->response->body(json_encode($this->promtMessage));
+      return $this->response->send();
+    }
+    public  function showProfile () {
+      $this->layout = false;
+      $userId = $this->cleanNumber($this->request->query('user_id'));
+      $searchId = $this->cleanNumber($this->request->query('search_id'));
+      $token = $this->cleanString($this->request->query('token'));
+      if ($this->CheckRequest('get')) { 
+          $this->promtMessage = array('status'=>'failed', 'message'=>'User not found');
+          if ($this->CheckSession('User.token')) {
+              $baseToken = $this->Session->read('User.token');
+              $baseId = $this->Session->read('User.id');
+              if ($token === $baseToken && $baseId === $userId) {
+                  $record = $this->User->find('first', array( 'conditions' => array('User.id' => $searchId),'fields' => array('id','first_name','middle_name','last_name','date_of_birth','username','image')));
+                  if (!empty($record)) {
+                      $record['User']['date_of_birth'] = date("M d, Y", strtotime($record['User']['date_of_birth']));
+                      $record['User']['first_name'] = $this->capitalizeFirstLetter($record['User']['first_name']);
+                      $record['User']['last_name'] = $this->capitalizeFirstLetter($record['User']['last_name']);
+                      $this->promtMessage = array('status'=>'success', 'record'=>$record);
+                  }
+              } else {
+                $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
+             }
+          } 
       }
       $this->response->type('application/json');
       $this->response->body(json_encode($this->promtMessage));

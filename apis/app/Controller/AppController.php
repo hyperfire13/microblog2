@@ -47,7 +47,7 @@
 
     public function sendValidationLink ($token,$name,$email) {
       try {
-          $this->link = '/activate-user.php';
+          $this->link = 'http://dev9.ynsdev.pw/activate-account.php';
           $this->name = $name;
           $this->token = $token;
           $this->email = $email;

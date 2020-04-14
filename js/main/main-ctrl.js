@@ -26,7 +26,7 @@ function($rootScope, $location, $routeParams, $http, $timeout, $interval, $httpP
         console.log("Something went wrong","It's not on you,It's on us");
       }
     });
-    if (realtime) { 
+    if (realtime) {
         $timeout(function () { 
           $rootScope.auth(true); 
         }, 2000); 

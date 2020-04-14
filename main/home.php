@@ -23,7 +23,7 @@
     <li class="list-group-item  align-items-center blog-post" ng-repeat="blog in blogs">
       <img id="postProfilePic"  ng-src="pic-profiles/{{blog.User.image}}" alt="..." alt=""  class="rounded float-left">
       <div class="blogger-name text-warning">
-        {{blog.User.first_name}} {{blog.User.last_name}}
+        <a href="" ng-click="showProfile(blog.User.id)" class="text-warning" style="text-decoration: none;">{{blog.User.first_name}} {{blog.User.last_name}}</a>
         <small>({{blog.Post.modified}})</small>
         <span ng-show="blog.User.id === user.id" ng-click="deletePostPrompt(blog.Post.id,blog.Post.post)" data-toggle="tooltip" title="Delete post?"onmouseenter="$(this).tooltip('show');" class="fa fa-trash fa-lg"></span>
         <span ng-show="blog.User.id === user.id" ng-click="editPostPrompt(blog.Post)" data-toggle="tooltip" title="Edit post?"onmouseenter="$(this).tooltip('show');" class="fa fa-pen-square fa-lg"></span>
@@ -258,6 +258,43 @@
           </div>
         </div>
         <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- profile Modal -->
+<div id="profileModal" class="modal fade " tabindex="-1" role="dialog">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content bg-warning text-primary">
+      <div class="modal-header">
+      </div>
+      <div ng-show="fetching" class="modal-body d-flex justify-content-center">
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <div class="row" ng-show="!fetching">
+        <div class="col-md-12">
+          <div id="profileCard" class="card border-warning mb-3">
+            <div class="card-header">About
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="profilePic" ng-src="pic-profiles/{{personProfile.User.image}}" alt="..." alt="" >
+                  <h4 class="card-title text-center">{{personProfile.User.first_name}} {{personProfile.User.last_name}}</h4>
+                </div>
+                <div class="col-md-6">
+                <p class="card-text">Birthday : {{personProfile.User.date_of_birth}}</p>
+                <p class="card-text">Username : {{personProfile.User.username}}</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

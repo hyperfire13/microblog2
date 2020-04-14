@@ -33,7 +33,7 @@ microblogApp.controller('profileCtrl',
     };
     $scope.people = [];
     $scope.searchName = '';
-    $scope.peoplePageSize = 1;
+    $scope.peoplePageSize = 10;
     $scope.peopleTotalPages = 0;
     $scope.peopleRequest = {
       page : 1,
@@ -44,7 +44,7 @@ microblogApp.controller('profileCtrl',
       total : 0
     };
 
-    $scope.followerPageSize = 3;
+    $scope.followerPageSize = 10;
     $scope.followerTotalPages = 0;
     $scope.followingTotalPages = 0;
     $scope.followerRequest = {
@@ -150,6 +150,8 @@ microblogApp.controller('profileCtrl',
             if (response.data.status === 'success') {
               $scope.saving = false;
               handler.growler('comment saved');
+              $scope.myComment = '';
+              $('#commentModal').modal('hide');
               $scope.showMyBlogs($scope.request.page);
               $scope.showComments(backupPostId);
             } else if (response.data.status === 'failed') {
@@ -205,11 +207,11 @@ microblogApp.controller('profileCtrl',
       }).then(function mySuccess(response) {
         if (response.data.status === 'success') {
           $scope.likeAdd = 0;
-           handler.growler('you  liked this post');
+           
            $scope.blogs[index].Like.push('');
            //$scope.likeAdd = 1;
         } else if (response.data.status === 'failed') {
-            handler.growler('you already liked this post');
+            
         } else {
             
         }
@@ -629,6 +631,9 @@ microblogApp.controller('profileCtrl',
           jQuery('#addInternetSimulationInput').val(null);
       }
     }); 
+    jQuery('#commentModal').on('hidden.bs.modal', function() {
+      $scope.myComment = '';
+    });
     //$scope.showMyBlogs();
   }]);
  

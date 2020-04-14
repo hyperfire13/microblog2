@@ -35,10 +35,7 @@
  * The origin email. See CakeEmail::from() about the valid values
  */
 class EmailConfig {
-
-  
-
-	public $default = array(
+	public $default = array (
 		'transport' => 'Mail',
 		'from' => 'you@localhost',
 		//'charset' => 'utf-8',

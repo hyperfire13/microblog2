@@ -7246,3 +7246,74 @@ Stack Trace:
 #3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
 #4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2020-04-14 14:49:29 Error: [MissingActionException] Action UsersController::showProfile() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'showProfile',
+)
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24X3UdxJVO6IpbfdisloF1nuAoIEt4M0tE85xFViGBV8b2IiLNUPbUG&id=232
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-04-14 14:50:38 Error: [MissingActionException] Action UsersController::showProfile() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'showProfile',
+)
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24X3UdxJVO6IpbfdisloF1nuAoIEt4M0tE85xFViGBV8b2IiLNUPbUG&id=232
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-04-14 14:51:21 Error: [MissingActionException] Action UsersController::showProfile() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'showProfile',
+)
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24X3UdxJVO6IpbfdisloF1nuAoIEt4M0tE85xFViGBV8b2IiLNUPbUG&id=232
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-04-14 14:52:43 Error: [MissingActionException] Action UsersController::showProfile() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'showProfile',
+)
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24X3UdxJVO6IpbfdisloF1nuAoIEt4M0tE85xFViGBV8b2IiLNUPbUG&id=232
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-04-14 14:55:29 Error: Fatal Error (64): Cannot redeclare UsersController::getProfile() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 285]
+2020-04-14 14:55:30 Error: [FatalErrorException] Cannot redeclare UsersController::getProfile()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 285)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 285, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-14 14:55:31 Error: Fatal Error (64): Cannot redeclare UsersController::getProfile() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php, line 285]
+2020-04-14 14:55:32 Error: [FatalErrorException] Cannot redeclare UsersController::getProfile()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 285)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 285, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-14 14:56:01 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
