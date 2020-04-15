@@ -142,27 +142,33 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <label for="exampleTextarea">Compose here : {{editPost.images}} </label>
+              <label for="exampleTextarea">Compose here : </label>
               <textarea ng-model="editPost.post" class="form-control" id="exampleTextarea" placeholder="What's up!" rows="3"></textarea>
             </div>
           </div>
           <div class="col-md-12">
             <div class="row">
-              <div class="col-md-2"ng-repeat="n in [].constructor(editPost.images.length) track by $index">
-                <img  style="max-width: 50px;height: 50px;" ng-src="pic-posts/{{editPost.images[$index]}}" class="profile-user-img img-responsive">
-                <span ng-click="removeExistingPhoto($index)"  class="fa fa-times fa-lg"></span>
+              <div class="col-md-4"ng-repeat="n in [].constructor(editPost.images.length) track by $index">
+                <figure>
+                  <span ng-click="removeExistingPhoto($index)"  class="fa fa-times fa-lg"></span>
+                  <img id="postPic" ng-src="pic-posts/{{editPost.images[$index]}}" alt="">{{editPost.imageCaptions[$index]}}
+                  <figcaption><textarea id="caption-{{$index}}" ng-bind="editPost.imageCaptions[$index]" rows="2" placeholder="short caption..."></textarea></figcaption>
+                </figure>
               </div>
               <div class="col-md-2">
                 <button type="button" class="btn btn-outline-success" ng-click="addImageSelector()">Add Image</button>
               </div>
             </div>
             <div class="row" ng-repeat="n in [].constructor(imageGenerator) track by $index">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
                 <span ng-click="removeNewPhoto($index)"  class="fa fa-times fa-lg"></span>
               </div>
-              <div class="col-md-6">
-                <img style="max-width: 50px;height: 50px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
+              <div class="col-md-2">
+                <img style="width: 70px;height: 60px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
+              </div>
+              <div class="col-md-4">
+                <textarea ng-show="go" id="newcaption-{{$index}}" rows="2" placeholder="short caption..."></textarea>
               </div>
             </div>
             

@@ -89,7 +89,14 @@
                 </div>
                 <p class="blogger-post" style="margin-top: 30px;padding-left: 0px;">{{blog.Retweet.post}}</p>
                 <div ng-show="blog.Retweet.images.length > 0">
-                  <img ng-repeat="n in [].constructor(blog.Retweet.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Retweet.images[$index]}}" alt="">
+                  <div class="row">
+                    <div class="col-md-3" ng-repeat="n in [].constructor(blog.Retweet.images.length)  track by $index">
+                      <figure>
+                        <img  id="postPic" ng-src="pic-posts/{{blog.Retweet.images[$index]}}" alt="">
+                        <figcaption><i>{{blog.Retweet.image_captions[$index]}}</i></figcaption>
+                      </figure>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card-body" ng-show="!blog.Retweet.deleted"> 

@@ -40,6 +40,7 @@ microblogApp.controller('homeCtrl',
       images : [],
       imageCaptions : []
     };
+    $scope.newCaptions = [];
     $scope.personProfile = null;
     $scope.showProfile = function (id) {
       $scope.fetching = true;
@@ -103,13 +104,15 @@ microblogApp.controller('homeCtrl',
           $('#paginatorBtn2').text("Page "+ $scope.searchRequest.page);
         });
       }, 2000);
-      
     }
     $scope.removeNewPhoto = function () {
       $scope.imageGenerator--;
     }
     $scope.removeExistingPhoto = function (index) {
       $scope.editPost.images.splice(index,1);
+      if ($scope.editPost.imageCaptions.length > 0) {
+          $scope.editPost.imageCaptions.splice(index,1);
+      }
     }
     $scope.addImageSelector  = function () {
       if (($scope.editPost.images.length + $scope.imageGenerator)  > 2) {
@@ -144,6 +147,7 @@ microblogApp.controller('homeCtrl',
       };
       if ($scope.isImage(imageName)) {
           reader.readAsDataURL(imageFile);
+          $scope.go = true;
           $scope.photoSelected = true;
           
       } else {
@@ -160,9 +164,18 @@ microblogApp.controller('homeCtrl',
       } 
       else {
           var form_data = new FormData();
+          if ($scope.editPost.images.length > 0) {
+            $scope.editPost.imageCaptions = [];
+            for (let index = 0; index < $scope.editPost.images.length; index++) {
+              $scope.editPost.imageCaptions.push($('#caption-'+index).val());
+            }
+          }
           if ($scope.imageGenerator > 0) {
               for (let id = 0; id < $scope.imageGenerator; id++) {
                 form_data.append("file[]", $("#"+id)[0].files[0]);
+                if ($('#newcaption-'+id).val() !== "") {
+                  $scope.editPost.imageCaptions.push($('#newcaption-'+id).val());
+                }
               }
           }
           form_data.append("token", localStorage.getItem('token'));
@@ -170,6 +183,7 @@ microblogApp.controller('homeCtrl',
           form_data.append("post_id", $scope.editPost.id);
           form_data.append("post", $scope.editPost.post);
           form_data.append("existing_pics",JSON.stringify($scope.editPost.images));
+          form_data.append("image_captions",JSON.stringify($scope.editPost.imageCaptions));
           handler.showLoading(true,"Editing your blog...");
           $timeout(function () {
             $.ajax({
@@ -212,12 +226,15 @@ microblogApp.controller('homeCtrl',
       }
     }
     $scope.editPostPrompt = function (post) {
-     
       $scope.imageGenerator = 0;
+      $scope.go = false;
       $scope.editPost.id = post.id;
       $scope.editPost.post = post.post;
       if (post.images !== null) {
-        $scope.editPost.images = post.images.slice();
+          $scope.editPost.images = post.images.slice();
+      }
+      if (post.image_captions !== null) {
+          $scope.editPost.imageCaptions = post.image_captions.slice();
       }
       
       $('#editPostModal').modal({
