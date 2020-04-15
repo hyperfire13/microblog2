@@ -6,7 +6,7 @@
   class PostsController extends AppController { 
     public function addPost () {
       $this->layout = false;
-      if ($this->CheckRequest('post')) { 
+      if ($this->CheckRequest('post')) {
           if ($this->CheckSession('User.token')) {
               $this->promtMessage = array('status'=>'failed', 'message'=>'record not found');
               $data = $this->request->data; 
@@ -22,7 +22,7 @@
                             'conditions' => array('Post.user_id' => $data['user_id'])
                         )) + 1;
                           $no_files = count($_FILES["file"]['name']);
-                          for ($i=0; $i < $no_files; $i++) { 
+                          for ($i=0; $i < $no_files; $i++) {
                             $img = $_FILES['file']['name'][$i];
                             $tmp = $_FILES['file']['tmp_name'][$i];
                             $path = '../../../pic-posts/';
@@ -31,15 +31,15 @@
                             $imgNewName = strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
                             array_push($postImages,$imgNewName);
                             if (!move_uploaded_file($tmp,$path)) {
-                              $this->promtMessage = array('status'=>'failed', 'message'=>"Image not uploaded to server and database");
-                          } 
+                                $this->promtMessage = array('status'=>'failed', 'message'=>"Image not uploaded to server and database");
+                            } 
                           }
                           $data['images'] = json_encode($postImages);
                       }
                       if ($this->Post->save($data)) {
                           $this->promtMessage = array('status'=>'success', 'message'=>'Your blog was uploaded');
                       } else {
-                          $errorList = ['Missing :'];
+                          $errorList = ['Notice :'];
                           $errors = $this->Post->validationErrors;
                           foreach ($errors as $value) {
                           array_push($errorList," ".$value[0]);
@@ -156,7 +156,7 @@
                           if ($this->Post->save($data,true,['deleted_date','deleted'])) { 
                               $this->promtMessage = array('status'=>'success','message'=>'Your post was deleted');
                           } else {
-                              $errorList = ['Missing :'];
+                              $errorList = ['Notice :'];
                               $errors = $this->Post->validationErrors;
                               foreach ($errors as $value) {
                               array_push($errorList," ".$value[0]);
@@ -176,7 +176,7 @@
       $this->response->body(json_encode($this->promtMessage));
       return $this->response->send();
     }
-    public function editPost () { 
+    public function editPost () {
       $this->layout = false;
       if ($this->CheckRequest('post')) { 
           if ($this->CheckSession('User.token')) {
@@ -198,7 +198,7 @@
                               $totalPosts = $this->Post->find('count', array('conditions' => array('Post.user_id' => $data['user_id'])
                                 )) + 1;
                                 $no_files = count($_FILES["file"]['name']);
-                              for ($i=0; $i < $no_files; $i++) { 
+                              for ($i=0; $i < $no_files; $i++) {
                                 $img = $_FILES['file']['name'][$i];
                                 $tmp = $_FILES['file']['tmp_name'][$i];
                                 $path = '../../../pic-posts/';
@@ -219,7 +219,7 @@
                           if ($this->Post->save($data)) {
                               $this->promtMessage = array('status'=>'success', 'message'=>'Your blog was edited');
                           } else {
-                              $errorList = ['Missing :'];
+                              $errorList = ['Notice :'];
                               $errors = $this->Post->validationErrors;
                               foreach ($errors as $value) {
                               array_push($errorList," ".$value[0]);
@@ -242,19 +242,20 @@
     public function sharePost () {
       $this->layout = false;
       $data = $this->request->input('json_decode', true);
-      if ($this->CheckRequest('post')) { 
-          if ($this->CheckSession('User.token')) { 
+      if ($this->CheckRequest('post')) {
+          if ($this->CheckSession('User.token')) {
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
-              if ($data['token'] === $baseToken && $baseId === $data['user_id']) { 
+              if ($data['token'] === $baseToken && $baseId === $data['user_id']) {
                   if (empty($data)) {
                       $data = $this->request->data;
-                  } elseif (!empty($data)) { 
-                      if ($this->Post->save($data,true,['user_id','post_id'])) { 
+                  } elseif (!empty($data)) {
+                      $rule = (empty($data['post']) ? false : true);
+                      if ($this->Post->save($data,$rule,['user_id','post_id','post'])) {
                           $this->promtMessage = array('status'=>'success','message'=>'You shared this post');
                       } else {
-                          $errorList = ['Missing :'];
+                          $errorList = ['Notice :'];
                           $errors = $this->Post->validationErrors;
                           foreach ($errors as $value) {
                           array_push($errorList," ".$value[0]);

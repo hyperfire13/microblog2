@@ -70,7 +70,14 @@
         <div class="blogger-post">
           {{blog.Post.post}}
           <div ng-cloak ng-show="blog.Post.images.length > 0">
-            <img ng-repeat="n in [].constructor(blog.Post.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
+            <div class="row">
+              <div class="col-md-3" ng-repeat="n in [].constructor(blog.Post.images.length) track by $index">
+                <figure>
+                  <img  id="postPic" ng-src="pic-posts/{{blog.Post.images[$index]}}" alt="">
+                  <figcaption><i>{{blog.Post.image_captions[$index]}}</i></figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
           <div ng-show="blog.Post.post_id">
             <div class="card border-default" style="margin-top: 29px;">
@@ -91,7 +98,7 @@
             </div>
           </div>
           <div class="float-right">
-            <span ng-click="sharePost(blog.Post.post_id ? blog.Post.post_id : blog.Post.id)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{(blog.Share.length) + shareAdd}}&nbsp;</span>&nbsp;
+            <span ng-click="promptSharePost(blog.Post.post_id ? blog.Retweet : blog.Post,blog.Post.post_id ? blog.RetweetOwner : blog.User)"  class="badge badge-primary badge-pill" data-toggle="tooltip" title="Shares"onmouseenter="$(this).tooltip('show');"><i class="fa fa-retweet"></i>&nbsp;{{(blog.Share.length) + shareAdd}}&nbsp;</span>&nbsp;
             <span ng-click="showComments(blog.Post.id,index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Comments"onmouseenter="$(this).tooltip('show');"><i class="fa fa-comments"></i>&nbsp;{{blog.Comment.length}}&nbsp;</span>&nbsp;
             <span ng-click="likePost(blog.Post.id,$index)" class="badge badge-primary badge-pill" data-toggle="tooltip" title="Likes"onmouseenter="$(this).tooltip('show');"><i class="fa fa-thumbs-up"></i>&nbsp;{{(blog.Like.length + likeAdd)}}&nbsp;</span>&nbsp;
           </div>
@@ -412,6 +419,56 @@
           </div>
         </div>
         <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- retweet Modal -->
+<div id="retweetModal" class="modal fade " tabindex="-1" role="dialog">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content bg-warning text-primary">
+      <div class="modal-header">
+      </div>
+      <div class="row" ng-show="!fetching">
+        <div class="col-md-12">
+          <div id="profileCard" class="card border-warning mb-3">
+            <div class="card-header">Retweet
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea ng-model="resharePost" class="form-control" id="exampleTextarea" placeholder="Say something about the retweet!" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="blogger-post">
+                    <div class="card border-default" style="margin-top: 29px;">
+                      <div class="card-body" ng-show="retweet.deleted">
+                        <img id="postProfilePic"  ng-src="pic-profiles/{{owner.image}}" alt="..." alt=""  class="rounded float-left">
+                        <div class="blogger-name text-warning">
+                          {{owner.first_name}} {{owner.last_name}}
+                          <small>({{retweet.modified}})</small>
+                        </div>
+                        <p class="blogger-post">{{retweet.post}}</p>
+                        <div ng-show="retweet.images.length > 0">
+                          <img ng-repeat="n in [].constructor(retweet.images.length)  track by $index" id="postPic" ng-src="pic-posts/{{retweet.images[$index]}}" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body" ng-show="!retweet.deleted"> 
+                        <p class="blogger-post">Blog is not available right now...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
+        <button type="button" class="btn btn-success" ng-click="sharePost(retweet.id,resharePost)" >Retweet</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

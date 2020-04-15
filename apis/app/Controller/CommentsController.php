@@ -46,7 +46,7 @@
                       if ($this->Comment->save($data)) { 
                           $this->promtMessage = array('status'=>'success','message'=>'comment saved');
                       } else {
-                          $errorList = ['Missing :'];
+                          $errorList = ['Notice :'];
                           $errors = $this->Comment->validationErrors;
                           foreach ($errors as $value) {
                           array_push($errorList," ".$value[0]);

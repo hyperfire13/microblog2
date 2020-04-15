@@ -109,7 +109,17 @@ microblogApp.controller('profileCtrl',
           $scope.imageGenerator++;
       }
     }
-    $scope.sharePost = function (postId) {
+    $scope.promptSharePost = function (post,owner) {
+      $scope.retweet = post;
+      $scope.owner = owner;
+      console.log(JSON.stringify(owner));
+      $('#retweetModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+    }
+    $scope.sharePost = function (postId,retweetCaption) {
       $http({
         method:'POST',
         url:'apis/posts/sharePost',
@@ -117,11 +127,15 @@ microblogApp.controller('profileCtrl',
           token : localStorage.getItem('token'),
           user_id : $rootScope.user.id,
           post_id : postId,
+          post : retweetCaption
         },
         headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
       }).then(function mySuccess(response) {
         if (response.data.status === 'success') {
            handler.growler('you shared this post');
+           $('#commentModal').modal('hide');
+           $('#retweetModal').modal('hide');
+           $scope.resharePost = '';
            $scope.showMyBlogs();
         } else if (response.data.status === 'failed') {
             handler.growler(response.data.message);
@@ -207,11 +221,11 @@ microblogApp.controller('profileCtrl',
       }).then(function mySuccess(response) {
         if (response.data.status === 'success') {
           $scope.likeAdd = 0;
-           
+           $('#commentModal').modal('hide');
            $scope.blogs[index].Like.push('');
            //$scope.likeAdd = 1;
-        } else if (response.data.status === 'failed') {
-            
+        } else if (response.data.status === 'unlike') {
+            $scope.blogs[index].Like.splice(0,1);
         } else {
             
         }

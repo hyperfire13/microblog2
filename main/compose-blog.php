@@ -23,7 +23,8 @@
                     <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
                   </div>
                   <div class="col-md-4">
-                    <img style="max-width: 50px;height: 50px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
+                  <textarea id="caption-{{$index}}" id="" rows="2" placeholder="short caption..."></textarea>
+                    <img style="max-width: 50px;height: 50px;margin-bottom: 50px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
                   </div>
                 </div>
               </div>

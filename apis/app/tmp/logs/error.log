@@ -7317,3 +7317,39 @@ Request URL: /microblog-2/apis/users/authenticate
 Stack Trace:
 #0 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2020-04-15 13:38:00 Error: [Error] Call to a member function save() on null
+Request URL: /microblog-2/apis/likes/likePost
+Stack Trace:
+#0 [internal function]: LikesController->likePost()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LikesController), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LikesController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-15 13:38:37 Error: [Error] Call to a member function save() on null
+Request URL: /microblog-2/apis/likes/likePost
+Stack Trace:
+#0 [internal function]: LikesController->likePost()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LikesController), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LikesController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-15 13:39:05 Error: [Error] Call to a member function save() on null
+Request URL: /microblog-2/apis/likes/likePost
+Stack Trace:
+#0 [internal function]: LikesController->likePost()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LikesController), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LikesController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-15 17:27:43 Error: Fatal Error (64): Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in [C:\xampp\htdocs\microblog-2\apis\app\Controller\PostsController.php, line 254]
+2020-04-15 17:27:43 Error: [FatalErrorException] Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+Request URL: /microblog-2/apis/posts/viewAllBlogs?token=%242a%2410%2430N%2Ft0pU8FKhiBkdFYMLoOtjXKg3iqjIxevwotRgUwNbKtUfxK%2FKS&id=231&page=1&size=5
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot use isse...', 'C:\\xampp\\htdocs...', 254)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot use isse...', 'C:\\xampp\\htdocs...', 254, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}

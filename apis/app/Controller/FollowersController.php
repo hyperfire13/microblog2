@@ -85,7 +85,7 @@
                           if ($this->Follower->save($data)) { 
                               $this->promtMessage = array('status'=>'success','message'=>'follow successful');
                           } else {
-                              $errorList = ['Missing :'];
+                              $errorList = ['Notice :'];
                               $errors = $this->Like->validationErrors;
                               foreach ($errors as $value) {
                               array_push($errorList," ".$value[0]);
@@ -119,7 +119,7 @@
                       if ($this->Follower->saveField('deleted',0)) { 
                           $this->promtMessage = array('status'=>'success','message'=>'unfollow successful');
                       } else {
-                          $errorList = ['Missing :'];
+                          $errorList = ['Notice :'];
                           $errors = $this->Like->validationErrors;
                           foreach ($errors as $value) {
                           array_push($errorList," ".$value[0]);

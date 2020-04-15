@@ -261,7 +261,7 @@
                               if ($this->User->save($data,true,['username','password','email','first_name','middle_name','last_name','date_of_birth'])) { 
                                   $this->promtMessage = array('status'=>'success', 'message'=>'Profile successfuilly updated!');
                               } else {
-                                  $errorList = ['Missing :'];
+                                  $errorList = ['Notice :'];
                                   $errors = $this->User->validationErrors;
                                   foreach ($errors as $value) {
                                   array_push($errorList," ".$value[0]);

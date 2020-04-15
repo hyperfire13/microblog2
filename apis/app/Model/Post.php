@@ -12,7 +12,7 @@
       ),
       'Retweet' => array (
         'className' => 'Post',
-        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created,Retweet.modified,Retweet.images,Retweet.deleted'),
+        'fields' => array('Retweet.post,Retweet.user_id,Retweet.id,Retweet.created,Retweet.modified,Retweet.images,Retweet.image_captions,Retweet.deleted'),
         'conditions' => "Retweet.deleted = 1",
         'foreignKey' => 'post_id',
         'dependent' => true 
@@ -112,6 +112,14 @@
           $results[$i]['Retweet']['images'] = $this->decodeImages(
             is_string($results[$i]['Retweet']['images']) ? $results[$i]['Retweet']['images'] : json_encode($results[$i]['Retweet']['images'])
           );
+        }
+        if (isset($results[$i]['Post']['image_captions'])) {
+            $results[$i]['Post']['image_captions'] = $this->decodeImages($results[$i]['Post']['image_captions']);
+        }
+        if (isset($results[$i]['Retweet']['image_captions'])) {
+            $results[$i]['Retweet']['image_captions'] = $this->decodeImages(
+              is_string($results[$i]['Retweet']['image_captions']) ? $results[$i]['Retweet']['image_captions'] : json_encode($results[$i]['Retweet']['image_captions'])
+            );
         }
       }
       return $results;
