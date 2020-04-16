@@ -24,7 +24,7 @@ microblogApp.service('handler',
       jQuery.jGrowl(growlMessage, {
         header: 'Notice meee!',
         position: 'top-right',
-        sticky : true
+        
       });
     };
     this.showLoading = function(show,title) {

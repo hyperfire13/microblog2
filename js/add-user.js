@@ -46,7 +46,7 @@ function addUser () {
               showSuccess(response.message);
               $('#addForm')[0].reset();
             } else if (status === 'failed') {
-                showError(response.message, "Oops!, Please Check the the details you entered below");
+                showError(JSON.stringify(response.message), "Oops!, Please Check the the details you entered below");
             } else if (status === 'emailProblem') {
                 moduleRequested = "signup";
                 showSuccess(response.message);

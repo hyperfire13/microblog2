@@ -21,6 +21,9 @@
               $name = $this->capitalizeFirstLetter($data['first_name']);
               $code = $data['code'];
               $email = $data['email'];
+              $data['first_name'] = $this->capitalizeFirstLetter($data['first_name']);
+              $data['middle_name'] = $this->capitalizeFirstLetter($data['middle_name']);
+              $data['last_name'] = $this->capitalizeFirstLetter($data['last_name']);
               $duplicateCount = $this->User->find('count', array(
                   'conditions' => array('User.username' => $data['username'])
               ));
@@ -37,8 +40,8 @@
                   } else {
                       $errorList = [];
                       $errors = $this->User->validationErrors;
-                      foreach ($errors as $value) {
-                        array_push($errorList," ".$value[0]);
+                      foreach ($errors as $key => $value) {
+                        array_push($errorList,array($key => $value[0]));
                       }
                       $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
                   }
