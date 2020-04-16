@@ -67,7 +67,7 @@
              $data = $this->request->data;
           } elseif (!empty($data)) {
               $data = array_map('trim', $data) ;
-              $record = $this->User->find('first', array( 'conditions' => array('User.code' => $data['code'])));
+              $record = $this->User->find('first', array( 'conditions' => array('BINARY User.code = '.'\''.$data['code'].'\'')));
               if (empty($record)) {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, you entered an invalid code');
               } else {
@@ -127,7 +127,7 @@
           } elseif (!empty($data)) {
               $data['username'] = $this->cleanString($data['username']);
               $data['password'] = $this->cleanString($data['password']);
-              $record = $this->User->find('first', array( 'conditions' => array('User.username' => $data['username'])));
+              $record = $this->User->find('first', array( 'conditions' => array('BINARY User.username = '.'\''. $data['username'].'\'')));
               if (empty($record)) {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, login failed');
               } else {

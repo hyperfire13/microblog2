@@ -161,7 +161,7 @@
                       "User.first_name LIKE" => $search,
                       "User.middle_name LIKE" => $search,
                       "User.last_name LIKE" => $search
-                    )),'User.deleted'=>1,'User.activation_status'=>1),
+                    )),'User.deleted'=>1,'User.activation_status'=>1,'User.id <>' => $userId),
                     'fields' => array('id','first_name','middle_name','last_name','image'),
                     'limit'=>$size,
                     'offset'=>$offset,

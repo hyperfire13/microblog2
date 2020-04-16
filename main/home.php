@@ -82,7 +82,7 @@
         <span  class="sr-only">Loading...</span>
       </div>
     </div>
-    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" ng-show="totalPages > 1" role="group" aria-label="Button group with nested dropdown">
       <button id="paginatorBtn" type="button" class="btn btn-success">Page</button>
       <div class="btn-group" role="group">
         <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
@@ -151,8 +151,8 @@
               <div class="col-md-4"ng-repeat="n in [].constructor(editPost.images.length) track by $index">
                 <figure>
                   <span ng-click="removeExistingPhoto($index)"  class="fa fa-times fa-lg"></span>
-                  <img id="postPic" ng-src="pic-posts/{{editPost.images[$index]}}" alt="">{{editPost.imageCaptions[$index]}}
-                  <figcaption><textarea id="caption-{{$index}}" ng-bind="editPost.imageCaptions[$index]" rows="2" placeholder="short caption..."></textarea></figcaption>
+                  <img id="postPic" ng-src="pic-posts/{{editPost.images[$index]}}" alt="">
+                  <figcaption><textarea style="width: 150px;" id="caption-{{$index}}" ng-bind="editPost.imageCaptions[$index]" rows="2" placeholder="short caption..."></textarea></figcaption>
                 </figure>
               </div>
               <div class="col-md-2">
@@ -171,7 +171,6 @@
                 <textarea ng-show="go" id="newcaption-{{$index}}" rows="2" placeholder="short caption..."></textarea>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -268,7 +267,7 @@
       </ul>
       </div>
       <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" ng-show="searchRequesttotalPages > 1" role="group" aria-label="Button group with nested dropdown">
           <button id="paginatorBtn2" type="button" class="btn btn-success">Page</button>
           <div class="btn-group" role="group">
             <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>

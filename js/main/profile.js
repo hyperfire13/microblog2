@@ -62,7 +62,8 @@ microblogApp.controller('profileCtrl',
     $scope.editPost = {
       id : '',
       post : '',
-      images : []
+      images : [],
+      imageCaptions : []
     };
     $scope.followings = [];
     $scope.followers = [];
@@ -81,6 +82,36 @@ microblogApp.controller('profileCtrl',
     };
     $scope.blogs = [];
     $scope.imageGenerator = 0;
+    $scope.personProfile = null;
+    $scope.showProfile = function (id) {
+      $scope.fetching = true;
+      $('#profileModal').modal({
+        backdrop: 'static',
+        keyboard: false,
+        show : true
+      });
+      $http({
+        method:'GET',
+        url:'apis/users/showProfile'+'?token='+localStorage.getItem('token')+'&search_id='+id+'&user_id='+$rootScope.user.id,
+          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+      }).then(function mySuccess(response) {
+        $scope.fetching = false;
+        if (response.data.status === 'success') {
+            $scope.personProfile = response.data.record;
+        } else if (response.data.status === 'failed') {
+            $scope.personProfile = null;
+            handler.growler(response.data.message);
+        } else if (!response.data.status) {
+            $scope.personProfile = null;
+            $scope.fetching = false;
+            handler.unknown();
+        }
+      },function myError () {
+          $scope.personProfile = null;
+          $scope.fetching = false;
+          handler.unknown();
+      });
+    }
 
     $scope.getExtension = function(filename) {
       var parts = filename.split('.');
@@ -101,6 +132,9 @@ microblogApp.controller('profileCtrl',
     }
     $scope.removeExistingPhoto = function (index) {
       $scope.editPost.images.splice(index,1);
+      if ($scope.editPost.imageCaptions.length > 0) {
+        $scope.editPost.imageCaptions.splice(index,1);
+      }
     }
     $scope.addImageSelector  = function () {
       if (($scope.editPost.images.length + $scope.imageGenerator)  > 2) {
@@ -237,55 +271,77 @@ microblogApp.controller('profileCtrl',
       } 
       else {
           var form_data = new FormData();
+          var measurer = true;
+          if ($scope.editPost.images.length > 0) {
+              $scope.editPost.imageCaptions = [];
+              for (let index = 0; index < $scope.editPost.images.length; index++) {
+                  $scope.editPost.imageCaptions.push($('#caption-'+index).val());
+              }
+          }
           if ($scope.imageGenerator > 0) {
               for (let id = 0; id < $scope.imageGenerator; id++) {
                 form_data.append("file[]", $("#"+id)[0].files[0]);
+                if ($('#newcaption-'+id).val() !== "") {
+                    $scope.editPost.imageCaptions.push($('#newcaption-'+id).val());
+                }
               }
           }
-          form_data.append("token", localStorage.getItem('token'));
-          form_data.append("user_id", $rootScope.user.id);
-          form_data.append("post_id", $scope.editPost.id);
-          form_data.append("post", $scope.editPost.post);
-          form_data.append("existing_pics",JSON.stringify($scope.editPost.images));
-          handler.showLoading(true,"Editing your blog...");
-          $timeout(function () {
-            $.ajax({
-              method: 'POST',
-              data: form_data ,
-              processData: false,
-              contentType: false,
-              url: 'apis/posts/editPost',
-              success: function(data) {
-                var response = data;
-                $timeout(function () {
-                  handler.showLoading(false,"");
-                }, 2000);
-                if (response.status === 'success') {
-                    handler.growler(response.message);
-                    $scope.editPost = {
-                      id : '',
-                      post : '',
-                      images : ''
-                    };
-                    $scope.imageGenerator = 0;
-                    $('#editPostModal').modal('hide');
-                    $scope.showMyBlogs();
-                } else if (response.status === 'failed') {
-                    handler.growler(response.message);
-                } else if (response.status !== 'success') {
-                    handler.unknown();
-                }
-              },
-              error: function() {
-                setTimeout(function() {
-                  handler.showLoading(false,"");
-                }, 1000);
-                setTimeout(function() {
-                  handler.growler("Something went wrong","It's not on you,It's on us");
-                },1000);
-              }
-            }); 
-          }, 2000);
+          for (let id = 0; id < $scope.editPost.imageCaptions.length; id++) {
+            if ($scope.editPost.imageCaptions[id].length < 20) {
+                continue;
+            } else {
+                measurer = false;
+                handler.growler('Picture number '+(id+1)+'\'s caption is over 20 characters');
+                break;
+            }
+          }
+          if (measurer) {
+              form_data.append("token", localStorage.getItem('token'));
+              form_data.append("user_id", $rootScope.user.id);
+              form_data.append("post_id", $scope.editPost.id);
+              form_data.append("post", $scope.editPost.post);
+              form_data.append("existing_pics",JSON.stringify($scope.editPost.images));
+              form_data.append("image_captions",JSON.stringify($scope.editPost.imageCaptions));
+              handler.showLoading(true,"Editing your blog...");
+              $timeout(function () {
+                $.ajax({
+                  method: 'POST',
+                  data: form_data ,
+                  processData: false,
+                  contentType: false,
+                  url: 'apis/posts/editPost',
+                  success: function(data) {
+                    var response = data;
+                    $timeout(function () {
+                      handler.showLoading(false,"");
+                    }, 2000);
+                    if (response.status === 'success') {
+                        handler.growler(response.message);
+                        $scope.editPost = {
+                          id : '',
+                          post : '',
+                          images : ''
+                        };
+                        $scope.imageGenerator = 0;
+                        $('#editPostModal').modal('hide');
+                        $scope.showMyBlogs();
+                    } else if (response.status === 'failed') {
+                        handler.growler(response.message);
+                    } else if (response.status !== 'success') {
+                        handler.unknown();
+                    }
+                  },
+                  error: function() {
+                    setTimeout(function() {
+                      handler.showLoading(false,"");
+                    }, 1000);
+                    setTimeout(function() {
+                      handler.growler("Something went wrong","It's not on you,It's on us");
+                    },1000);
+                  }
+                }); 
+              }, 2000);
+          }
       }
     }
     $scope.viewImage = function (element, index) {
@@ -300,6 +356,7 @@ microblogApp.controller('profileCtrl',
       };
       if ($scope.isImage(imageName)) {
           reader.readAsDataURL(imageFile);
+          $scope.go = true;
           $scope.photoSelected = true;
           
       } else {
@@ -311,12 +368,16 @@ microblogApp.controller('profileCtrl',
       }
     }
     $scope.editPostPrompt = function (post) {
-     
+      alert(JSON.stringify(post))
       $scope.imageGenerator = 0;
+      $scope.go = false;
       $scope.editPost.id = post.id;
       $scope.editPost.post = post.post;
       if (post.images !== null) {
-        $scope.editPost.images = post.images.slice();
+          $scope.editPost.images = post.images.slice();
+      }
+      if (post.image_captions !== null) {
+          $scope.editPost.imageCaptions = post.image_captions.slice();
       }
       
       $('#editPostModal').modal({

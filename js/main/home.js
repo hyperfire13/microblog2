@@ -164,11 +164,12 @@ microblogApp.controller('homeCtrl',
       } 
       else {
           var form_data = new FormData();
+          var measurer = true;
           if ($scope.editPost.images.length > 0) {
-            $scope.editPost.imageCaptions = [];
-            for (let index = 0; index < $scope.editPost.images.length; index++) {
-              $scope.editPost.imageCaptions.push($('#caption-'+index).val());
-            }
+              $scope.editPost.imageCaptions = [];
+              for (let index = 0; index < $scope.editPost.images.length; index++) {
+                $scope.editPost.imageCaptions.push($('#caption-'+index).val());
+              }
           }
           if ($scope.imageGenerator > 0) {
               for (let id = 0; id < $scope.imageGenerator; id++) {
@@ -178,51 +179,62 @@ microblogApp.controller('homeCtrl',
                 }
               }
           }
-          form_data.append("token", localStorage.getItem('token'));
-          form_data.append("user_id", $rootScope.user.id);
-          form_data.append("post_id", $scope.editPost.id);
-          form_data.append("post", $scope.editPost.post);
-          form_data.append("existing_pics",JSON.stringify($scope.editPost.images));
-          form_data.append("image_captions",JSON.stringify($scope.editPost.imageCaptions));
-          handler.showLoading(true,"Editing your blog...");
-          $timeout(function () {
-            $.ajax({
-              method: 'POST',
-              data: form_data ,
-              processData: false,
-              contentType: false,
-              url: 'apis/posts/editPost',
-              success: function(data) {
-                var response = data;
-                $timeout(function () {
-                  handler.showLoading(false,"");
-                }, 2000);
-                if (response.status === 'success') {
-                    handler.growler(response.message);
-                    $scope.editPost = {
-                      id : '',
-                      post : '',
-                      images : ''
-                    };
-                    $scope.imageGenerator = 0;
-                    $('#editPostModal').modal('hide');
-                    $scope.viewAllBlogs();
-                } else if (response.status === 'failed') {
-                    handler.growler(response.message);
-                } else if (response.status !== 'success') {
-                    handler.unknown();
-                }
-              },
-              error: function() {
-                setTimeout(function() {
-                  handler.showLoading(false,"");
-                }, 1000);
-                setTimeout(function() {
-                  handler.growler("Something went wrong","It's not on you,It's on us");
-                },1000);
-              }
-            }); 
-          }, 2000);
+          for (let id = 0; id < $scope.editPost.imageCaptions.length; id++) {
+            if ($scope.editPost.imageCaptions[id].length < 20) {
+                continue;
+            } else {
+                measurer = false;
+                handler.growler('Picture number '+(id+1)+'\'s caption is over 20 characters');
+                break;
+            }
+          }
+          if (measurer) {
+              form_data.append("token", localStorage.getItem('token'));
+              form_data.append("user_id", $rootScope.user.id);
+              form_data.append("post_id", $scope.editPost.id);
+              form_data.append("post", $scope.editPost.post);
+              form_data.append("existing_pics",JSON.stringify($scope.editPost.images));
+              form_data.append("image_captions",JSON.stringify($scope.editPost.imageCaptions));
+              handler.showLoading(true,"Editing your blog...");
+              $timeout(function () {
+                $.ajax({
+                  method: 'POST',
+                  data: form_data ,
+                  processData: false,
+                  contentType: false,
+                  url: 'apis/posts/editPost',
+                  success: function(data) {
+                    var response = data;
+                    $timeout(function () {
+                      handler.showLoading(false,"");
+                    }, 2000);
+                    if (response.status === 'success') {
+                        handler.growler(response.message);
+                        $scope.editPost = {
+                          id : '',
+                          post : '',
+                          images : ''
+                        };
+                        $scope.imageGenerator = 0;
+                        $('#editPostModal').modal('hide');
+                        $scope.viewAllBlogs();
+                    } else if (response.status === 'failed') {
+                        handler.growler(response.message);
+                    } else if (response.status !== 'success') {
+                        handler.unknown();
+                    }
+                  },
+                  error: function() {
+                    setTimeout(function() {
+                      handler.showLoading(false,"");
+                    }, 1000);
+                    setTimeout(function() {
+                      handler.growler("Something went wrong","It's not on you,It's on us");
+                    },1000);
+                  }
+                }); 
+              }, 2000);
+          }
       }
     }
     $scope.editPostPrompt = function (post) {

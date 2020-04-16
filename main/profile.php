@@ -121,7 +121,7 @@
           <span  class="sr-only">Loading...</span>
         </div>
       </div>
-      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" ng-show="totalPages > 1" role="group" aria-label="Button group with nested dropdown">
         <button id="paginatorBtn" type="button" class="btn btn-success">Page</button>
         <div class="btn-group" role="group">
           <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
@@ -153,7 +153,7 @@
         <li ng-repeat="follower in followers" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
           <img id="postProfilePic"  ng-src="pic-profiles/{{follower.MyFollower.image}}" alt="..." alt=""  class="rounded float-left">
           <div class="blogger-name text-warning"style=" margin-bottom: 0px;margin-top: 8px;">
-            {{follower.MyFollower.first_name}} {{follower.MyFollower.last_name}}
+            <a href="" ng-click="showProfile(follower.MyFollower.id)" class="text-warning" style="text-decoration: none;">{{follower.MyFollower.first_name}} {{follower.MyFollower.last_name}}</a>
             <span ng-show="follower.MyFollower.followed" class="badge badge-warning float-right">Following</span>
             <button ng-show="!follower.MyFollower.followed" ng-click="follow(follower.MyFollower.id)" type="submit" class="btn btn-outline-warning float-right" >Follow</button>
         </li>
@@ -171,7 +171,7 @@
       <!-- Page : <select class="custom-select " ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
         <option ng-repeat="n in [].constructor(followerTotalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
       </select>  -->
-      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" ng-show="followerTotalPages > 1" role="group" aria-label="Button group with nested dropdown">
         <button id="paginatorBtn2" type="button" class="btn btn-success">Page</button>
         <div class="btn-group" role="group">
           <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
@@ -202,7 +202,7 @@
         <li ng-repeat="following in followings" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
           <img id="postProfilePic"  ng-src="pic-profiles/{{following.MyFollowing.image}}" alt="..." alt=""  class="rounded float-left">
           <div class="blogger-name text-warning"style=" margin-bottom: 0px;margin-top: 8px;">
-            {{following.MyFollowing.first_name}} {{following.MyFollowing.last_name}}
+            <a href="" ng-click="showProfile(following.MyFollowing.id)" class="text-warning" style="text-decoration: none;">{{following.MyFollowing.first_name}} {{following.MyFollowing.last_name}}</a>
             <button ng-click="unfollow(following.Follower.id)" type="submit" class="btn btn-outline-warning float-right" >Unfollow</button>
         </li>
       </ul>
@@ -309,21 +309,36 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <label for="exampleTextarea">Compose here : {{editPost.images}} </label>
+              <label for="exampleTextarea">Compose here : </label>
               <textarea ng-model="editPost.post" class="form-control" id="exampleTextarea" placeholder="What's up!" rows="3"></textarea>
             </div>
           </div>
           <div class="col-md-12">
             <div class="row">
-              <div class="col-md-2"ng-repeat="n in [].constructor(editPost.images.length) track by $index">
-                <img  style="max-width: 50px;height: 50px;" ng-src="pic-posts/{{editPost.images[$index]}}" class="profile-user-img img-responsive">
-                <span ng-click="removeExistingPhoto($index)"  class="fa fa-times fa-lg"></span>
+              <div class="col-md-4"ng-repeat="n in [].constructor(editPost.images.length) track by $index">
+                <figure>
+                  <span ng-click="removeExistingPhoto($index)"  class="fa fa-times fa-lg"></span>
+                  <img id="postPic" ng-src="pic-posts/{{editPost.images[$index]}}" alt="">
+                  <figcaption><textarea style="width: 150px;" id="caption-{{$index}}" ng-bind="editPost.imageCaptions[$index]" rows="2" placeholder="short caption..."></textarea></figcaption>
+                </figure>
               </div>
               <div class="col-md-2">
                 <button type="button" class="btn btn-outline-success" ng-click="addImageSelector()">Add Image</button>
               </div>
             </div>
             <div class="row" ng-repeat="n in [].constructor(imageGenerator) track by $index">
+              <div class="col-md-4">
+                <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
+                <span ng-click="removeNewPhoto($index)"  class="fa fa-times fa-lg"></span>
+              </div>
+              <div class="col-md-2">
+                <img style="width: 70px;height: 60px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
+              </div>
+              <div class="col-md-4">
+                <textarea ng-show="go" id="newcaption-{{$index}}" rows="2" placeholder="short caption..."></textarea>
+              </div>
+            </div>
+            <!-- <div class="row" ng-repeat="n in [].constructor(imageGenerator) track by $index">
               <div class="col-md-6">
                 <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
                 <span ng-click="removeNewPhoto($index)"  class="fa fa-times fa-lg"></span>
@@ -331,8 +346,7 @@
               <div class="col-md-6">
                 <img style="max-width: 50px;height: 50px;" id="picPreview-{{$index}}" ng-show="photoSelected" class="profile-user-img img-responsive">
               </div>
-            </div>
-            
+            </div> -->
           </div>
         </div>
       </div>
@@ -408,7 +422,7 @@
         <li ng-repeat="person in people" class="list-group-item align-items-center blog-post" style="padding-bottom: 0px;">
           <img id="postProfilePic"  ng-src="pic-profiles/{{person.User.image}}" alt="..." alt=""  class="rounded float-left">
           <div class="blogger-name text-warning"style=" margin-bottom: 0px;margin-top: 8px;">
-            {{person.User.first_name}} {{person.User.last_name}}
+            <a href="" ng-click="showProfile(person.User.id)" class="text-warning" style="text-decoration: none;">{{person.User.first_name}} {{person.User.last_name}}</a>
             <button ng-show="!person.User.myFollowing" ng-click="follow(person.User.id)" type="submit" class="btn btn-outline-warning float-right" >Follow</button>
             <button ng-show="person.User.myFollowing" ng-click="unfollow(person.User.myFollowingId)" type="submit" class="btn btn-outline-warning float-right" >Unfollow</button>
             <span ng-show="person.User.myFollower" class="badge badge-warning float-right">Follows you</span>
@@ -416,7 +430,7 @@
       </ul>
       </div>
       <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" ng-show="peopleTotalPages > 1" role="group" aria-label="Button group with nested dropdown">
           <button id="paginatorBtn3" type="button" class="btn btn-success">Page</button>
           <div class="btn-group" role="group">
             <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
@@ -475,6 +489,43 @@
       </div>
       <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
         <button type="button" class="btn btn-success" ng-click="sharePost(retweet.id,resharePost)" >Retweet</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- profile Modal -->
+<div id="profileModal" class="modal fade " tabindex="-1" role="dialog">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content bg-warning text-primary">
+      <div class="modal-header">
+      </div>
+      <div ng-show="fetching" class="modal-body d-flex justify-content-center">
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <div class="row" ng-show="!fetching">
+        <div class="col-md-12">
+          <div id="profileCard" class="card border-warning mb-3">
+            <div class="card-header">About
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="profilePic" ng-src="pic-profiles/{{personProfile.User.image}}" alt="..." alt="" >
+                  <h4 class="card-title text-center">{{personProfile.User.first_name}} {{personProfile.User.last_name}}</h4>
+                </div>
+                <div class="col-md-6">
+                <p class="card-text">Birthday : {{personProfile.User.date_of_birth}}</p>
+                <p class="card-text">Username : {{personProfile.User.username}}</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="margin-bottom: 0px;margin-top: 0px;padding-top: 0px;">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>

@@ -61,11 +61,11 @@
       ),
       'date_of_birth' => array(
         'required' => array(
-          'rule' => 'date',
-          'type' => 'string',
+          'rule' => 'checkDOB',
+          'type' => 'date',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'birthday'
+          'message' => 'birthday is invalid'
         )
       ),'activation_status' => array(
         'required' => array(
@@ -86,6 +86,9 @@
         )
       )
     );
+    public function checkDOB($check) {
+      return $check['date_of_birth'] < date("Y-m-d");
+    }
     public function beforeSave($options = array()) {
       if (isset($this->data[$this->alias]['password'])) {
           $passwordHasher = new BlowfishPasswordHasher();
@@ -105,7 +108,6 @@
       if (isset($this->data[$this->alias]['username'])) {
           $this->data[$this->alias]['username'] = $this->clean_string($this->data[$this->alias]['username']);
       }
-      
       return true;
     }
   }
