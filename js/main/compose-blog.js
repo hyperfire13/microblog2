@@ -26,7 +26,7 @@ microblogApp.controller('composeCtrl',
     $scope.imageCaptions = [];
     $scope.savePost = function () {
       if ($scope.blogBody.length > 150) {
-          handler.growler('your blog should not be more than 150 characters');
+          $("#blogId").addClass("is-invalid");
       } else {
           var form_data = new FormData();
           var measurer = true;

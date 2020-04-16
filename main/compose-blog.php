@@ -11,8 +11,9 @@
               <div class="col-md-3">
                 <div class="form-group">
                   <label for="exampleTextarea">Compose here : </label>
-                  <textarea ng-model="blogBody" class="form-control" id="exampleTextarea" placeholder="What's up!" rows="3"></textarea>
-                  <button ng-disabled="blogBody.length > 150 || blogBody.length === 0" type="button" class="btn btn-outline-success" ng-click="savePost()">Save</button>
+                  <textarea id="blogId" ng-model="blogBody" ng-class="{'is-invalid' : blogBody.length > 150}" class="form-control" id="exampleTextarea" placeholder="What's up!" rows="3"></textarea>
+                  <div class="invalid-feedback">Blog must be no more than 150 characters.</div>
+                  <button ng-disabled="blogBody.length === 0" type="button" class="btn btn-outline-success" ng-click="savePost()">Save</button>
                 </div>
               </div>
               <div class="col-md-9" >

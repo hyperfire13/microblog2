@@ -66,7 +66,8 @@
           if (empty($data)) {
              $data = $this->request->data;
           } elseif (!empty($data)) {
-              $data = array_map('trim', $data) ;
+              $data = array_map('trim', $data);
+              $data['code'] = $this->cleanString($data['code']); 
               $record = $this->User->find('first', array( 'conditions' => array('BINARY User.code = '.'\''.$data['code'].'\'')));
               if (empty($record)) {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'Whoops, you entered an invalid code');
@@ -213,9 +214,9 @@
           if ($this->CheckSession('User.token')) {
               $data = $this->request->data; 
               $baseToken = $this->Session->read('User.token');
-              if ($data['token'] === $baseToken) { 
+              if ($data['token'] === $baseToken) {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'Please complete the fields');
-                  if (empty($_FILES['file'])) { 
+                  if (empty($_FILES['file'])) {
                       $this->promtMessage = array('status'=>'failed', 'message'=>'No photo was sent');
                   } else {
                       $userId = $this->Session->read('User.id');
@@ -223,13 +224,17 @@
                       $tmp = $_FILES['file']['tmp_name'][0];
                       $path = '../../../pic-profiles/';
                       $extension = pathinfo($img, PATHINFO_EXTENSION);
-                      $path = $path.strtolower($userId."-profilepic.".$extension);
-                      $imgNewName = strtolower($userId."-profilepic.".$extension);
+                      $imgNewName = strtolower($userId.$this->createCode()."-profilepic.".$extension);
+                      $path = $path. $imgNewName;
                       $this->User->id = $userId;
-                      if ($this->User->saveField('image',$imgNewName)) { 
-                          if (move_uploaded_file($tmp,$path)) {
-                              $this->promtMessage = array('status'=>'success', 'message'=>"Image uploaded to server and database");
-                          }
+                      if ($_FILES['file']['size'][0] <= 2000000) {
+                          if ($this->User->saveField('image',$imgNewName)) {
+                              if (move_uploaded_file($tmp,$path)) {
+                                  $this->promtMessage = array('status'=>'success', 'message'=>"Image uploaded to server and database");
+                              }
+                          } 
+                      } else {
+                          $this->promtMessage = array('status'=>'failed', 'message'=>'Image should not be more than 2mb in size');
                       }
                   }
               } else {

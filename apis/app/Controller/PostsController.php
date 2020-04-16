@@ -17,35 +17,44 @@
                   if (empty($data)) {
                       $data = $this->request->data;
                   } elseif (!empty($data)) { 
+                      $go = true;
                       if (!empty($_FILES['file'])) { 
                           $totalPosts = $this->Post->find('count', array(
                             'conditions' => array('Post.user_id' => $data['user_id'])
                         )) + 1;
                           $no_files = count($_FILES["file"]['name']);
                           for ($i=0; $i < $no_files; $i++) {
-                            $img = $_FILES['file']['name'][$i];
-                            $tmp = $_FILES['file']['tmp_name'][$i];
-                            $path = '../../../pic-posts/';
-                            $extension = pathinfo($img, PATHINFO_EXTENSION);
-                            $path = $path.strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
-                            $imgNewName = strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
-                            array_push($postImages,$imgNewName);
-                            if (!move_uploaded_file($tmp,$path)) {
-                                $this->promtMessage = array('status'=>'failed', 'message'=>"Image not uploaded to server and database");
-                            } 
+                            
+                            if ($_FILES['file']['size'][$i] > 2000000) {
+                                $this->promtMessage = array('status'=>'failed', 'message'=>('Image number '.($i+1).' should not exceed size of 2mb'));
+                                $go = false;
+                            } else {
+                                $img = $_FILES['file']['name'][$i];
+                                $tmp = $_FILES['file']['tmp_name'][$i];
+                                $path = '../../../pic-posts/';
+                                $extension = pathinfo($img, PATHINFO_EXTENSION);
+                                $path = $path.strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
+                                $imgNewName = strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
+                                array_push($postImages,$imgNewName);
+                                if (!move_uploaded_file($tmp,$path)) {
+                                    $this->promtMessage = array('status'=>'failed', 'message'=>"Image not uploaded to server and database");
+                                }  
+                            }
                           }
                           $data['images'] = json_encode($postImages);
                       }
-                      if ($this->Post->save($data)) {
-                          $this->promtMessage = array('status'=>'success', 'message'=>'Your blog was uploaded');
-                      } else {
-                          $errorList = ['Notice :'];
-                          $errors = $this->Post->validationErrors;
-                          foreach ($errors as $value) {
-                          array_push($errorList," ".$value[0]);
-                          } 
-                          $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
-                        }
+                      if ($go) {
+                          if ($this->Post->save($data)) {
+                              $this->promtMessage = array('status'=>'success', 'message'=>'Your blog was uploaded');
+                          } else {
+                              $errorList = ['Notice :'];
+                              $errors = $this->Post->validationErrors;
+                              foreach ($errors as $value) {
+                              array_push($errorList," ".$value[0]);
+                              } 
+                              $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
+                          }
+                      }
                   }
               } else {
                   $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized');
@@ -186,28 +195,35 @@
               $baseId = $this->Session->read('User.id');
               $postImages = [];
               $data['existing_pics'] = json_decode($data['existing_pics'],true);
-              if ($data['token'] === $baseToken && $baseId === $data['user_id']) {  
+              if ($data['token'] === $baseToken && $baseId === $data['user_id']) {
                   if (empty($data)) {
                       $data = $this->request->data;
                   } elseif (!empty($data)) { 
                       $checkOwner = $this->Post->find('count', array(
                         'conditions' => array('Post.id' => $data['post_id'],'Post.user_id' => $data['user_id'])
                       ));
-                      if ($checkOwner === 1) {
+                      if ($checkOwner === 1) { 
+                          $go = true;
                           if (!empty($_FILES['file'])) { 
                               $totalPosts = $this->Post->find('count', array('conditions' => array('Post.user_id' => $data['user_id'])
                                 )) + 1;
                                 $no_files = count($_FILES["file"]['name']);
+                               
                               for ($i=0; $i < $no_files; $i++) {
-                                $img = $_FILES['file']['name'][$i];
-                                $tmp = $_FILES['file']['tmp_name'][$i];
-                                $path = '../../../pic-posts/';
-                                $extension = pathinfo($img, PATHINFO_EXTENSION);
-                                $path = $path.strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
-                                $imgNewName = strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
-                                array_push($data['existing_pics'],$imgNewName);
-                                if (!move_uploaded_file($tmp,$path)) {
-                                    $this->promtMessage = array('status'=>'failed', 'message'=>"Image not uploaded to server and database");
+                                if ($_FILES['file']['size'][$i] > 2000000) {
+                                    $this->promtMessage = array('status'=>'failed', 'message'=>('Some of your images exceeds the size of 2mb, select another image with lower size'));
+                                    $go = false;
+                                } else {
+                                    $img = $_FILES['file']['name'][$i];
+                                    $tmp = $_FILES['file']['tmp_name'][$i];
+                                    $path = '../../../pic-posts/';
+                                    $extension = pathinfo($img, PATHINFO_EXTENSION);
+                                    $path = $path.strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
+                                    $imgNewName = strtolower($totalPosts.$data['user_id'].$i."-postpic.".$extension);
+                                    array_push($data['existing_pics'],$imgNewName);
+                                    if (!move_uploaded_file($tmp,$path)) {
+                                        $this->promtMessage = array('status'=>'failed', 'message'=>"Image not uploaded to server and database");
+                                    }
                                 }
                               }
                               $data['images'] = json_encode($data['existing_pics']);
@@ -216,15 +232,17 @@
                           }
                           $this->Post->id = $data['post_id'];
                           unset($data['post_id']);
-                          if ($this->Post->save($data)) {
-                              $this->promtMessage = array('status'=>'success', 'message'=>'Your blog was edited');
-                          } else {
-                              $errorList = ['Notice :'];
-                              $errors = $this->Post->validationErrors;
-                              foreach ($errors as $value) {
-                              array_push($errorList," ".$value[0]);
-                              } 
-                              $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
+                          if ($go) {
+                              if ($this->Post->save($data)) {
+                                  $this->promtMessage = array('status'=>'success', 'message'=>'Your blog was edited');
+                              } else {
+                                  $errorList = ['Notice :'];
+                                  $errors = $this->Post->validationErrors;
+                                  foreach ($errors as $value) {
+                                  array_push($errorList," ".$value[0]);
+                                  } 
+                                  $this->promtMessage = array('status'=>'failed', 'message'=> $errorList);
+                              }
                           }
                       } else {
                         $this->promtMessage = array('status'=>'failed', 'message'=>'unauthorized to edit this');

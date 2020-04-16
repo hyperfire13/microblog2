@@ -62,7 +62,7 @@
       <div class="modal-body">
         <div class="form-group has-danger">
           <label for="">Enter Username you provided</label>
-          <input type="text" name="resendUsername" class="form-control " id="resendUsername"  placeholder="Enter username" required>
+          <input type="text" name="resendUsername" class="form-control " id="resendUsername"  placeholder="Enter username">
           <div class="invalid-feedback">Please enter username.</div>
         </div>
       </div>

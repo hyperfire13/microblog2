@@ -368,7 +368,6 @@ microblogApp.controller('profileCtrl',
       }
     }
     $scope.editPostPrompt = function (post) {
-      alert(JSON.stringify(post))
       $scope.imageGenerator = 0;
       $scope.go = false;
       $scope.editPost.id = post.id;
@@ -482,7 +481,9 @@ microblogApp.controller('profileCtrl',
             } else if (response.status === 'empty') {
                 handler.growler("Please choose an image");
             } else if (response.status !== 'success') {
-                handler.unknown();
+              handler.growler(response.message);
+              jQuery('#picPreview').attr('src', null);
+                $scope.pictureChange = false;
             }
           }
         }); 

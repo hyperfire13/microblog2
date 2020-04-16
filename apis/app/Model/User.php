@@ -37,7 +37,7 @@
           'rule' => 'notBlank',
           'type' => 'string',
           'allowEmpty' => false,
-          'message' => 'firstname',
+          'message' => ' - missing firstname -',
           'required' => true
         )
       ),
@@ -47,7 +47,7 @@
           'type' => 'string',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'middlename'
+          'message' => '- missing middlename -'
         )
       ),
       'last_name' => array(
@@ -56,7 +56,7 @@
           'type' => 'string',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'lastname'
+          'message' => '- missing lastname -'
         )
       ),
       'date_of_birth' => array(
@@ -65,7 +65,7 @@
           'type' => 'date',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'birthday is invalid'
+          'message' => 'birthday is invalid,'
         )
       ),'activation_status' => array(
         'required' => array(
@@ -73,7 +73,7 @@
           'type' => 'tinyinteger',
           'allowEmpty' => false,
           'required' => false,
-          'message' => 'birthday'
+          'message' => '- missing activation status -'
         )
         ),
       'code' => array(

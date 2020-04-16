@@ -136,7 +136,7 @@
   <div class="tab-pane fade" id="followers">
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2  border-bottom">
       <div class="btn-group mr-2">
-        <input type="text" ng-model="searchName" name="search" class="form-control" placeholder="find people." id="search" required>
+        <input type="text" ng-model="searchName" name="search" class="form-control" placeholder="find people." id="search" >
         <button ng-click="searchPeople()" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
       </div>
     </div>
@@ -185,7 +185,7 @@
   <div class="tab-pane fade" id="following">
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2  border-bottom">
       <div class="btn-group mr-2">
-        <input type="text" ng-model="searchName" name="search" class="form-control" placeholder="find people." id="search" required>
+        <input type="text" ng-model="searchName" name="search" class="form-control" placeholder="find people." id="search" >
         <button ng-click="searchPeople()" class="btn btn-sm btn-outline-secondary"><span class="fa fa-search fa-lg"></span></button>
       </div>
     </div>
@@ -233,41 +233,49 @@
             <div class="col-lg-6">
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input ng-model="editUser.email" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <input ng-class="{'is-invalid' : editUser.email.length === 0}" ng-model="editUser.email" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" >
+                <div class="invalid-feedback">Missing email</div>
               </div>
               <div class="form-group">
                 <label class="col-form-label" for="inputDefault">Username</label>
-                <input ng-model="editUser.username" type="text" name="username" class="form-control" placeholder="Enter username" id="username" required>
+                <input ng-class="{'is-invalid' : editUser.username.length === 0}" ng-model="editUser.username" type="text" name="username" class="form-control" placeholder="Enter username" id="username" >
+                <div class="invalid-feedback">Missing username</div>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Old Password</label>
-                <input ng-model="editUser.oldPassword" type="password" name="password" class="form-control" id="password" placeholder="Enter Old Password" required>
+                <input ng-class="{'is-invalid' : editUser.oldPassword === 0}" ng-model="editUser.oldPassword" type="password" name="password" class="form-control" id="password" placeholder="Enter Old Password">
+                <div class="invalid-feedback">Missing old password</div>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1"> New/Old Password</label>
-                <input ng-model="editUser.password" type="password" name="password" class="form-control" id="password" placeholder="Enter Password" required>
+                <input ng-class="{'is-invalid' : editUser.password === 0}" ng-model="editUser.password" type="password" name="password" class="form-control" id="password" placeholder="Enter Password" >
+                <div class="invalid-feedback">Missing new/old password</div>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Confirm Password</label>
-                <input ng-model="confirmPassword" type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                <input ng-class="{'is-invalid' : confirmPassword === 0}" ng-model="confirmPassword" type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password" >
+                <div class="invalid-feedback">Missing confirm password</div>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="form-group">
                 <label class="col-form-label" for="inputDefault">Firstname</label>
-                <input ng-model="editUser.firstName" type="text" name="firstName" class="form-control" placeholder="Enter firstname" id="firstName" required>
+                <input ng-class="{'is-invalid' : editUser.firstName.length === 0}" ng-model="editUser.firstName" type="text" name="firstName" class="form-control" placeholder="Enter firstname" id="firstName" >
+                <div class="invalid-feedback">Missing firstname</div>
               </div>
               <div class="form-group">
                 <label class="col-form-label" for="inputDefault">Middlename</label>
-                <input ng-model="editUser.middleName" type="text" name="middleName" class="form-control" placeholder="Enter middlename" id="middleName" required>
+                <input ng-class="{'is-invalid' : editUser.middleName.length === 0}" ng-model="editUser.middleName" type="text" name="middleName" class="form-control" placeholder="Enter middlename" id="middleName" >
+                <div class="invalid-feedback">Missing middlename</div>
               </div>
               <div class="form-group">
                 <label class="col-form-label" for="inputDefault">Lastname</label>
-                <input ng-model="editUser.lastName" type="text" name="lastName" class="form-control" placeholder="Enter lastname" id="lastName" required>
+                <input ng-class="{'is-invalid' : editUser.lastName.length === 0}" ng-model="editUser.lastName" type="text" name="lastName" class="form-control" placeholder="Enter lastname" id="lastName" >
+                <div class="invalid-feedback">Missing lastname</div>
               </div>
               <div class="form-group">
                 <label class="col-form-label" for="inputDefault">Birthday</label>
-                <input  type="date" name="dateOfBirth" class="form-control" placeholder="Enter birthday" id="dateOfBirth" required>
+                <input  type="date" name="dateOfBirth" class="form-control" placeholder="Enter birthday" id="dateOfBirth" >
               </div>
             </div>
           </div>
@@ -328,7 +336,7 @@
             </div>
             <div class="row" ng-repeat="n in [].constructor(imageGenerator) track by $index">
               <div class="col-md-4">
-                <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
+                <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" >
                 <span ng-click="removeNewPhoto($index)"  class="fa fa-times fa-lg"></span>
               </div>
               <div class="col-md-2">
@@ -340,7 +348,7 @@
             </div>
             <!-- <div class="row" ng-repeat="n in [].constructor(imageGenerator) track by $index">
               <div class="col-md-6">
-                <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" required>
+                <input onchange="angular.element(this).scope().viewImage(this)" class="form-control" accept=".png, .jpg, .jpeg" type="file" id="{{$index}}" name="file[]" multiple="multiple" >
                 <span ng-click="removeNewPhoto($index)"  class="fa fa-times fa-lg"></span>
               </div>
               <div class="col-md-6">
@@ -394,7 +402,7 @@
             <span class="sr-only">Loading...</span>
           </div>
         </div>
-        <textarea ng-show="!saving" class="form-control" ng-model="myComment" id="comment" rows="3" placeholder="enter comment" required></textarea>
+        <textarea ng-show="!saving" class="form-control" ng-model="myComment" id="comment" rows="3" placeholder="enter comment" ></textarea>
         <button ng-show="!saving" type="submit" class="btn btn-success" ng-click="saveComment($index,myComment)">Comment</button>
         <button ng-show="!saving" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
