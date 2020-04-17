@@ -49,10 +49,14 @@
                   if ($duplicateCount > 0 ) { 
                       // response if email/username is existing
                       $this->promtMessage = array('status'=>'failed','message'=>'Username already taken');
+                      $errorList = [];
+                      array_push($errorList,array('username'=>'Username already taken'));
+                      $this->promtMessage = array('status'=>'failed','message'=>$errorList);
                   }
                   if ($duplicateEmail > 0 ) { 
-                    // response if email/username is existing
-                    $this->promtMessage = array('status'=>'failed','message'=>'Email already taken');
+                      $errorList = [];
+                      array_push($errorList,array('email'=>'Email already taken'));
+                      $this->promtMessage = array('status'=>'failed','message'=>$errorList);
                   }
               }
           }
@@ -195,15 +199,16 @@
           } elseif (!empty($data)) { 
               $this->promtMessage = array('status'=>'failed', 'message'=>'Please relogin');
               if ($this->Session->check('User.token')) {
-                $baseToken = $this->Session->read('User.token');
-                if ($data['token'] === $baseToken) {
-                  $id = $this->Session->read('User.id');
-                  $record = $this->User->find('first', array( 'conditions' => array('User.id' => $id)));
-                  $record['User']['date_of_birth'] = date("M d, Y", strtotime($record['User']['date_of_birth']));
-                  $record['User']['first_name'] = $this->capitalizeFirstLetter($record['User']['first_name']);
-                  $record['User']['last_name'] = $this->capitalizeFirstLetter($record['User']['last_name']);
-                  $this->promtMessage = array('status'=>'success', 'record'=>$record);
-                }
+                  $baseToken = $this->Session->read('User.token');
+                  if ($data['token'] === $baseToken) {
+                      $id = $this->Session->read('User.id');
+                      $record = $this->User->find('first', array( 'conditions' => array('User.id' => $id)));
+                      $record['User']['date_of_birth'] = date("M d, Y", strtotime($record['User']['date_of_birth']));
+                      $record['User']['first_name'] = $this->capitalizeFirstLetter($record['User']['first_name']);
+                      $record['User']['last_name'] = $this->capitalizeFirstLetter($record['User']['last_name']);
+                      $record['User']['id'] = $this->idEncryption($record['User']['id']);
+                      $this->promtMessage = array('status'=>'success', 'record'=>$record);
+                  }
               }
           }
       }

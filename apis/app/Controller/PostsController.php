@@ -67,7 +67,8 @@
     }
     public function viewAllBlogs () {
       $this->layout = false;
-      $userId = $this->cleanNumber($this->request->query('id'));
+      $userId = $this->request->query('id');
+      $userId = $this->cleanNumber($this->idDecryption($userId));
       $token = $this->cleanString($this->request->query('token'));
       $page = $this->cleanNumber($this->request->query('page'));
       $size = $this->cleanNumber($this->request->query('size'));
@@ -111,7 +112,8 @@
     } 
     public function viewMyBlogs () {
       $this->layout = false;
-      $userId = $this->cleanNumber($this->request->query('id'));
+      $userId = $this->request->query('id');
+      $userId = $this->cleanNumber($this->idDecryption($userId));
       $token = $this->cleanString($this->request->query('token'));
       $page = $this->cleanNumber($this->request->query('page'));
       $size = $this->cleanNumber($this->request->query('size'));

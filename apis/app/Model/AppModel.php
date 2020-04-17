@@ -44,4 +44,14 @@ class AppModel extends Model {
 
     return $data;
   }
+  public function idEncryption($id) {
+    $data = openssl_encrypt($id, "AES-128-ECB", $this->idEncryptor);
+    //AyYEF91D0AisI0CHxk2+0w==
+    return $data;
+  }
+  public function idDecryption($id) {
+    $data = openssl_decrypt($id, "AES-128-ECB", $this->idEncryptor);
+    //AyYEF91D0AisI0CHxk2+0w==
+    return $data;
+  }
 }

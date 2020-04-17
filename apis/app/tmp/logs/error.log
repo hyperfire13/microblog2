@@ -7415,3 +7415,2448 @@ Stack Trace:
 #4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
 #5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2020-04-17 14:26:44 Error: [Error] Class 'Security' not found
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 [internal function]: UsersController->showProfile()
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2020-04-17 14:32:15 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:18 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:20 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:23 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:26 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:29 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:32 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:35 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:38 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:41 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:44 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:47 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:50 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:53 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:56 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:32:58 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:01 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:03 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:06 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:09 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:11 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:14 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:16 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:19 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:21 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:24 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:27 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:30 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:32 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:35 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:38 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:41 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:43 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:46 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:48 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:51 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:53 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:56 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:33:58 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:01 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:03 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:06 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:08 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:11 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:14 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:16 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:20 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:22 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:25 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:28 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:31 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:34 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:37 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:39 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:42 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:45 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:48 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:50 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:52 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:55 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:57 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:34:59 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:02 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:05 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:07 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:10 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:13 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:16 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:19 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:22 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:25 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:27 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:30 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:33 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:35 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:37 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:40 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:42 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:45 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:48 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:51 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:53 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:56 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:35:59 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:02 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:04 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:06 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:08 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:11 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:14 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:17 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:20 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:23 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:26 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:28 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:31 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:34 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:37 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:39 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:42 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:44 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:47 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:50 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:53 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:55 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:36:58 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:01 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:04 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:06 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:09 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:12 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:15 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:18 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:20 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:23 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:25 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:28 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:30 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:32 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:35 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:37 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:39 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:42 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:45 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:47 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:50 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:53 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:55 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:37:58 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:01 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:03 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:06 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:09 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:12 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:14 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:17 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:19 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:22 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:25 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:27 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:30 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:33 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:35 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:38 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:41 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:43 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:46 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:48 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:51 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:53 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:55 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:38:58 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:01 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:03 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:06 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:08 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:11 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:14 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:17 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:19 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:22 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:24 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:27 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:29 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:32 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:34 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:36 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:38 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:41 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:44 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:46 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:49 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:51 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:54 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:56 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:39:59 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:02 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:05 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:07 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:10 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:12 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:15 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:18 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:21 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:24 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:26 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:29 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:31 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:34 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:37 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:40 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:43 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:45 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:48 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:51 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:54 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:56 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:40:59 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:01 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:04 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:07 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:10 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:13 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:16 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:19 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:22 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:25 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:28 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:31 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:33 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:35 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:38 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:40 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:43 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:45 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:48 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:51 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:41:54 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:45:58 Error: [CakeException] Invalid key for encrypt(), key must be at least 256 bits (32 bytes) long.
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Utility\Security.php(346): Security::_checkKey('coronavirus2019', 'encrypt()')
+#1 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::encrypt('233', 'coronavirus2019')
+#2 [internal function]: UsersController->showProfile()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2020-04-17 14:50:58 Error: [CakeException] Invalid key for encrypt(), key must be at least 256 bits (32 bytes) long.
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Utility\Security.php(346): Security::_checkKey('768593096574535...', 'encrypt()')
+#1 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::encrypt('233', '768593096574535...')
+#2 [internal function]: UsersController->showProfile()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2020-04-17 14:53:37 Error: [Error] Call to undefined function mcrypt_get_iv_size()
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::encrypt('233', '180e59499f92fd0...')
+#1 [internal function]: UsersController->showProfile()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:54:59 Error: [Error] Call to undefined function mcrypt_get_iv_size()
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::encrypt('233', '180e59499f92fd0...')
+#1 [internal function]: UsersController->showProfile()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:55:40 Error: [CakeException] Invalid key for encrypt(), key must be at least 256 bits (32 bytes) long.
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Utility\Security.php(346): Security::_checkKey('768593096574535...', 'encrypt()')
+#1 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::encrypt('233', '768593096574535...')
+#2 [internal function]: UsersController->showProfile()
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2020-04-17 14:56:18 Error: [Error] Call to undefined function mcrypt_get_iv_size()
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::encrypt('233', '6ac1a52fe6e2303...')
+#1 [internal function]: UsersController->showProfile()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 14:56:23 Error: [Error] Call to undefined function mcrypt_get_iv_size()
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::encrypt('233', '6ac1a52fe6e2303...')
+#1 [internal function]: UsersController->showProfile()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:02:09 Error: [ParseError] syntax error, unexpected ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:02:11 Error: [ParseError] syntax error, unexpected ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:02:14 Error: [ParseError] syntax error, unexpected ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:02:16 Error: [ParseError] syntax error, unexpected ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:02:19 Error: [ParseError] syntax error, unexpected ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:02:22 Error: [ParseError] syntax error, unexpected ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:02:24 Error: [ParseError] syntax error, unexpected ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:02:44 Error: [Error] Call to undefined function mcrypt_get_iv_size()
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::encrypt('233', '6ac1a52fe6e2303...')
+#1 [internal function]: UsersController->showProfile()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:12:31 Error: [Error] Call to undefined function mcrypt_get_iv_size()
+Request URL: /microblog-2/apis/users/showProfile?token=%242a%2410%24RIB.o8G4epPWFHfQv.vhUe2zoBG6STO%2FX4BhHfgDv.LQs5a5JFyq2&search_id=233&user_id=233
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\app\Controller\UsersController.php(298): Security::rijndael('a secret', 'c105f5fe2d7d706...', 'encrypt')
+#1 [internal function]: UsersController->showProfile()
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:21:24 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE), expecting ';' or ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:21:27 Error: [ParseError] syntax error, unexpected '$this' (T_VARIABLE), expecting ';' or ','
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(266): class_exists('UsersController')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2020-04-17 15:26:15 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:15 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:16 Error: [FatalErrorException] Cannot redeclare AppController::idEncryption()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-17 15:26:17 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:18 Error: [FatalErrorException] Cannot redeclare AppController::idEncryption()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-17 15:26:18 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:18 Error: [FatalErrorException] Cannot redeclare AppController::idEncryption()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-17 15:26:19 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:20 Error: [FatalErrorException] Cannot redeclare AppController::idEncryption()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-17 15:26:20 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:20 Error: [FatalErrorException] Cannot redeclare AppController::idEncryption()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-17 15:26:21 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:22 Error: [FatalErrorException] Cannot redeclare AppController::idEncryption()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-17 15:26:23 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:23 Error: [FatalErrorException] Cannot redeclare AppController::idEncryption()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2020-04-17 15:26:23 Error: Fatal Error (64): Cannot redeclare AppController::idEncryption() in [C:\xampp\htdocs\microblog-2\apis\app\Controller\AppController.php, line 144]
+2020-04-17 15:26:24 Error: [FatalErrorException] Cannot redeclare AppController::idEncryption()
+Request URL: /microblog-2/apis/users/authenticate
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Error\ErrorHandler.php(212): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(970): ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 144, Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}

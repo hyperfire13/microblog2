@@ -29,7 +29,7 @@
           'type' => 'string',
           'allowEmpty' => false,
           'required' => true,
-          'message' => 'email'
+          'message' => 'email provided is either taken / invalid'
         )
       ),
       'first_name' => array(
@@ -37,7 +37,7 @@
           'rule' => 'notBlank',
           'type' => 'string',
           'allowEmpty' => false,
-          'message' => ' - missing firstname -',
+          'message' => 'invalid firstname',
           'required' => true
         )
       ),
@@ -47,7 +47,7 @@
           'type' => 'string',
           'allowEmpty' => false,
           'required' => true,
-          'message' => '- missing middlename -'
+          'message' => 'invalid middlename'
         )
       ),
       'last_name' => array(
@@ -56,7 +56,7 @@
           'type' => 'string',
           'allowEmpty' => false,
           'required' => true,
-          'message' => '- missing lastname -'
+          'message' => 'invalid lastname'
         )
       ),
       'date_of_birth' => array(
@@ -73,7 +73,7 @@
           'type' => 'tinyinteger',
           'allowEmpty' => false,
           'required' => false,
-          'message' => '- missing activation status -'
+          'message' => 'invalid activation status'
         )
         ),
       'code' => array(
@@ -110,5 +110,14 @@
       }
       return true;
     }
+    // public function afterFind($results, $primary = false) {
+    //   //echo json_encode($results);
+    //   for ($i=0; $i < sizeof($results); $i++) {
+    //     if (isset($results[$i]['User']['id'])) {
+    //         $results[$i]['User']['id'] = $this->idEncryption($results[$i]['User']['id']);
+    //     }
+    //   }
+    //   return $results;
+    // }
   }
 ?>

@@ -23,6 +23,7 @@
   App::uses('CakeEmail', 'Network/Email');
   App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
   App::uses('CakeTime', 'Utility');
+  App::uses('Security', 'Utility');
   /**
    * Application Controller
    *
@@ -44,6 +45,7 @@
     public $email;
     // code for validation
     private $code;
+    public $idEncryptor = "coronavirus2019";
 
     public function sendValidationLink ($token,$name,$email) {
       try {
@@ -132,6 +134,16 @@
       // Sanitizes HTML Characters
       $data = htmlspecialchars_decode($data, ENT_QUOTES);
 
+      return $data;
+    }
+    public function idEncryption($id) {
+      $data = openssl_encrypt($id, "AES-128-ECB", $this->idEncryptor);
+      //AyYEF91D0AisI0CHxk2+0w==
+      return $data;
+    }
+    public function idDecryption($id) {
+      $data = openssl_decrypt($id, "AES-128-ECB", $this->idEncryptor);
+      //AyYEF91D0AisI0CHxk2+0w==
       return $data;
     }
   }

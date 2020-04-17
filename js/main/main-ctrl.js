@@ -45,6 +45,7 @@ function($rootScope, $location, $routeParams, $http, $timeout, $interval, $httpP
     }).then(function mySuccess(response) {
         if (response.data.status === 'success') {
             $rootScope.user = response.data.record.User;
+            localStorage.setItem('myId',$rootScope.user.id);
         }
         //$timeout(function() { location.href = './'; }, 600);
     });

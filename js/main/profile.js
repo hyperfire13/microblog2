@@ -83,6 +83,7 @@ microblogApp.controller('profileCtrl',
     $scope.blogs = [];
     $scope.imageGenerator = 0;
     $scope.personProfile = null;
+    
     $scope.showProfile = function (id) {
       $scope.fetching = true;
       $('#profileModal').modal({
@@ -112,7 +113,6 @@ microblogApp.controller('profileCtrl',
           handler.unknown();
       });
     }
-
     $scope.getExtension = function(filename) {
       var parts = filename.split('.');
       return parts[parts.length - 1];
@@ -561,7 +561,13 @@ microblogApp.controller('profileCtrl',
       $timeout(function () {
         $http({
           method:'GET',
-          url:'apis/posts/viewMyBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.request.page+'&size='+$scope.pageSize,
+          url:'apis/posts/viewMyBlogs',
+          params : {
+            token : localStorage.getItem('token'),
+            id : $rootScope.user.id,
+            page : $scope.request.page,
+            size :$scope.pageSize
+          },
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
           $timeout(function () {

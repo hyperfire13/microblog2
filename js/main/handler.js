@@ -44,8 +44,7 @@ microblogApp.service('handler',
         $timeout(function() {
           jQuery.jGrowl('Something went wrong. Please try again.', {
             header: 'Ooppss',
-            position: 'top-right',
-            sticky : true
+            position: 'top-right'
           });
         }, 500);
       }, 1000);
@@ -55,8 +54,7 @@ microblogApp.service('handler',
         $timeout(function() {
           jQuery.jGrowl('Cannot connect to the server. Please make sure that you have internet connection.', {
             header: 'Ooppss',
-            position: 'top-right',
-            sticky : true
+            position: 'top-right'
           });
         }, 500);
       }, 1000);

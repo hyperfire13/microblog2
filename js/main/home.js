@@ -42,6 +42,36 @@ microblogApp.controller('homeCtrl',
     };
     $scope.newCaptions = [];
     $scope.personProfile = null;
+
+    // $scope.showProfile = function (id) {
+    //   $scope.fetching = true;
+    //   $('#profileModal').modal({
+    //     backdrop: 'static',
+    //     keyboard: false,
+    //     show : true
+    //   });
+    //   $http({
+    //     method:'GET',
+    //     url:'apis/users/showProfile'+'?token='+localStorage.getItem('token')+'&search_id='+id+'&user_id='+$rootScope.user.id,
+    //       headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+    //   }).then(function mySuccess(response) {
+    //     $scope.fetching = false;
+    //     if (response.data.status === 'success') {
+    //         $scope.personProfile = response.data.record;
+    //     } else if (response.data.status === 'failed') {
+    //         $scope.personProfile = null;
+    //         handler.growler(response.data.message);
+    //     } else if (!response.data.status) {
+    //         $scope.personProfile = null;
+    //         $scope.fetching = false;
+    //         handler.unknown();
+    //     }
+    //   },function myError () {
+    //       $scope.personProfile = null;
+    //       $scope.fetching = false;
+    //       handler.unknown();
+    //   });
+    // }
     $scope.showProfile = function (id) {
       $scope.fetching = true;
       $('#profileModal').modal({
@@ -51,8 +81,13 @@ microblogApp.controller('homeCtrl',
       });
       $http({
         method:'GET',
-        url:'apis/users/showProfile'+'?token='+localStorage.getItem('token')+'&search_id='+id+'&user_id='+$rootScope.user.id,
-          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        url:'apis/users/showProfile',
+        params : {
+          token : localStorage.getItem('token'),
+          search_id : id,
+          user_id : $rootScope.user.id 
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
       }).then(function mySuccess(response) {
         $scope.fetching = false;
         if (response.data.status === 'success') {
@@ -302,7 +337,13 @@ microblogApp.controller('homeCtrl',
       $timeout(function () {
         $http({
           method:'GET',
-          url:'apis/posts/viewAllBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.request.page+'&size='+$scope.pageSize,
+          url:'apis/posts/viewAllBlogs',
+          params : {
+            token : localStorage.getItem('token'),
+            id : $rootScope.user.id,
+            page : $scope.request.page,
+            size : $scope.pageSize
+          },
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
           $timeout(function () {
