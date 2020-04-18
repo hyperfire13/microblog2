@@ -2,10 +2,11 @@
   App::uses('AppController', 'Controller');
   App::uses('CakeEmail', 'Network/Email');
   App::uses('User', 'Model');
-  class FollowersController extends AppController { 
+  class FollowersController extends AppController {
     public function viewPeople () {
       $this->layout = false;
-      $userId = $this->cleanNumber($this->request->query('id'));
+      $userId = $this->request->query('id');
+      $userId = $this->cleanNumber($this->idDecryption($userId));
       $token = $this->cleanString($this->request->query('token'));
       $page = $this->cleanNumber($this->request->query('page'));
       $size = $this->cleanNumber($this->request->query('size'));
@@ -51,6 +52,12 @@
                       for ($i=0; $i < sizeof($followingThatFollowedBack); $i++) { 
                         $followings[$followingThatFollowedBack[$i]]['MyFollowing']['followedBack'] = true;
                       }
+                      for ($i=0; $i < sizeof($followers) ; $i++) { 
+                        $followers[$i]['MyFollower']['id'] = $this->idEncryption($followers[$i]['MyFollower']['id']);
+                      }
+                      for ($i=0; $i < sizeof($followings) ; $i++) { 
+                        $followings[$i]['MyFollowing']['id'] = $this->idEncryption($followings[$i]['MyFollowing']['id']);
+                      }
                       $this->promtMessage = array('status'=>'success','totalFollowers' => $totalFollowers,'totalFollowings' => $totalFollowings, 'followerTotalPages'=>(ceil($totalFollowers/$size)),'followingTotalPages'=>(ceil($totalFollowings/$size)),'followers'=>$followers,'followings'=> $followings);
                   } else {
                       $followers = [];
@@ -74,6 +81,7 @@
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
+              $data['user_id'] = $this->idDecryption($data['user_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) {  
                   if (empty($data)) {
                     $data = $this->request->data;
@@ -111,6 +119,7 @@
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
+              $data['user_id'] = $this->idDecryption($data['user_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) {  
                   if (empty($data)) {
                       $data = $this->request->data;
@@ -139,7 +148,8 @@
     }
     public function searchPeople () {
       $this->layout = false;
-      $userId = $this->cleanNumber($this->request->query('id'));
+      $userId = $this->request->query('id');
+      $userId = $this->cleanNumber($this->idDecryption($userId));
       $token = $this->cleanString($this->request->query('token'));
       $page = $this->cleanNumber($this->request->query('page'));
       $size = $this->cleanNumber($this->request->query('size'));
@@ -198,6 +208,9 @@
                           "User.last_name LIKE" => $search
                         )),'User.deleted'=>1,'User.activation_status'=>1)
                          ));
+                      for ($i=0; $i < sizeof($peopleName); $i++) { 
+                        $peopleName[$i]['User']['id'] = $this->idEncryption($peopleName[$i]['User']['id']);
+                      }
                       $this->promtMessage = array('status'=>'success', 'people'=>$peopleName,'total'=>$total,'totalPages'=>(ceil($total/$size)));
                   } else {
                       $people = [];

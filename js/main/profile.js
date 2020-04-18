@@ -93,8 +93,13 @@ microblogApp.controller('profileCtrl',
       });
       $http({
         method:'GET',
-        url:'apis/users/showProfile'+'?token='+localStorage.getItem('token')+'&search_id='+id+'&user_id='+$rootScope.user.id,
-          headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
+        url:'apis/users/showProfile',
+        params : {
+          token : localStorage.getItem('token'),
+          search_id : id,
+          user_id : $rootScope.user.id
+        },
+        headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
       }).then(function mySuccess(response) {
         $scope.fetching = false;
         if (response.data.status === 'success') {
@@ -225,7 +230,12 @@ microblogApp.controller('profileCtrl',
         
         $http({
           method:'GET',
-          url:'apis/comments/viewComments'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&postId='+postId,
+          url:'apis/comments/viewComments',
+          params : {
+            token : localStorage.getItem('token'),
+            id :$rootScope.user.id,
+            postId : postId
+          },
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
           $timeout(function () {
@@ -597,7 +607,13 @@ microblogApp.controller('profileCtrl',
       $timeout(function () {
         $http({
           method:'GET',
-          url:'apis/followers/viewPeople'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.followerRequest.page+'&size='+$scope.followerPageSize,
+          url:'apis/followers/viewPeople',
+          params : {
+            token : localStorage.getItem('token'),
+            id : $rootScope.user.id,
+            page : $scope.followerRequest.page,
+            size : $scope.followerPageSize
+          },
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
           $scope.fetching = false;
@@ -632,7 +648,14 @@ microblogApp.controller('profileCtrl',
       $timeout(function () {
         $http({
           method:'GET',
-          url:'apis/followers/searchPeople'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.peopleRequest.page+'&size='+$scope.peoplePageSize+'&search='+$scope.searchName,
+          url:'apis/followers/searchPeople',
+          params : {
+            token : localStorage.getItem('token'),
+            id : $rootScope.user.id,
+            page : $scope.peopleRequest.page,
+            size : $scope.peoplePageSize,
+            search : $scope.searchName
+          },
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
           $scope.fetching = false;

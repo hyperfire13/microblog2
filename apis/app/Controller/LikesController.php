@@ -2,7 +2,7 @@
   App::uses('AppController', 'Controller');
   App::uses('CakeEmail', 'Network/Email');
 
-  class LikesController extends AppController { 
+  class LikesController extends AppController {
     public function likePost () {
       $this->layout = false;
       $data = $this->request->input('json_decode', true);
@@ -11,6 +11,7 @@
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
+              $data['user_id'] = $this->idDecryption($data['user_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) { 
                   if (empty($data)) {
                       $data = $this->request->data;

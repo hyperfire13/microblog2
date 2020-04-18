@@ -66,7 +66,6 @@
           $this->promtMessage = array('status'=>'emailProblem', 'message'=>'There is a problem sending verification code to email');
       }
     }
-
     public function CheckRequest ($method) {
       $this->requestMethod = $method;
       if ($this->request->is($this->requestMethod)) {
@@ -76,7 +75,6 @@
           return false;
       }
     }
-
     public function CheckSession ($session) {
       $this->session = $session;
       if ($this->Session->check($this->session)) { 
@@ -86,29 +84,24 @@
           return false;
       }
     }
-    
     public function createCode () {
       $this->code = rand(1000, 999999); 
       return $this->code;
     }
-
     public function capitalizeFirstLetter ($word) {
       $formattedWord = ucwords($word);
       return $formattedWord;
     }
-
     public function checkPassword ($pw,$basePw) {
       $passwordHasher = new BlowfishPasswordHasher();
       $pw = $passwordHasher->check($pw,$basePw);
       return $pw;
     }
-
     public function createToken ($username) {
       $passwordHasher = new BlowfishPasswordHasher();
       $token = $passwordHasher->hash($username);
       return $token;
     }
-
     public function cleanString($value) {
 
       // Removes leading and trailing spaces
@@ -122,7 +115,6 @@
   
       return $data;
     }
-
     public function cleanNumber($value) {
 
       // Removes leading and trailing spaces

@@ -211,10 +211,29 @@
       Showing <b>{{(followerPageSize * (followerRequest.page - 1)) + 1}}</b> to <b>{{(followerPageSize * (followerRequest.page - 1)) + followings.length}}</b> of <b class="text-primary">{{$scope.followingRequest.total}}</b> followed
     </div>
     <div class="float-right">
+      <div class="d-flex justify-content-center">
+        <div ng-show="fetching" class="spinner-border text-primary" role="status">
+          <span  class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Page : <select class="custom-select " ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
+        <option ng-repeat="n in [].constructor(followerTotalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
+      </select>  -->
+      <div class="btn-group" ng-show="followingTotalPages > 1" role="group" aria-label="Button group with nested dropdown">
+        <button id="paginatorBtn2" type="button" class="btn btn-success">Page</button>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnGroupDrop2">
+            <a ng-click="showPeople($index+1)" ng-repeat="n in [].constructor(followingTotalPages)  track by $index" class="dropdown-item" href="">{{$index+1}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="float-right">
       Page : <select class="custom-select" ng-init="followerRequest.page=1" ng-model="followerRequest.page" ng-change="showPeople()">
         <option ng-repeat="n in [].constructor(followingTotalPages)  track by $index" valaue="{{$index+1}}">{{$index+1}}</option>
       </select> 
-    </div>
+    </div> -->
   </div>
 </div>
 <!-- edit Profile Modal -->

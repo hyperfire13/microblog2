@@ -118,7 +118,14 @@ microblogApp.controller('homeCtrl',
       $timeout(function () {
         $http({
           method:'GET',
-          url:'apis/posts/searchAllBlogs'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&page='+$scope.searchRequest.page+'&size='+$scope.pageSize+'&search='+$scope.findBlog,
+          url:'apis/posts/searchAllBlogs',
+          params : {
+            token : localStorage.getItem('token'),
+            id : $rootScope.user.id,
+            page : $scope.searchRequest.page,
+            size : $scope.pageSize,
+            search : $scope.findBlog
+          },
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
           $timeout(function () {
@@ -439,7 +446,12 @@ microblogApp.controller('homeCtrl',
         
         $http({
           method:'GET',
-          url:'apis/comments/viewComments'+'?token='+localStorage.getItem('token')+'&id='+$rootScope.user.id+'&postId='+postId,
+          url:'apis/comments/viewComments',
+          params : {
+            token : localStorage.getItem('token'),
+            id : $rootScope.user.id,
+            postId : postId
+          },
           headers:{'Content-Type' : 'application/x-www-form-urlencoded'}
         }).then(function mySuccess(response) {
           $timeout(function () {

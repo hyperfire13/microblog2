@@ -13,6 +13,7 @@
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
               $postImages = [];
+              $data['user_id'] = $this->idDecryption($data['user_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) {  
                   if (empty($data)) {
                       $data = $this->request->data;
@@ -98,6 +99,14 @@
                     'order'=> array('Post.created DESC'),
                     'offset'=>$offset
                   ));
+                  for ($i=0; $i < sizeof($blogs); $i++) {
+                    if (isset($blogs[$i]['Post']['user_id'])) {
+                      $blogs[$i]['Post']['user_id'] = $this->idEncryption($blogs[$i]['Post']['user_id']);
+                    }
+                    if (isset($blogs[$i]['User']['id'])) {
+                      $blogs[$i]['User']['id'] = $this->idEncryption($blogs[$i]['User']['id']);
+                    }
+                  }
                   if (!empty($blogs)) {
                       $this->promtMessage = array('status'=>'success','total'=>$total,'totalPages'=>(ceil($total/$size)),'record'=>$blogs);
                   }
@@ -153,6 +162,7 @@
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
+              $data['user_id'] = $this->idDecryption($data['user_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) { 
                   if (empty($data)) {
                       $data = $this->request->data;
@@ -197,6 +207,7 @@
               $baseId = $this->Session->read('User.id');
               $postImages = [];
               $data['existing_pics'] = json_decode($data['existing_pics'],true);
+              $data['user_id'] = $this->idDecryption($data['user_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) {
                   if (empty($data)) {
                       $data = $this->request->data;
@@ -267,6 +278,7 @@
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
+              $data['user_id'] = $this->idDecryption($data['user_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) {
                   if (empty($data)) {
                       $data = $this->request->data;
@@ -294,7 +306,8 @@
     }
     public function searchAllBlogs () {
       $this->layout = false;
-      $userId = $this->cleanNumber($this->request->query('id'));
+      $userId = $this->request->query('id');
+      $userId = $this->cleanNumber($this->idDecryption($userId));
       $token = $this->cleanString($this->request->query('token'));
       $page = $this->cleanNumber($this->request->query('page'));
       $size = $this->cleanNumber($this->request->query('size'));

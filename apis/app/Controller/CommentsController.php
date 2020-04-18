@@ -2,10 +2,11 @@
   App::uses('AppController', 'Controller');
   App::uses('CakeEmail', 'Network/Email');
 
-  class CommentsController extends AppController { 
+  class CommentsController extends AppController {
     public function viewComments () {
       $this->layout = false;
-      $userId = $this->cleanNumber($this->request->query('id'));
+      $userId = $this->request->query('id');
+      $userId = $this->cleanNumber($this->idDecryption($userId));
       $postId = $this->cleanNumber($this->request->query('postId'));
       $token = $this->cleanString($this->request->query('token'));
       if ($this->CheckRequest('get')) {
@@ -39,6 +40,7 @@
               $this->promtMessage = array('status'=>'failed', 'message'=>'records not found');
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
+              $data['user_id'] = $this->idDecryption($data['user_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) { 
                   if (empty($data)) {
                       $data = $this->request->data;

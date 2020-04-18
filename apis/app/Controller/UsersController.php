@@ -262,6 +262,7 @@
               $data = $this->request->input('json_decode', true);
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
+              $data['id'] = $this->idDecryption($data['id']);
               if ($data['token'] === $baseToken && $baseId === $data['id']) {  
                   if (empty($data)) {
                       $data = $this->request->data;
@@ -297,10 +298,12 @@
     }
     public  function showProfile () {
       $this->layout = false;
-      $userId = $this->cleanNumber($this->request->query('user_id'));
-      $searchId = $this->cleanNumber($this->request->query('search_id'));
+      $userId = $this->request->query('user_id');
+      $userId = $this->cleanNumber($this->idDecryption($userId));
+      $searchId = $this->request->query('search_id');
+      $searchId = $this->cleanNumber($this->idDecryption($searchId));
       $token = $this->cleanString($this->request->query('token'));
-      if ($this->CheckRequest('get')) { 
+      if ($this->CheckRequest('get')) {
           $this->promtMessage = array('status'=>'failed', 'message'=>'User not found');
           if ($this->CheckSession('User.token')) {
               $baseToken = $this->Session->read('User.token');
