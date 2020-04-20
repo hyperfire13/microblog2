@@ -1,10 +1,10 @@
 $(document).ready(function() { 
-  $('#activateForm').submit(function(e) {
-    e.preventDefault();
-    //activateAccount();
-  });
+  
 });
-
+$('#activateForm').submit(function(e) {
+  e.preventDefault();
+  activateAccount();
+});
 function resendCode () {
   var resendUsername = $('#resendUsername').val();
   var resend = {

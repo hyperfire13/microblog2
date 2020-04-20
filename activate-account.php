@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<base href="/">
+		<base href="/microblog-2/">
 		<link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="dependencies/css/custom.min.css">
 		<?php
@@ -26,7 +26,7 @@
                     <label for="exampleInputEmail1">We sent an activation code to the email you provided in the Registration</label>
                     <input type="text" name="code" class="form-control" id="code"  placeholder="Enter code">
                     <div class="invalid-feedback">Please enter the validation code.</div>
-                    <button onclick="showResendModal(true)" class="btn btn-link">Resend Activation Code</button>
+                    <button type="button" onclick="showResendModal(true)" class="btn btn-link">Resend Activation Code</button>
                   </div>
                 </div>
               </div>

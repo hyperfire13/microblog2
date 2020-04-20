@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<base href="/">
+		<base href="/microblog-2/">
 		<link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="dependencies/css/custom.min.css">
 		<?php
