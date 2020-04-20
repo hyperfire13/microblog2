@@ -1,7 +1,7 @@
 $(document).ready(function() { 
   $('#activateForm').submit(function(e) {
     e.preventDefault();
-    activateAccount();
+    //activateAccount();
   });
 });
 
