@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html  ng-app="microblogApp" >
   <head>
-    <?php $version = '1.0.0';?>
+    <?php $version = '5.0.0';?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/microblog-2/">
+    <base href="/">
     <link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css">
     <!-- <link rel="stylesheet" type="text/css" href="dependencies/css/custom.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/main.css">

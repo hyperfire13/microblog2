@@ -9860,3 +9860,48 @@ Stack Trace:
 #2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Core\App.php(943): App::_checkFatalError()
 #3 [internal function]: App::shutdown()
 #4 {main}
+2020-04-20 09:36:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`microblogdb`.`followers`, CONSTRAINT `followers_ibfk_2` FOREIGN KEY (`following_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /microblog-2/apis/followers/follow
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Follower), Array, Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(93): Model->save(Array)
+#6 [internal function]: FollowersController->follow()
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2020-04-20 09:36:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`microblogdb`.`followers`, CONSTRAINT `followers_ibfk_2` FOREIGN KEY (`following_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /microblog-2/apis/followers/follow
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Follower), Array, Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(93): Model->save(Array)
+#6 [internal function]: FollowersController->follow()
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2020-04-20 09:37:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`microblogdb`.`followers`, CONSTRAINT `followers_ibfk_2` FOREIGN KEY (`following_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /microblog-2/apis/followers/follow
+Stack Trace:
+#0 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Follower), Array, Array)
+#4 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\microblog-2\apis\app\Controller\FollowersController.php(93): Model->save(Array)
+#6 [internal function]: FollowersController->follow()
+#7 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(FollowersController), Array)
+#8 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\microblog-2\apis\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FollowersController), Object(CakeRequest))
+#10 C:\xampp\htdocs\microblog-2\apis\app\webroot\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

@@ -82,6 +82,7 @@
               $baseToken = $this->Session->read('User.token');
               $baseId = $this->Session->read('User.id');
               $data['user_id'] = $this->idDecryption($data['user_id']);
+              $data['following_id'] = $this->idDecryption($data['following_id']);
               if ($data['token'] === $baseToken && $baseId === $data['user_id']) {  
                   if (empty($data)) {
                     $data = $this->request->data;
