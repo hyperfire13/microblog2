@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<base href="/microblog-2/">
-		<link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="dependencies/css/custom.min.css">
-		<?php
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="dependencies/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dependencies/css/custom.min.css">
+    <?php
       require 'modals.php';
-		?>
-	</head>
-	<title>
-	</title>
-	</head>
-	<body>
-		<div class="container">
+    ?>
+  </head>
+  <title>
+  </title>
+  </head>
+  <body>
+    <div class="container">
       <div class="col-lg-12">
         <form id="addForm" method="POST" autocomplete="off">
           <div class="card text-white bg-warning mb-3">
