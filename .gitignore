@@ -32,4 +32,8 @@ Thumbs.db
 #/index.php
 #signup.php
 #activate-account.php
+apis/app/tmp/*
+apis/app/Config/*
+apis/app/tmp/cache/persistent/*
+apis/app/tmp/cache/models/*
 haha.php

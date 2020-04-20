@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  ng-app="microblogApp" >
   <head>
-    <?php $version = '5.0.0';?>
+    <?php $version = '6.0.0';?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/">
